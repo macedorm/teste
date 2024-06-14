@@ -1,0 +1,48 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="br.com.jjconsulting.mobile.dansales.HomeFragment">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/BackgroundHomeTitle"
+            android:orientation="vertical">
+
+            <TextView
+                    android:id="@+id/home_title"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:textColor="@color/formLabelTextColor"
+                    android:textSize="18dp"
+                    android:layout_marginTop="12dp"
+                    android:layout_marginBottom="12dp"
+                    android:layout_marginStart="12dp"
+                    android:layout_marginEnd="12dp"
+                    android:text="@string/title_page_home" />
+        </LinearLayout>
+
+        <GridView
+            android:id="@+id/home_options_grid_view"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="@dimen/home_options_container_horizontal_padding"
+            android:layout_marginBottom="@dimen/home_options_container_horizontal_padding"
+            android:layout_marginStart="@dimen/home_options_container_vertical_padding"
+            android:layout_marginEnd="@dimen/home_options_container_vertical_padding"
+            android:numColumns="auto_fit"
+            android:columnWidth="@dimen/home_options_container_width"
+            android:verticalSpacing="@dimen/home_options_container_vertical_padding"
+            android:horizontalSpacing="@dimen/home_options_container_horizontal_padding"
+            android:stretchMode="columnWidth"
+            android:gravity="center" />
+
+    </LinearLayout>
+
+</FrameLayout>

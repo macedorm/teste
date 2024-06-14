@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="?android:attr/selectableItemBackground"
+    android:paddingBottom="@dimen/list_item_horizontal_padding"
+    android:paddingTop="@dimen/list_item_horizontal_padding"
+    tools:context="br.com.jjconsulting.mobile.dansales.LoginActivity">
+
+    <br.com.jjconsulting.mobile.dansales.util.CustomTextInputLayout
+        android:id="@+id/pergunta_text_input_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/form_edit_text_margin_top">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/pergunta_edit_text"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/pergunta_resposta_hint" />
+
+    </br.com.jjconsulting.mobile.dansales.util.CustomTextInputLayout>
+
+</LinearLayout>

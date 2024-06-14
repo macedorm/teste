@@ -1,0 +1,6 @@
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:state_pressed="true"
+        android:color="@color/danButtonLoginTextColor"
+        android:alpha="0.5" />
+    <item android:color="@color/danButtonLoginTextColor" />
+</selector>

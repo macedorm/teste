@@ -1,0 +1,20 @@
+{
+  "version": 3,
+  "artifactType": {
+    "type": "APK",
+    "kind": "Directory"
+  },
+  "applicationId": "br.danone.dansalesmobile",
+  "variantName": "prodDebug",
+  "elements": [
+    {
+      "type": "SINGLE",
+      "filters": [],
+      "attributes": [],
+      "versionCode": 83,
+      "versionName": "1.83.20240515",
+      "outputFile": "app-prod-debug.apk"
+    }
+  ],
+  "elementType": "File"
+}

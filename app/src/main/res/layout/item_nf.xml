@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:paddingTop="@dimen/list_item_horizontal_padding"
+    android:paddingBottom="@dimen/list_item_horizontal_padding"
+    android:paddingStart="@dimen/list_item_vertical_padding"
+    android:paddingEnd="@dimen/list_item_vertical_padding"
+    android:background="?android:attr/selectableItemBackground">
+
+    <RelativeLayout
+        android:id="@+id/container_nf_relative_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginRight="@dimen/form_label_large_margin_vertical">
+
+
+        <ImageView
+            android:id="@+id/nf_status_image_view"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_centerVertical="true"
+            android:layout_alignParentStart="true"
+            android:paddingEnd="@dimen/list_item_image_end_padding" />
+
+        <TextView
+            android:id="@+id/nf_cliente_nome_text_view"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_toEndOf="@id/nf_status_image_view"
+            style="@style/ListItemPrimaryText" />
+
+
+        <TextView
+            android:id="@+id/nf_pedido_sap_text_view"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingTop="@dimen/list_item_spacing"
+            android:layout_below="@id/nf_cliente_nome_text_view"
+            android:layout_toEndOf="@id/nf_status_image_view"
+            style="@style/ListItemSecondaryText" />
+
+        <TextView
+            android:id="@+id/nf_emissao_sap_text_view"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingTop="@dimen/list_item_spacing"
+            android:layout_below="@id/nf_pedido_sap_text_view"
+            android:layout_toEndOf="@id/nf_status_image_view"
+            style="@style/ListItemSecondaryText" />
+
+        <TextView
+            android:id="@+id/nf_num_sap_text_view"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingTop="@dimen/list_item_spacing"
+            android:layout_below="@id/nf_emissao_sap_text_view"
+            android:layout_toEndOf="@id/nf_status_image_view"
+            style="@style/ListItemSecondaryText" />
+
+        <TextView
+            android:id="@+id/nf_serie_sap_text_view"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingTop="@dimen/list_item_spacing"
+            android:layout_below="@id/nf_num_sap_text_view"
+            android:layout_toEndOf="@id/nf_status_image_view"
+            style="@style/ListItemSecondaryText" />
+
+
+    </RelativeLayout>
+
+</RelativeLayout>

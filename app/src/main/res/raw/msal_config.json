@@ -1,0 +1,16 @@
+{
+  "client_id": "6a1009e1-299c-4c86-b8a2-a1e2e480a78f",
+  "authorization_user_agent": "WEBVIEW",
+  "redirect_uri": "https://dansaleswebdev.danone.com.br/homolog/LoginbySSO",
+  "account_mode": "SINGLE",
+  "authorities": [
+    {
+      "type": "AAD",
+      "audience": {
+        "type": "AzureADMyOrg",
+        "tenant_id": "4720ed5e-c545-46eb-99a5-958dd333e9f2"
+      }
+    }
+  ]
+
+}

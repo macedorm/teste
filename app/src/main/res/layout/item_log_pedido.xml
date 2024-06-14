@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:minHeight="80dp"
+    android:orientation="horizontal"
+    android:paddingEnd="@dimen/activity_vertical_margin"
+    android:paddingStart="@dimen/activity_vertical_margin"
+    android:background="?android:attr/selectableItemBackground">
+
+    <LinearLayout
+        android:id="@+id/log_icon_relative_layout"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:gravity="center_horizontal"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:id="@+id/line_top_linear_layout"
+            android:layout_width="2dp"
+            android:layout_height="20dp"
+            android:orientation="vertical"
+            android:background="@color/sucessCollor" />
+
+        <LinearLayout
+            android:id="@+id/llIconStatus"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:gravity="center"
+            android:background="@drawable/circular_status_enable">
+            <ImageView
+                android:id="@+id/ivIconStatus"
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:scaleType="fitCenter"
+                app:srcCompat="@drawable/ic_baseline_done_24"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/line_bottom_linear_layout"
+            android:layout_width="2dp"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:background="@color/sucessCollor"/>
+
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/form_label_margin_vertical">
+
+        <TextView
+            android:id="@+id/log_descricao"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_centerVertical="true"
+            android:textStyle="bold"
+            style="@style/ListItemSecondaryText" />
+
+
+        <TextView
+            android:id="@+id/log_nome"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/log_descricao"
+            android:paddingTop="@dimen/list_item_spacing"
+            android:visibility="gone"
+            style="@style/ListItemSecondaryText" />
+
+        <TextView
+            android:id="@+id/log_date"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/log_nome"
+            android:paddingTop="@dimen/list_item_spacing"
+            style="@style/ListItemSecondaryText" />
+
+    </RelativeLayout>
+
+</LinearLayout>

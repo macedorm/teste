@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:paddingTop="@dimen/tree_view_horizontal_padding"
+    android:paddingBottom="@dimen/tree_view_horizontal_padding">
+
+    <CheckBox
+        android:id="@+id/hierarquia_comercial_check_box"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_alignParentLeft="true" />
+
+    <ImageView
+        android:id="@+id/arrow_image_view"
+        android:layout_width="16dp"
+        android:layout_height="16dp"
+        android:layout_toRightOf="@id/hierarquia_comercial_check_box"
+        android:layout_centerVertical="true" />
+
+    <TextView
+        android:id="@+id/usuario_nome_text_view"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@id/arrow_image_view"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="@dimen/tree_view_spacing"
+        style="@style/ListItemPrimaryText" />
+
+    <TextView
+        android:id="@+id/usuario_email_text_view"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@id/arrow_image_view"
+        android:layout_below="@id/usuario_nome_text_view"
+        android:layout_marginStart="@dimen/tree_view_spacing"
+        style="@style/ListItemSecondaryText" />
+
+</RelativeLayout>

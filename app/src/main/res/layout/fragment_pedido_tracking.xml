@@ -1,0 +1,140 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:fillViewport="true"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <include
+            android:id="@+id/list_empty_text_view"
+            layout="@layout/base_list_empty_no_filter"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:visibility="visible"/>
+
+        <RelativeLayout
+            xmlns:app="http://schemas.android.com/apk/res-auto"
+            android:id="@+id/container_relative_layout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:layout_margin="@dimen/form_label_margin_vertical"
+            android:visibility="gone">
+
+
+            <ImageView
+                android:id="@+id/ivIconStatus"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_marginTop="15dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:tint="@color/sucessCollor"
+                app:srcCompat="@drawable/ic_baseline_shopping_cart_24" />
+
+            <TextView
+                android:id="@+id/status_pedido_text_view"
+                style="@style/ListItemPrimaryText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@+id/ivIconStatus"
+                android:layout_marginTop="25dp"
+                android:text="Status Pedido"
+                android:textColor="@color/formLabelTextColorDisable"/>
+
+            <View
+                android:id="@+id/lineStatus"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="10dp"
+                android:paddingLeft="20dp"
+                android:paddingRight="20dp"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_below="@+id/ivIconStatus"
+                android:background="@color/danWhiteButtonBorderColor"/>
+
+            <androidx.cardview.widget.CardView
+                xmlns:card_view="http://schemas.android.com/apk/res-auto"
+                android:id="@+id/info_card_view"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="right"
+                android:layout_margin="@dimen/margin_text_chat"
+                android:layout_below="@+id/lineStatus"
+                app:cardBackgroundColor="@color/cardview_light_background"
+                card_view:cardCornerRadius="10dp">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="10dp">
+
+                <TextView
+                    style="@style/ListItemSecondaryText"
+                    android:id="@+id/info_text_view"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="@dimen/form_label_margin_vertical"
+                    android:text="@string/pedido_tracking_error_nf" />
+
+                </RelativeLayout>
+
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                xmlns:card_view="http://schemas.android.com/apk/res-auto"
+                android:id="@+id/log_pedido_card_view"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/info_card_view"
+                android:layout_gravity="right"
+                android:layout_margin="@dimen/margin_text_chat"
+                app:cardBackgroundColor="@color/cardview_light_background"
+                card_view:cardCornerRadius="10dp">
+
+                <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/log_pedido_recycler_view"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/margin_text_chat"
+                    android:layout_marginBottom="@dimen/margin_text_chat" />
+
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                xmlns:card_view="http://schemas.android.com/apk/res-auto"
+                android:id="@+id/map_log_pedido_card_view"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/log_pedido_card_view"
+                android:layout_gravity="right"
+                android:layout_margin="@dimen/margin_text_chat"
+                app:cardBackgroundColor="@color/cardview_light_background"
+                card_view:cardCornerRadius="10dp">
+
+                <fragment
+                    android:name="com.google.android.gms.maps.SupportMapFragment"
+                    android:id="@+id/frg"
+                    android:layout_width="match_parent"
+                    android:layout_height="200dp"
+                    android:layout_margin="@dimen/form_label_margin_vertical" />
+
+            </androidx.cardview.widget.CardView>
+
+            <Button
+                android:id="@+id/link_button"
+                style="@style/DanButton"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/map_log_pedido_card_view"
+                android:layout_marginTop="@dimen/app_vertical_spacing"
+                android:layout_marginHorizontal="@dimen/app_vertical_spacing"
+                android:text="@string/link_rastreio" />
+
+        </RelativeLayout>
+
+    </RelativeLayout>
+
+</ScrollView>

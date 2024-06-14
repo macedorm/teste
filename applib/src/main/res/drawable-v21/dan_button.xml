@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ripple xmlns:android="http://schemas.android.com/apk/res/android"
+    android:color="@color/danButtonRippleEffectColor">
+    <item android:drawable="@drawable/dan_button_default" />
+    <item android:id="@android:id/mask">
+        <shape xmlns:android="http://schemas.android.com/apk/res/android"
+            android:shape="rectangle">
+            <corners
+                android:radius="@dimen/dan_button_radius" />
+            <solid
+                android:color="@color/danButtonRippleEffectColor" />
+            <padding
+                android:left="@dimen/dan_button_vertical_padding"
+                android:right="@dimen/dan_button_vertical_padding"
+                android:top="@dimen/dan_button_horizontal_padding"
+                android:bottom="@dimen/dan_button_horizontal_padding" />
+        </shape>
+    </item>
+</ripple>

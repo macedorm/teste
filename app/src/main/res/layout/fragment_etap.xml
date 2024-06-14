@@ -1,0 +1,37 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginLeft="@dimen/margin_left_right_dan_button"
+    android:layout_marginRight="@dimen/margin_left_right_dan_button"
+    android:layout_marginTop="@dimen/margin_left_right_dan_button"
+    android:orientation="vertical"
+    tools:context="br.com.jjconsulting.mobile.dansales.RelatoriosFragment">
+
+    <Button
+        android:id="@+id/etap_lista_button"
+        style="@style/DanButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/margin_bottom_dan_button"
+        android:text="@string/etap_lista_objetivo" />
+
+    <Button
+        android:id="@+id/etap_financas_button"
+        style="@style/DanButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/margin_bottom_dan_button"
+        android:text="@string/etap_financas" />
+
+    <Button
+        android:id="@+id/etap_consultar_button"
+        style="@style/DanButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/margin_bottom_dan_button"
+        android:text="@string/etap_consultar" />
+
+</LinearLayout>
+
+

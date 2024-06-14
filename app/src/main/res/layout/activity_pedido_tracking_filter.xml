@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true"
+    android:background="@color/appBackgroundColor">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:id="@+id/base_relative_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:focusableInTouchMode="true"
+            android:layout_centerInParent="true"
+            android:paddingStart="@dimen/login_vertical_margin"
+            android:paddingTop="@dimen/login_horizontal_margin"
+            android:paddingEnd="@dimen/login_vertical_margin"
+            android:paddingBottom="@dimen/login_horizontal_margin">
+
+            <TextView
+                style="@style/ListItemPrimaryText"
+                android:id="@+id/nota_title"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="@color/danButtonGrayPressedTextColor"
+                android:text="@string/pedido_tracking_title_filter"/>
+
+            <LinearLayout
+                android:id="@+id/nota_container_linear_layout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/nota_title"
+                android:layout_marginTop="@dimen/form_label_margin_vertical"
+                android:layout_marginBottom="@dimen/form_label_margin_vertical"
+                android:orientation="horizontal">
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:id="@+id/nota_text_input_layout"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:layout_below="@+id/nota_title">
+
+                    <EditText
+                        android:id="@+id/nota_edit_text"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:hint="@string/nota_hint"
+                        android:inputType="number" />
+
+                </com.google.android.material.textfield.TextInputLayout>
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:id="@+id/serial_text_input_layout"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="2"
+                    android:layout_marginLeft="@dimen/form_label_margin_vertical">
+
+                    <EditText
+                        android:id="@+id/serial_edit_text"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:hint="@string/serie_nota_hint"
+                        android:inputType="number" />
+
+                </com.google.android.material.textfield.TextInputLayout>
+
+            </LinearLayout>
+
+
+            <TextView
+                style="@style/ListItemPrimaryText"
+                android:id="@+id/nota_title_divisor_text_view"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/form_label_margin_vertical"
+                android:layout_centerHorizontal="true"
+                android:textColor="@color/danButtonGrayPressedTextColor"
+                android:text="Ou"
+                android:layout_below="@+id/nota_container_linear_layout"/>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/pedido_nota_text_input_layout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/nota_title_divisor_text_view">
+
+                <EditText
+                    android:id="@+id/pedido_nota_edit_text"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="@string/pedido_hint"
+                    android:inputType="text"
+                    android:paddingRight="@dimen/password_img_padding_width" />
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <Button
+                android:id="@+id/ok_button"
+                style="@style/DanButton"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/pedido_nota_text_input_layout"
+                android:layout_marginTop="@dimen/form_label_large_margin_vertical"
+                android:text="@string/ok" />
+
+        </RelativeLayout>
+
+    </RelativeLayout>
+
+</ScrollView>

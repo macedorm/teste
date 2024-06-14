@@ -1,0 +1,250 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <color name="defaultColorPrimaryExtraDark">#1f6ca6</color>
+    <color name="defaultColorPrimaryDark">#2275ba</color>
+    <color name="defaultColorPrimaryMedium">#388bc7</color>
+    <color name="defaultColorPrimary">#5B9BD5</color>
+
+    <color name="defaultColorSecondaryDark">#0c0c0c</color>
+    <color name="defaultColorSecondaryMedium">#8a8a8a</color>
+    <color name="defaultColorSecondary">#F2F2F2</color>
+
+    <color name="defaultColorTernary">#FFFFFF</color>
+    <color name="defaultColorLine">#8A8A8A</color>
+
+    <!-- App -->
+    <color name="colorPrimary">@color/defaultColorPrimaryDark</color>
+    <color name="colorPrimaryDark">@color/defaultColorPrimaryExtraDark</color>
+    <color name="colorWhite">@color/defaultColorTernary</color>
+    <color name="colorAccent">@color/defaultColorPrimaryMedium</color>
+    <color name="appBackgroundColor">@color/defaultColorTernary</color>
+    <color name="appDarkBackgroundColor">@color/defaultColorPrimaryDark</color>
+    <color name="colorItens">@color/defaultColorPrimaryDark</color>
+    <color name="progress">@color/defaultColorPrimaryDark</color>
+
+    <color name="lineHome">@color/defaultColorSecondary</color>
+
+    <!-- Login theme. -->
+    <color name="loginColorItens">@color/defaultColorTernary</color>
+    <color name="loginProgress">@color/defaultColorPrimaryDark</color>
+    <color name="loginColorPrimary">@color/defaultColorPrimaryDark</color>
+    <color name="loginColorPrimaryDark">@color/defaultColorPrimaryExtraDark</color>
+    <color name="loginColorAccent">@color/loginColorItens</color>
+    <color name="loginBackgroundColor">@color/defaultColorPrimaryDark</color>
+
+    <!--Menu-->
+    <color name="menu_icon">#a8a8a8</color>
+    <color name="menu_text">#1f1f1f</color>
+    <color name="menu_selected">@color/defaultColorPrimaryMedium</color>
+    <color name="menu_selected_background">@color/defaultColorSecondary</color>
+    <color name="line_separator_menu">@color/defaultColorSecondary</color>
+    <color name="action_icon_menu">@color/defaultColorPrimaryMedium</color>
+    <color name="action_icon_cancel_menu">#a8a8a8</color>
+    <color name="home_menu_text_color">@color/defaultColorTernary</color>
+
+    <!--Dialog -->
+    <color name="alertCollor">#fbc40e</color>
+    <color name="sucessCollor">#00B050</color>
+    <color name="errorCollor">#EE302E</color>
+    <color name="infoCollor">#1847A1</color>
+    <color name="questionCollor">#2275ba</color>
+    <color name="backgroundColorDialog">#FFFFFF</color>
+    <color name="BackgroundDialog">#B3000000</color>
+
+    <color name="backgroundColorTranspDialog">#20000000</color>
+    <color name="dialogText">#3a3a3a</color>
+
+    <!-- Color jjFormView -->
+    <color name="colorControlActivated">@color/defaultColorPrimaryMedium</color>
+    <color name="colorSpinnerBorder">@color/defaultColorSecondary</color>
+    <color name="formValueTextColor">@color/defaultColorSecondaryDark</color>
+    <color name="formLabelFilterTextColor">@color/defaultColorSecondaryDark</color>
+    <color name="formLabelTextColor">@color/defaultColorSecondaryDark</color>
+    <color name="formLabelTextColorDisable">@color/defaultColorSecondaryMedium</color>
+
+    <!-- Color jjGridView -->
+    <color name="listItemPrimaryTextColor">@color/defaultColorSecondaryMedium</color>
+    <color name="listItemSecondaryTextColor">@color/defaultColorSecondaryMedium</color>
+    <color name="listItemSecondaryTextLabelColor">@color/defaultColorSecondaryMedium</color>
+    <color name="listEmpty">@color/defaultColorSecondaryMedium</color>
+    <color name="formLineColor">@color/defaultColorLine</color>
+    <color name="calendarLine">#D2D2D2</color>
+
+    <color name="containerGridViewBackgroundColor">@color/defaultColorSecondary</color>
+    <color name="gridViewBackgroundColor">@color/defaultColorTernary</color>
+    <color name="text_spinner">@color/defaultColorSecondaryDark</color>
+    <color name="hint_color">@color/defaultColorSecondary</color>
+    <color name="fab_color">@color/defaultColorPrimaryDark</color>
+    <color name="fab_color_text">@color/defaultColorTernary</color>
+
+    <!-- Default tab colors. -->
+    <color name="tabTextColor">#5B9BD5</color>
+    <color name="tabSelectedTextColor">@color/defaultColorPrimaryDark</color>
+    <color name="tabIndicatorColor">@color/defaultColorPrimaryDark</color>
+
+    <!-- Dan button. -->
+    <color name="danButtonBackgroundColor">@color/defaultColorPrimaryDark</color>
+    <color name="danButtonPressedBackgroundColor">#1B51B7</color>
+    <color name="danButtonBorderColor">@color/defaultColorTernary</color>
+    <color name="danButtonTextColor">@color/defaultColorTernary</color>
+    <color name="danButtonEffectColor">@color/defaultColorTernary</color>
+
+
+    <!-- Dan button login. -->
+    <color name="danButtonLoginBackgroundColor">@color/defaultColorPrimaryDark</color>
+    <color name="danButtonLoginBorderColor">@color/defaultColorTernary</color>
+    <color name="danButtonLoginTextColor">@color/defaultColorTernary</color>
+    <color name="danButtonLoginEffectColor">@color/defaultColorTernary</color>
+
+    <color name="actionBarBackground">@color/defaultColorPrimaryDark</color>
+    <color name="actionBarTextColor">@color/defaultColorTernary</color>
+    <color name="actionBarDrawerColor">@color/defaultColorTernary</color>
+
+
+    <!-- Dan shape. -->
+    <color name="danShapeBackgroundColor">@color/defaultColorPrimaryMedium</color>
+    <color name="danShapeRippleEffectColor">@color/defaultColorPrimary</color>
+
+    <!-- ButElementFilterlter icon-->
+    <color name="statusNoFilter">@color/defaultColorTernary</color>
+
+    <!-- Pesquisa -->
+    <color name="pesquisa_progress_bar_title">@color/defaultColorTernary</color>
+
+    <!-- Sync -->
+    <color name="syncColor">@color/defaultColorPrimaryDark</color>
+
+
+    <color name="white">#FFFFFF</color>
+    <color name="backgroundColor">#FFFFFF</color>
+    <color name="backgroundColorDark">#F2F2F2</color>
+    <color name="backgroundColorExtraDark">#ebf0fa</color>
+
+    <color name="icon_lote_enable">#9d9d9d</color>
+
+    <color name="BackgroundHomeTitle">#1A000000</color>
+    <color name="navHeaderMasterBackgroundColor">#1847A1</color>
+    <color name="separatorColor">@color/colorAccent</color>
+    <color name="darkTextColor">#000000</color>
+    <color name="itemMapBorder">#E6FFFFFF</color>
+
+    <!-- Progress bar colors. -->
+    <color name="progress_bad">#EE302E</color>
+    <color name="progress_good">#fbc40e</color>
+    <color name="progress_very_good">#00B050</color>
+    <!-- Default tab colors. -->
+
+    <!-- Splash screen theme. -->
+    <color name="splashScreenBackgroundColor">#FFFFFF</color>
+    <!-- Login theme. -->
+
+    <!-- Alter Senha -->
+    <color name="alteraSenhaText">#ffffff</color>
+    <!-- Alter Senha -->
+    <color name="recuperaSenhaTitleText">#ffffff</color>
+
+    <!-- Dan button GRAY. -->
+    <color name="danButtonGrayBackgroundColor">#FFFFFF</color>
+    <color name="danButtonGrayPressedBackgroundColor">#F2F2F2</color>
+    <color name="danButtonGrayButtonBorderColor">#8a8a8a</color>
+    <color name="danButtonGrayPressedTextColor">#8a8a8a</color>
+
+    <!-- Dan button. -->
+    <color name="danWhiteButtonBackgroundColor">#FFFFFF</color>
+    <color name="danWhiteButtonPressedBackgroundColor">#F2F2F2</color>
+    <color name="danWhiteButtonBorderColor">#C0C0C0</color>
+
+    <color name="danButtonRippleEffectColor">#5B9BD5</color>
+    <color name="danButtonPressedBorderColor">#5B9BD5</color>
+    <color name="danButtonPressedTextColor">#FFFFFF</color>
+    <!-- Dan shape. -->
+    <color name="danShapePressedBackgroundColor">#1847A1</color>
+    <!-- Forms. -->
+    <color name="listItemSecondarySugTextColor">#C00000</color>
+    <color name="listItemBackgroundTextColor">#FFFFFF</color>
+    <color name="listItemBackgroundColor">#C00000</color>
+
+    <!-- Status crédETapClienteente. -->
+    <color name="statusCreditoDisponivel">#00B050</color>
+    <color name="statusCreditoIndisponivel">#C00000</color>
+    <color name="statusCreditoAgenda">#1A4EB8</color>
+    <!-- Status pedido. -->
+    <color name="statusPedido1">#0000E9</color>
+    <color name="statusPedido2">#D19C34</color>
+    <color name="statusPedido3">#8B008B</color>
+    <color name="statusPedido4">#EE302E</color>
+    <color name="statusPedido5">#909090</color>
+    <color name="statusPedido6">#7CBB3D</color>
+    <color name="statusPedido7">#FBB60E</color>
+    <color name="statusPedido8">#7494CA</color>
+    <color name="statusPedido9">#ff9D32</color>
+    <color name="statusPedido10">#ff00aa</color>
+
+    <!-- Status ETap. -->
+    <color name="statusETap1">#184794</color>
+    <color name="statusETap2">#FCFC53</color>
+    <color name="statusETap3">#FF66C7</color>
+    <color name="statusETap4">#00ff4c</color>
+    <color name="statusETap5">#FF0015</color>
+    <color name="statusETap6">#00FFFB</color>
+    <color name="statusETap7">#118EF5</color>
+    <color name="statusETap8">#00992B</color>
+    <color name="statusETap9">#000000</color>
+    <color name="statusETap10">#CCCCB6</color>
+    <color name="statusETap11">#820004</color>
+    <color name="statusETap12">#FF0015</color>
+
+    <!-- Status Item ETap. -->
+    <color name="statusItemETap1">#00992B</color>
+    <color name="statusItemETap2">#FCFC53</color>
+
+    <!-- Status Item ETap. -->
+    <color name="statusNotaCheckListNRespondeu">#CCCCB6</color>
+    <color name="statusNotaCheckListNPontou">#C00000</color>
+    <color name="statusNotaCheckListPontou">#00992B</color>
+    <color name="statusNotaCheckListOportunidade">#fbc40e</color>
+
+
+    <!-- Ambiente -->
+    <!-- Products Dialog -->
+    <!-- Status produto -->
+    <color name="statusProdutoOK">#00B050</color>
+    <color name="statusProdutoError">#C00000</color>
+    <color name="sortimentoRecomendado">#1847A1</color>
+    <color name="sortimentoObrigatorio">#ff9900</color>
+    <!-- Relatorio objetivo -->
+    <color name="statusPositivo">#00B050</color>
+    <color name="statusNegativo">#C00000</color>
+    <!-- Button Filter icon-->
+    <color name="statusFilter">#f5e23b</color>
+
+    <!-- Chat-->
+    <color name="chatBackgroundUser">#f2f2f2</color>
+    <color name="chatTextUser">#1847A1</color>
+    <color name="chatTextDataUser">#6d6d6d</color>
+    <color name="chatBackgroundBot">#1847A1</color>
+    <color name="chatTextBot">#ffffff</color>
+    <color name="chatTextDataBot">#5B9BD5</color>
+    <color name="chatEditTextBackground">#f2f2f2</color>
+
+    <!-- Cliente Crédito -->
+    <color name="cliente_credito_green">#00B050</color>
+    <color name="cliente_credito_red">#C00000</color>
+    <color name="cliente_credito_black">#000000</color>
+    <color name="cliente_credito_blue">#1847A1</color>
+    <color name="cliente_credito_yellow">#f5e23b</color>
+
+    <!-- Message -->
+    <color name="background_legend_message">#464646</color>
+    <color name="background_icon_message">#9d9d9d</color>
+    <color name="background_icon_message_unread">#1847A1</color>
+    <color name="title_detail_message">#20000000</color>
+
+
+    <!-- Status CR Sortimento -->
+    <color name="crSortimentoInovacao">#f5e23b</color>
+    <color name="crSortimentoRecomendado">#00B050</color>
+    <color name="crSortimentoObrigatorio">#1847A1</color>
+    <color name="crSortimentoSubstituto">#1847A1</color>
+</resources>

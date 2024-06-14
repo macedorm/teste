@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true"
+    android:gravity="center">
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="@dimen/dialog_default_margin"
+        app:cardBackgroundColor="@color/backgroundColorDialog"
+        app:cardCornerRadius="@dimen/dialog_card_corner_radius"
+        app:cardElevation="@dimen/dialog_card_elevation"
+        app:cardUseCompatPadding="true">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/backgroundColorDialog"
+            android:gravity="center_horizontal"
+            android:orientation="vertical"
+            android:paddingBottom="@dimen/activity_horizontal_margin"
+            android:paddingEnd="@dimen/activity_vertical_margin"
+            android:paddingStart="@dimen/activity_vertical_margin"
+            android:paddingTop="@dimen/activity_horizontal_margin">
+
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <LinearLayout
+                    android:id="@+id/linear_title"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="@dimen/form_label_margin_vertical"
+                    android:gravity="center"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/tv_dialog_title"
+                        style="@style/FormValue"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/title_legends"
+                        android:textAlignment="center"
+                        android:tint="@color/colorPrimary"
+                        android:textStyle="bold" />
+
+                </LinearLayout>
+
+                <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/dialog_frag_ped_valid_recycler_view"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_below="@+id/linear_title"
+                    android:layout_margin="@dimen/form_label_margin_vertical"
+                    android:layout_marginBottom="@dimen/dialog_size_buttons_height"
+                    android:paddingBottom="@dimen/form_label_margin_vertical"
+                    android:layout_marginTop="@dimen/form_label_margin_vertical" />
+
+                <Button
+                    android:id="@+id/dialog_frag_ped_ok_button"
+                    style="@style/DefaultButton"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/dialog_size_buttons_height"
+                    android:layout_below="@id/password_text_input_layout"
+                    android:layout_marginLeft="@dimen/dialog_margin_left"
+                    android:layout_marginRight="@dimen/dialog_margin_right"
+                    android:layout_alignParentBottom="true"
+                    android:text="@string/ok" />
+            </RelativeLayout>
+
+
+        </LinearLayout>
+
+    </androidx.cardview.widget.CardView>
+
+</RelativeLayout>

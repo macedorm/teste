@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <group
+        android:id="@+id/nav_group_main"
+        android:orderInCategory="1"
+        android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_home"
+            android:icon="@drawable/ic_home"
+            android:title="@string/title_home" />
+       <item
+            android:id="@+id/nav_add_pedido"
+            android:icon="@drawable/ic_add_pedido"
+            android:title="@string/title_add_pedido"
+            android:checkable="false" />
+
+        <item
+            android:id="@+id/nav_planejamento_rota"
+            android:icon="@drawable/ic_menu_rota_guiada"
+            android:title="@string/title_planejamento_rota"
+            android:checkable="false" />
+
+        <item
+           android:id="@+id/nav_rota_guiada"
+           android:icon="@drawable/ic_menu_rota_guiada"
+           android:title="@string/title_rota"
+           android:checkable="false" />
+
+        <item
+            android:id="@+id/nav_pedidos"
+            android:icon="@drawable/ic_pedidos"
+            android:title="@string/title_hist_pedidos" />
+        <item
+            android:id="@+id/nav_clientes"
+            android:icon="@drawable/ic_clientes"
+            android:title="@string/title_clientes" />
+
+        <item
+            android:id="@+id/nav_rastreio"
+            android:icon="@drawable/ic_home"
+            android:title="@string/title_rastreio" />
+
+        <item
+            android:id="@+id/nav_aprovacao"
+            android:icon="@drawable/ic_aprovacao"
+            android:title="@string/title_aprovacao" />
+        <item
+            android:id="@+id/nav_liberacao"
+            android:icon="@drawable/ic_liberacao"
+            android:title="@string/title_liberacao" />
+        <item
+            android:id="@+id/nav_rota"
+            android:icon="@drawable/ic_rota"
+            android:title="@string/title_rota" />
+        <item
+            android:id="@+id/nav_relatorios"
+            android:icon="@drawable/ic_relatorios"
+            android:title="@string/title_relatorios" />
+        <item
+            android:id="@+id/nav_pesquisa"
+            android:icon="@drawable/ic_pesquisa"
+            android:title="@string/title_pesquisa" />
+        <item
+            android:id="@+id/nav_cr"
+            android:icon="@drawable/icon_cr"
+            android:title="@string/title_CR" />
+
+        <item
+            android:id="@+id/nav_etap"
+            android:icon="@drawable/ic_tap"
+            android:title="@string/title_tap" />
+
+        <item
+            android:id="@+id/nav_sync_data"
+            android:icon="@drawable/ic_sync_data"
+            android:title="@string/title_sync_data" />
+
+        <item
+            android:id="@+id/nav_requisicao"
+            android:icon="@drawable/ic_relatorios"
+            android:title="@string/title_requisicao" />
+
+        <item
+            android:id="@+id/nav_chat"
+            android:icon="@drawable/icon_issac_menu"
+            android:title="@string/title_chat" />
+
+        <item
+            android:id="@+id/nav_message"
+            app:actionLayout="@layout/badge_menu_item"
+            android:icon="@drawable/ic_message_black_24dp"
+            android:title="@string/title_screen_message" />
+
+    </group>
+
+    <group
+        android:id="@+id/nav_group_etc"
+        android:orderInCategory="2"
+        android:checkableBehavior="none">
+        <item
+            android:id="@+id/nav_settings"
+            android:icon="@drawable/ic_settings"
+            android:title="@string/title_settings" />
+        <item
+            android:id="@+id/nav_help"
+            android:icon="@drawable/ic_help"
+            android:title="@string/title_help" />
+        <item
+            android:id="@+id/nav_about"
+            android:icon="@drawable/ic_about"
+            android:title="@string/title_about" />
+
+        <item
+            android:id="@+id/nav_teste"
+            android:icon="@drawable/ic_logout"
+            android:visible="false"
+            android:title="teste" />
+
+        <item
+            android:id="@+id/nav_logout"
+            android:icon="@drawable/ic_logout"
+            android:title="@string/title_logout" />
+    </group>
+
+</menu>

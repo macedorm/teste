@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true"
+    tools:context="br.com.jjconsulting.mobile.dansales.LoginActivity">
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/colorPrimary">
+
+        <LinearLayout
+            android:id="@+id/loading_linear_layout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:visibility="gone">
+
+            <ProgressBar
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+            <TextView
+                android:id="@+id/message_error_text_view"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/login_horizontal_margin"
+                android:gravity="center"
+                android:textStyle="bold" />
+
+        </LinearLayout>
+
+        <RelativeLayout
+            android:id="@+id/base_relative_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:focusableInTouchMode="true"
+            android:layout_centerVertical="true"
+            android:paddingBottom="@dimen/login_horizontal_margin"
+            android:paddingEnd="@dimen/login_vertical_margin"
+            android:paddingStart="@dimen/login_vertical_margin"
+            android:paddingTop="@dimen/login_horizontal_margin">
+
+            <TextView
+                android:id="@+id/title_text_view"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_margin="@dimen/activity_vertical_margin"
+                android:text="@string/title_troca_senha"
+                android:textColor="@color/alteraSenhaText"
+                android:textSize="@dimen/alterar_senha_title_text_size" />
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/password_text_input_layout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/title_text_view">
+
+                <EditText
+                    android:id="@+id/password_edit_text"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="@string/current_password_hint"
+                    android:imeOptions="actionNext"
+                    android:singleLine="true"
+                    android:paddingRight="@dimen/password_img_padding_width" />
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <ImageView
+                android:id="@+id/show_password_image_button"
+                android:layout_width="@dimen/password_img_width"
+                android:layout_height="wrap_content"
+                android:layout_alignBottom="@+id/password_text_input_layout"
+                android:layout_alignParentRight="true"
+                android:layout_below="@id/title_text_view"
+                android:scaleType="fitCenter"
+                android:src="@drawable/password_off" />
+
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/new_password_text_input_layout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/password_text_input_layout">
+
+                <EditText
+                    android:id="@+id/new_password_edit_text"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="@string/new_password_hint"
+                    android:imeOptions="actionNext"
+                    android:singleLine="true"
+                    android:paddingRight="@dimen/password_img_padding_width" />
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <ImageView
+                android:id="@+id/show_new_password_image_button"
+                android:layout_width="@dimen/password_img_width"
+                android:layout_height="wrap_content"
+                android:layout_alignBottom="@+id/new_password_text_input_layout"
+                android:layout_alignParentRight="true"
+                android:layout_below="@id/password_text_input_layout"
+                android:scaleType="fitCenter"
+                android:src="@drawable/password_off" />
+
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/confirm_password_text_input_layout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/new_password_text_input_layout">
+
+                <EditText
+                    android:id="@+id/confirm_password_edit_text"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="@string/confirm_password_hint"
+                    android:imeOptions="actionDone"
+                    android:singleLine="true"
+                    android:paddingRight="@dimen/password_img_padding_width" />
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <ImageView
+                android:id="@+id/show_confirm_password_image_button"
+                android:layout_width="@dimen/password_img_width"
+                android:layout_height="wrap_content"
+                android:layout_alignBottom="@+id/confirm_password_text_input_layout"
+                android:layout_alignParentRight="true"
+                android:layout_below="@id/new_password_text_input_layout"
+                android:scaleType="fitCenter"
+                android:src="@drawable/password_off" />
+
+
+            <Button
+                android:id="@+id/alterar_button"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/confirm_password_text_input_layout"
+                android:layout_marginTop="@dimen/activity_vertical_margin"
+                style="@style/DanButton"
+                android:text="@string/title_troca_senha" />
+        </RelativeLayout>
+    </RelativeLayout>
+</LinearLayout>

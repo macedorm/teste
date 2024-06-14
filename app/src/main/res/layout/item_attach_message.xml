@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/background_item_attach_linear_layout"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginLeft="@dimen/mensagem_attach_margin_line"
+    android:layout_marginRight="@dimen/mensagem_attach_margin_line"
+    android:layout_marginTop="@dimen/mensagem_attach_margin_line"
+    android:orientation="vertical"
+    android:background="@color/title_detail_message">
+
+    <ImageView
+        android:id="@+id/attach_message_video_image_view"
+        android:layout_width="match_parent"
+        android:layout_height="160dp"
+        android:scaleType="centerCrop"
+        android:src="@drawable/attachment_background_video"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:id="@+id/message_type_linear_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1">
+
+            <TextView
+                android:id="@+id/attach_message_text_view"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/app_vertical_spacing"
+                style="@style/ListItemSecondaryText" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/attach_message_icon_linear_layout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center_vertical|right"
+            android:layout_weight="4">
+
+            <ImageView
+                android:id="@+id/attach_image_view"
+                android:layout_width="@dimen/mensagem_icon_small"
+                android:layout_height="@dimen/mensagem_icon_small"
+                android:layout_marginRight="@dimen/app_vertical_spacing"
+                android:src="@drawable/ic_attach_file_black_24dp" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</LinearLayout>

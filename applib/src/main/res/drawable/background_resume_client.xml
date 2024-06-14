@@ -1,0 +1,4 @@
+<shape xmlns:android="http://schemas.android.com/apk/res/android">
+    <solid android:color="@color/backgroundColorDark"/>
+    <stroke android:width="@dimen/background_product_grid_width" android:color="@color/colorPrimary" />/>
+</shape>

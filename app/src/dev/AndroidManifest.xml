@@ -1,0 +1,217 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="br.com.jjconsulting.mobile.dansales">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.QUERY_ALL_PACKAGES" tools:ignore="QueryAllPackagesPermission" />
+
+    <uses-permission
+        android:name="android.permission.INTERACT_ACROSS_USERS_FULL"
+        android:protectionLevel="signature" />
+
+    <uses-permission
+        android:name="android.permission.INTERACT_ACROSS_USERS_FULL"
+        android:protectionLevel="signature" />
+
+    <application
+        android:allowBackup="false"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity
+            android:name=".SplashScreenActivity"
+            android:theme="@style/SplashScreenTheme">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".LoginActivity"
+            android:theme="@style/LoginTheme"
+            android:windowSoftInputMode="stateHidden|adjustResize" />
+        <activity
+            android:name=".kotlin.LoginSso"
+            android:configChanges="orientation|screenSize|keyboardHidden"
+            android:theme="@style/LoginTheme"
+            android:windowSoftInputMode="stateHidden|adjustResize" />
+        <activity
+            android:name=".MasterActivity"
+            android:launchMode="singleTop"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".AboutActivity"
+            android:label="@string/title_about" />
+        <activity
+            android:name=".HelpActivity"
+            android:label="@string/title_help" />
+        <activity
+            android:name=".SettingsActivity"
+            android:label="@string/title_settings" />
+        <activity
+            android:name=".LogPedidoActivity"
+            android:label="@string/title_cliente_detail"
+            android:parentActivityName=".MasterActivity" />
+        <activity
+            android:name=".ClienteDetailActivity"
+            android:label="@string/title_cliente_detail"
+            android:parentActivityName=".MasterActivity" />
+        <activity
+            android:name=".PickClienteActivity"
+            android:label="@string/title_pick_cliente"
+            android:parentActivityName=".MasterActivity" />
+        <activity
+            android:name=".PickClientePesquisaActivity"
+            android:label="@string/title_pick_cliente"
+            android:parentActivityName=".MasterActivity" />
+        <activity
+            android:name=".PickAgendaActivity"
+            android:label="@string/title_pick_agenda"
+            android:parentActivityName=".PickClienteActivity" />
+        <activity
+            android:name=".PesquisaPerguntasActivity"
+            android:configChanges="orientation|screenSize|keyboardHidden"
+            android:label="@string/title_pick_cliente"
+            android:parentActivityName=".MasterActivity"
+            android:windowSoftInputMode="stateHidden|adjustResize" />
+        <activity
+            android:name=".PedidoItemDetailActivity"
+            android:label="@string/title_add_item"
+            android:parentActivityName=".PedidoDetailActivity"
+            android:windowSoftInputMode="stateHidden|adjustResize" />
+        <activity
+            android:name=".PedidoDetailActivity"
+            android:configChanges="orientation|screenSize|keyboardHidden"
+            android:label="@string/title_pedido_detail"
+            android:parentActivityName=".MasterActivity"
+            android:windowSoftInputMode="stateHidden|adjustResize" />
+        <activity
+            android:name=".SyncDataActivity"
+            android:label="@string/title_sync_data"
+            android:parentActivityName=".MasterActivity" />
+        <activity
+            android:name=".AmbienteActivity"
+            android:label="@string/title_ambiente"
+            android:parentActivityName=".MasterActivity" />
+        <activity
+            android:name=".SystemUpdateActivity"
+            android:label="@string/title_system"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ClienteFilterActivity"
+            android:label="@string/menu_filter_title" />
+        <activity
+            android:name=".MessageFilterActivity"
+            android:label="@string/menu_filter_title" />
+        <activity
+            android:name=".RelatorioNotasFilterActivity"
+            android:label="@string/menu_filter_title" />
+        <activity
+            android:name=".RelatorioNotasDetailActivity"
+            android:label="@string/title_relatorio_notas"
+            android:parentActivityName=".RelatorioNotasActivity" />
+        <activity
+            android:name=".RelatorioNotasActivity"
+            android:label="@string/title_relatorio_notas"
+            android:launchMode="singleTop"
+            android:parentActivityName=".MasterActivity" />
+        <activity
+            android:name=".RelatorioObjetivoActivity"
+            android:label="@string/title_relatorio_objetivos"
+            android:launchMode="singleTop"
+            android:parentActivityName=".MasterActivity" />
+        <activity android:name="br.com.jjconsulting.mobile.jjlib.UnderDevelopmentActivity" />
+        <activity
+            android:name=".AlteraSenhaActivity"
+            android:label="@string/title_troca_senha"
+            android:parentActivityName=".MasterActivity"
+            android:theme="@style/LoginTheme" />
+        <activity
+            android:name=".AlteraSenhaComPassThroughActivity"
+            android:label="@string/title_troca_senha"
+            android:parentActivityName=".RecuperaSenhaActivity"
+            android:theme="@style/LoginTheme" />
+        <activity
+            android:name=".PedidoFilterActivity"
+            android:label="@string/menu_filter_title"
+            android:parentActivityName=".MasterActivity" />
+        <activity
+            android:name=".RelatorioObjetivoFilterActivity"
+            android:label="@string/menu_filter_title"
+            android:parentActivityName=".MasterActivity" />
+        <activity
+            android:name=".PickClienteFilterActivity"
+            android:label="@string/menu_filter_title"
+            android:parentActivityName=".MasterActivity" />
+        <activity
+            android:name=".RelatorioCarteiraPedidosActivity"
+            android:label="@string/title_relatorio_carteira"
+            android:parentActivityName=".MasterActivity" />
+        <activity
+            android:name=".RelatorioCarteiraPedidoDetailActivity"
+            android:label="@string/title_relatorio_carteira"
+            android:parentActivityName=".MasterActivity" />
+
+        <activity
+            android:name=".RelatorioCarteiraPedidoFilterActivity"
+            android:label="@string/title_relatorio_carteira"
+            android:parentActivityName=".MasterActivity" />
+
+        <activity
+            android:name=".TapListActivity"
+            android:label="@string/title_tap"
+            android:parentActivityName=".MasterActivity" />
+
+        <activity
+            android:name=".BarcodeScannerActivity"
+            android:theme="@android:style/Theme.Black.NoTitleBar.Fullscreen"
+            android:windowSoftInputMode="stateHidden|adjustResize" />
+
+        <activity
+            android:name=".RecuperaSenhaActivity"
+            android:label="@string/title_recupera_senha"
+            android:theme="@style/LoginTheme" />
+
+        <service android:name=".service.MyFirebaseMessagingService">
+            <intent-filter>
+                <action android:name="com.google.firebase.MESSAGING_EVENT" />
+            </intent-filter>
+        </service>
+
+        <service android:name=".service.MyFirebaseInstanceIDService">
+            <intent-filter>
+                <action android:name="com.google.firebase.INSTANCE_ID_EVENT" />
+            </intent-filter>
+        </service>
+
+        <meta-data
+            android:name="com.google.firebase.messaging.default_notification_icon"
+            android:resource="@drawable/ic_notification" />
+        <!-- Set color used with incoming notification messages. This is used when no color is set for the incoming
+             notification message. See README(https://goo.gl/6BKBk7) for more. -->
+        <meta-data
+            android:name="com.google.firebase.messaging.default_notification_color"
+            android:resource="@color/colorAccent" />
+
+        <provider
+            android:name="androidx.core.content.FileProvider"
+            android:authorities="${applicationId}.fileprovider"
+            android:exported="false"
+            android:grantUriPermissions="true">
+            <meta-data
+                android:name="android.support.FILE_PROVIDER_PATHS"
+                android:resource="@xml/file_paths" />
+        </provider>
+
+    </application>
+
+
+</manifest>

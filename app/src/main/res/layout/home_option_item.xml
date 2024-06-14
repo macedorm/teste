@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:minHeight="@dimen/home_options_container_height">
+
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:minHeight="@dimen/home_options_container_height"
+    android:layout_margin="@dimen/margin_menu_home"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:background="@drawable/dan_shape">
+
+    <ImageView
+        android:id="@+id/option_icon_image_view"
+        android:layout_width="@dimen/home_options_width"
+        android:layout_height="wrap_content"
+        android:scaleType="fitCenter"
+        android:src="@drawable/ic_home_white"
+        android:textColor="@android:color/white" />
+
+    <TextView
+        android:id="@+id/option_title_text_view"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAlignment="center"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:textColor="@android:color/white" />
+
+</LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/badge_notification_linear_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="top|right">
+
+        <LinearLayout
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:orientation="vertical"
+            android:background="@drawable/background_bagde_oval"
+            android:gravity="center">
+
+            <TextView
+                android:id="@+id/badge_notification_text_view"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="12"
+                android:textSize="10sp"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:textColor="@android:color/white" />
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+
+</FrameLayout>

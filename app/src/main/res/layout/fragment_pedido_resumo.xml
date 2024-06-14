@@ -1,0 +1,530 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="br.com.jjconsulting.mobile.dansales.PedidoResumoFragment">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingBottom="@dimen/activity_horizontal_margin"
+            android:paddingEnd="@dimen/activity_vertical_margin"
+            android:paddingStart="@dimen/activity_vertical_margin"
+            android:paddingTop="@dimen/activity_horizontal_margin">
+
+            <LinearLayout
+                android:id="@+id/resumo_validation_linear_layout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/form_label_margin_vertical"
+                android:orientation="vertical">
+
+                <TextView
+                    style="@style/FormLabel"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/resumo_erros_pedido" />
+
+                <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/resumo_validation_recycler_view"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingBottom="@dimen/form_value_padding_bottom" />
+
+                <View
+                    style="@style/LineDefault"
+                    android:layout_width="match_parent" />
+
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/resumo_text_view"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/resumo_validation_linear_layout"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:visibility="gone" />
+
+            <LinearLayout
+                android:id="@+id/resumo_status_pedido_linear_layout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/resumo_validation_linear_layout"
+                android:orientation="vertical">
+
+                <TextView
+                    style="@style/FormLabel"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/resumo_status_pedido" />
+
+                <TextView
+                    android:id="@+id/resumo_status_pedido_text_view"
+                    style="@style/FormValue"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/resumo_status_pedido" />
+
+                <View
+                    style="@style/LineDefault"
+                    android:layout_width="match_parent" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/resumo_data_pedido_linear_layout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/resumo_status_pedido_linear_layout"
+                android:layout_marginTop="@dimen/form_label_margin_vertical"
+                android:orientation="vertical">
+
+                <TextView
+                    style="@style/FormLabel"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/resumo_data_pedido" />
+
+                <TextView
+                    android:id="@+id/resumo_data_pedido_text_view"
+                    style="@style/FormValue"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+
+                <View
+                    style="@style/LineDefault"
+                    android:layout_width="match_parent" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/resumo_data_importacao_sap_linear_layout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/resumo_data_pedido_linear_layout"
+                android:layout_marginTop="@dimen/form_label_margin_vertical"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/resumo_data_import_sap"
+                    style="@style/FormLabel" />
+
+                <TextView
+                    android:id="@+id/resumo_data_importacao_sap_text_view"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    style="@style/FormValue" />
+
+                <View
+                    android:layout_width="match_parent"
+                    style="@style/LineDefault" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/resumo_peso_minimo_linear_layout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/resumo_data_importacao_sap_linear_layout"
+                android:layout_marginTop="@dimen/form_label_margin_vertical"
+                android:orientation="vertical">
+
+                <TextView
+                    style="@style/FormLabel"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/resumo_peso_minimo" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/resumo_peso_minimo_text_view"
+                        style="@style/FormValue"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="@string/resumo_peso_minimo" />
+
+                    <ProgressBar
+                        android:id="@+id/resumo_peso_minimo_progress_bar"
+                        style="@style/Widget.AppCompat.ProgressBar.Horizontal"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_centerInParent="true"
+                        android:layout_weight="1"
+                        android:indeterminate="false"
+                        android:max="100"
+                        android:progress="50"
+                        android:scaleY="3"
+                        android:secondaryProgress="100" />
+
+                </LinearLayout>
+
+
+                <View
+                    style="@style/LineDefault"
+                    android:layout_width="match_parent" />
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:id="@+id/resumo_peso_maximo_linear_layout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/resumo_peso_minimo_linear_layout"
+                android:layout_marginTop="@dimen/form_label_margin_vertical"
+                android:orientation="vertical">
+
+                <TextView
+                    style="@style/FormLabel"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/resumo_peso_maximo" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/resumo_peso_max_text_view"
+                        style="@style/FormValue"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="@string/resumo_peso_minimo" />
+
+                    <ProgressBar
+                        android:id="@+id/resumo_peso_max_progress_bar"
+                        style="@style/Widget.AppCompat.ProgressBar.Horizontal"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_centerInParent="true"
+                        android:layout_weight="1"
+                        android:indeterminate="false"
+                        android:max="100"
+                        android:progress="50"
+                        android:scaleY="3"
+                        android:secondaryProgress="100" />
+
+                </LinearLayout>
+
+
+                <View
+                    style="@style/LineDefault"
+                    android:layout_width="match_parent" />
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:id="@+id/resumo_valor_minimo_linear_layout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/resumo_peso_maximo_linear_layout"
+                android:layout_marginTop="@dimen/form_label_margin_vertical"
+                android:orientation="vertical">
+
+                <TextView
+                    style="@style/FormLabel"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/resumo_valor_minimo" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/resumo_valor_minimo_text_view"
+                        style="@style/FormValue"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="@string/resumo_valor_minimo" />
+
+                    <ProgressBar
+                        android:id="@+id/resumo_valor_minimo_progress_bar"
+                        style="@style/Widget.AppCompat.ProgressBar.Horizontal"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_centerInParent="true"
+                        android:layout_weight="1"
+                        android:indeterminate="false"
+                        android:max="100"
+                        android:progress="50"
+                        android:scaleY="3"
+                        android:secondaryProgress="100" />
+
+                </LinearLayout>
+
+
+                <View
+                    style="@style/LineDefault"
+                    android:layout_width="match_parent" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/resumo_peso_pedido_linear_layout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/resumo_valor_minimo_linear_layout"
+                android:layout_marginTop="@dimen/form_label_margin_vertical"
+                android:orientation="vertical">
+
+                <TextView
+                    style="@style/FormLabel"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/resumo_peso_Pedido" />
+
+                <TextView
+                    android:id="@+id/resumo_peso_pedido_text_view"
+                    style="@style/FormValue"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/resumo_peso_Pedido" />
+
+                <View
+                    style="@style/LineDefault"
+                    android:layout_width="match_parent" />
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:id="@+id/resumo_quantidade_pedido_linear_layout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/resumo_peso_pedido_linear_layout"
+                android:layout_marginTop="@dimen/form_label_margin_vertical"
+                android:orientation="vertical">
+
+                <TextView
+                    style="@style/FormLabel"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/resumo_quantidade_pedido" />
+
+                <TextView
+                    android:id="@+id/resumo_quantidade_pedido_text_view"
+                    style="@style/FormValue"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/resumo_quantidade_pedido" />
+
+                <View
+                    style="@style/LineDefault"
+                    android:layout_width="match_parent" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/resumo_quantidade_itens_linear_layout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/resumo_quantidade_pedido_linear_layout"
+                android:layout_marginTop="@dimen/form_label_margin_vertical"
+                android:orientation="vertical">
+
+                <TextView
+                    style="@style/FormLabel"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/resumo_quantidade_itens" />
+
+                <TextView
+                    android:id="@+id/resumo_quantidade_itens_text_view"
+                    style="@style/FormValue"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/resumo_quantidade_itens" />
+
+                <View
+                    style="@style/LineDefault"
+                    android:layout_width="match_parent" />
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:id="@+id/resumo_valor_linear_layout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/resumo_quantidade_itens_linear_layout"
+                android:layout_marginTop="@dimen/form_label_margin_vertical"
+                android:orientation="vertical">
+
+                <TextView
+                    style="@style/FormLabel"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/resumo_valor" />
+
+                <TextView
+                    android:id="@+id/resumo_valor_itens_text_view"
+                    style="@style/FormValue"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/resumo_valor" />
+
+                <View
+                    style="@style/LineDefault"
+                    android:layout_width="match_parent" />
+            </LinearLayout>
+
+
+            <TextView
+                android:id="@+id/resumo_title_sortimento_linear_layout"
+                style="@style/FormLabel"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/resumo_valor_linear_layout"
+                android:text="@string/resumo_title_sortimento" />
+
+            <LinearLayout
+                android:id="@+id/resumo_sortimento_linear_layout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/resumo_title_sortimento_linear_layout"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/resumo_sortimento_text_view"
+                        style="@style/FormValue"
+                        android:textSize="11dp"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="@string/loading" />
+
+                    <ProgressBar
+                        android:id="@+id/resumo_sortimento_progress_bar"
+                        style="@style/Widget.AppCompat.ProgressBar.Horizontal"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:indeterminate="false"
+                        android:max="100"
+                        android:progress="0"
+                        android:scaleY="3"
+                        android:secondaryProgress="100" />
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/resumo_sortimento_recomendado_linear_layout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/resumo_sortimento_linear_layout"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/resumo_sortimento_recomendado_text_view"
+                        style="@style/FormValue"
+                        android:textSize="11dp"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="@string/loading" />
+
+                    <ProgressBar
+                        android:id="@+id/resumo_sortimento_recomendado_progress_bar"
+                        style="@style/Widget.AppCompat.ProgressBar.Horizontal"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:indeterminate="false"
+                        android:max="100"
+                        android:progress="0"
+                        android:scaleY="3"
+                        android:secondaryProgress="100" />
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/resumo_sortimento_inovacao_linear_layout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/resumo_sortimento_recomendado_linear_layout"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/resumo_sortimento_inovacao_text_view"
+                        style="@style/FormValue"
+                        android:textSize="11dp"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="@string/loading" />
+
+                    <ProgressBar
+                        android:id="@+id/resumo_sortimento_inovacao_progress_bar"
+                        style="@style/Widget.AppCompat.ProgressBar.Horizontal"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:indeterminate="false"
+                        android:max="100"
+                        android:progress="0"
+                        android:scaleY="3"
+                        android:secondaryProgress="100" />
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/positivado_linear_layout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/resumo_sortimento_inovacao_linear_layout"
+                android:layout_marginTop="@dimen/form_label_margin_vertical"
+                android:orientation="vertical">
+
+                <TextView
+                    style="@style/FormLabel"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/resumo_positivado" />
+
+                <TextView
+                    android:id="@+id/positivado_itens_text_view"
+                    style="@style/FormValue"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/resumo_positivado" />
+
+                <View
+                    style="@style/LineDefault"
+                    android:layout_width="match_parent" />
+            </LinearLayout>
+
+        </RelativeLayout>
+
+    </ScrollView>
+
+</LinearLayout>

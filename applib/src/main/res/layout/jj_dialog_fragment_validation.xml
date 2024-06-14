@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/backgroundColorTranspDialog"
+    android:gravity="center">
+<RelativeLayout
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:fillViewport="true"
+    android:gravity="center">
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/dialog_default_margin"
+        app:cardBackgroundColor="@color/backgroundColorDialog"
+        app:cardCornerRadius="@dimen/dialog_card_corner_radius"
+        app:cardElevation="@dimen/dialog_card_elevation"
+        app:cardUseCompatPadding="true">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/backgroundColorDialog"
+            android:gravity="center_horizontal"
+            android:orientation="vertical"
+            android:paddingBottom="@dimen/activity_horizontal_margin"
+            android:paddingEnd="@dimen/activity_vertical_margin"
+            android:paddingStart="@dimen/activity_vertical_margin"
+            android:paddingTop="@dimen/activity_horizontal_margin">
+
+            <ImageView
+                android:id="@+id/icon_image_view"
+                android:layout_width="@dimen/dialog_size_icon"
+                android:layout_height="@dimen/dialog_size_icon"
+                android:scaleType="fitCenter"
+                android:src="@drawable/ic_error_black_24dp"
+                android:tint="@color/alertCollor" />
+
+            <TextView
+                style="@style/ListItemPrimaryText"
+                android:id="@+id/title_text_view"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:enabled="true"
+                android:text="@string/message_title_validation"
+                android:textAlignment="center"
+                android:textStyle="bold" />
+
+
+            <ScrollView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <androidx.recyclerview.widget.RecyclerView
+                        android:id="@+id/dialog_frag_ped_valid_recycler_view"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:paddingBottom="@dimen/form_label_margin_vertical"
+                        android:layout_marginTop="@dimen/form_label_margin_vertical"
+                        android:layout_marginBottom="@dimen/form_label_margin_vertical" />
+
+                    <Button
+                        android:id="@+id/dialog_frag_ped_ok_button"
+                        style="@style/DefaultButton"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/dialog_size_buttons_height"
+                        android:layout_below="@id/dialog_frag_ped_valid_recycler_view"
+                        android:layout_marginTop="@dimen/dialog_margin_left"
+                        android:layout_marginLeft="@dimen/dialog_margin_left"
+                        android:layout_marginRight="@dimen/dialog_margin_right"
+                        android:layout_alignParentBottom="true"
+                        android:text="@string/ok" />
+                </RelativeLayout>
+            </ScrollView>
+
+        </LinearLayout>
+
+    </androidx.cardview.widget.CardView>
+
+</RelativeLayout>
+
+</LinearLayout>

@@ -1,0 +1,163 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:background="@color/BackgroundDialog">
+
+    <androidx.cardview.widget.CardView
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/form_label_margin_vertical"
+        app:cardUseCompatPadding="true"
+        app:cardElevation="@dimen/dialog_card_elevation"
+        app:cardCornerRadius="@dimen/dialog_card_corner_radius"
+        app:cardBackgroundColor="@color/backgroundColorDialog">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="@dimen/form_label_margin_vertical"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="vertical">
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <ImageView
+                    android:id="@+id/icon_info_image_view"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:layout_alignParentLeft="true"
+                    android:scaleType="fitCenter"
+                    android:tint="@color/colorPrimary"
+                    android:src="@drawable/ic_menu"/>
+
+                <ImageView
+                    android:id="@+id/icon_close_image_view"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:layout_alignParentRight="true"
+                    android:scaleType="fitCenter"
+                    android:tint="@color/errorCollor"
+                    android:src="@drawable/ic_close"/>
+
+            </RelativeLayout>
+
+            <TextView
+                android:id="@+id/tv_dialog_message"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dialog_margin_top"
+                android:layout_marginBottom="@dimen/dialog_margin_bottom_end"
+                android:layout_marginLeft="@dimen/dialog_margin_left"
+                android:layout_marginRight="@dimen/dialog_margin_left"
+                android:textAlignment="center"
+                android:text="@string/planejamento_rota_resume"
+                android:textStyle="bold"
+                android:textSize="@dimen/dialog_text_size"
+                android:textColor="@color/colorPrimary"/>
+
+        </LinearLayout>
+
+        <TableLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginVertical="@dimen/dialog_margin"
+            android:padding="@dimen/form_label_small_margin_vertical"
+            android:background="@drawable/custom_border"
+            android:stretchColumns="0">
+            <TableRow>
+                <TextView
+                    style="@style/FormLabel"
+                    android:text="@string/planejamento_rota_store_general_last_score"
+                    android:padding="3dip" />
+                <TextView
+                    android:id="@+id/last_note_text_view"
+                    android:gravity="right"
+                    android:padding="3dip" />
+            </TableRow>
+
+            <TableRow>
+                <TextView
+                    style="@style/FormLabel"
+                    android:text="@string/planejamento_rota_store_general_average_client"
+                    android:padding="3dip" />
+                <TextView
+                    android:id="@+id/average_time_text_view"
+                    android:gravity="right"
+                    android:padding="3dip" />
+            </TableRow>
+
+            <TableRow>
+                <TextView
+                    style="@style/FormLabel"
+                    android:text="@string/planejamento_rota_store_average_client_weekly"
+                    android:padding="3dip" />
+                <TextView
+                    android:id="@+id/sum_note_client_text_view"
+                    android:gravity="right"
+                    android:padding="3dip" />
+            </TableRow>
+        </TableLayout>
+
+        <TableLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="@dimen/form_label_margin_vertical"
+            android:stretchColumns="*"
+            android:shrinkColumns="*">
+            <TableRow>
+                <TextView
+                    style="@style/FormLabel"
+                    android:layout_weight="1"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_horizontal"
+                    android:text="@string/planejamento_rota_total_score" />
+                <TextView
+                    style="@style/FormLabel"
+                    android:id="@+id/average_supervisor"
+                    android:layout_weight="1"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:text="@string/planejamento_rota_store_average_sup"
+                    android:gravity="center"/>
+                <TextView
+                    style="@style/FormLabel"
+                    android:id="@+id/average_checklist_clients_day"
+                    android:layout_weight="1"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:text="@string/planejamento_rota_store_average_promotor_client"
+                    android:gravity="center"/>
+                <TextView
+                    style="@style/FormLabel"
+                    android:id="@+id/average_checklist_all"
+                    android:layout_weight="1"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:text="@string/planejamento_rota_store_average_promotor_checklist"
+                    android:gravity="center"/>
+            </TableRow>
+        </TableLayout>
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/resume_recycler_view"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:scrollbars="vertical" />
+
+    </LinearLayout>
+
+    </androidx.cardview.widget.CardView>
+
+</RelativeLayout>

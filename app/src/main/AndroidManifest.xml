@@ -1,0 +1,533 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="br.com.jjconsulting.mobile.dansales">
+
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION"/>
+    <uses-permission
+        android:name="android.permission.REQUEST_IGNORE_BATTERY_OPTIMIZATIONS"/>
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
+
+    <uses-permission android:name="android.permission.FOREGROUND_SERVICE" />
+
+    <application
+        android:requestLegacyExternalStorage="true"
+        android:allowBackup="false"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:usesCleartextTraffic="true"
+        android:theme="@style/AppTheme">
+
+
+        <activity
+            android:name=".SplashScreenActivity"
+            android:theme="@style/SplashScreenTheme"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+                />
+
+            </intent-filter>
+        </activity>
+
+        <uses-library android:name="org.apache.http.legacy"
+            android:required="false"/>
+
+        <activity
+            android:name=".kotlin.LoginSso"
+            android:configChanges="orientation|screenSize|keyboardHidden"
+            android:theme="@style/LoginTheme"
+            android:windowSoftInputMode="stateHidden|adjustResize" />
+
+        <activity
+            android:name=".kotlin.UpdateUser"
+            android:configChanges="orientation|screenSize|keyboardHidden"
+            android:theme="@style/LoginTheme"
+            android:windowSoftInputMode="stateHidden|adjustResize" />
+        <activity
+            android:name=".LoginActivity"
+            android:configChanges="orientation|screenSize|keyboardHidden"
+            android:theme="@style/LoginTheme"
+            android:windowSoftInputMode="stateHidden|adjustResize"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.RESTART" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+
+        <activity
+            android:name=".MasterActivity"
+            android:launchMode="singleTop"
+
+            android:theme="@style/AppTheme.NoActionBar" />
+
+
+        <activity
+            android:name=".AboutActivity"
+            android:launchMode="singleTop"
+            android:label="@string/title_about" />
+        <activity
+            android:name=".HelpActivity"
+            android:launchMode="singleTop"
+            android:label="@string/title_help" />
+        <activity
+            android:name=".SettingsActivity"
+            android:launchMode="singleTop"
+            android:label="@string/title_settings" />
+        <activity
+            android:name=".LogPedidoActivity"
+            android:launchMode="singleTop"
+            android:parentActivityName=".MasterActivity" />
+        <activity
+            android:name=".kotlin.PedidoLogActivity"
+            android:launchMode="singleTop"
+            android:parentActivityName=".MasterActivity" />
+        <activity
+            android:name=".kotlin.PedidoTrackingListNFActivity"
+            android:label="@string/title_rastreio"
+            android:launchMode="singleTop"
+            android:parentActivityName=".MasterActivity" />
+        <activity
+            android:name=".kotlin.PedidoTrackingDetailActivity"
+            android:label="@string/title_rastreio"
+            android:parentActivityName=".MasterActivity" />
+        <activity
+            android:name=".util.DetailImage"
+            android:label="@string/title_CR"
+            android:launchMode="singleTop"
+            android:screenOrientation="fullSensor"
+            android:parentActivityName=".LoginActivity" />
+        <activity
+            android:name=".ClienteDetailActivity"
+            android:label="@string/title_cliente_detail"
+            android:launchMode="singleTop"
+            android:parentActivityName=".MasterActivity" />
+        <activity
+            android:name=".PickClienteActivity"
+            android:label="@string/title_pick_cliente"
+            android:launchMode="singleTop"
+            android:parentActivityName=".MasterActivity" />
+
+        <activity
+            android:name=".PickLayoutActivity"
+            android:configChanges="orientation|screenSize|keyboardHidden"
+            android:label="@string/title_pick_layout"
+            android:parentActivityName=".PesquisaPerguntasActivity"
+            android:launchMode="singleTop"
+            android:windowSoftInputMode="stateHidden|adjustResize" />
+
+        <activity
+            android:name=".RotaGuiadaPickClienteActivity"
+            android:label="@string/title_pick_cliente"
+            android:parentActivityName=".RotaGuiadaActivity" />
+
+        <activity
+            android:name=".PickClientePlanejamentoRotaActivity"
+            android:label="@string/title_pick_cliente"
+            android:parentActivityName=".PlanejamentoRotaAddActivity" />
+
+        <activity
+            android:name=".TapPickClienteActivity"
+            android:label="@string/title_pick_cliente"
+            android:parentActivityName=".TapListFilterActivity" />
+        <activity
+            android:name=".PickClientePesquisaActivity"
+            android:configChanges="orientation|screenSize|keyboardHidden"
+            android:label="@string/title_pick_cliente"
+            android:parentActivityName=".MasterActivity"
+            android:launchMode="singleTop"
+            android:windowSoftInputMode="stateHidden|adjustResize" />
+        <activity
+            android:name=".PickAgendaActivity"
+            android:label="@string/title_pick_agenda"
+            android:parentActivityName=".PickClienteActivity" />
+        <activity
+            android:name=".PesquisaPerguntasActivity"
+            android:configChanges="orientation|screenSize|keyboardHidden"
+            android:label="@string/title_pick_cliente"
+            android:launchMode="singleTop"
+            android:parentActivityName=".MasterActivity" />
+
+        <activity
+            android:name=".PesquisaNotasActivity"
+            android:configChanges="orientation|screenSize|keyboardHidden"
+            android:label="@string/title_pick_cliente"
+            android:parentActivityName=".MasterActivity" />
+        <activity
+            android:name=".PedidoItemDetailActivity"
+            android:configChanges="orientation|screenSize|keyboardHidden"
+            android:label="@string/title_add_item"
+            android:parentActivityName=".PedidoDetailActivity"
+            android:launchMode="singleTop"
+            android:windowSoftInputMode="stateHidden|adjustResize" />
+
+        <activity
+            android:name=".PedidoItensJustificativaActivty"
+            android:configChanges="orientation|screenSize|keyboardHidden"
+            android:label="@string/title_add_item"
+            android:parentActivityName=".PedidoDetailActivity"
+            android:windowSoftInputMode="stateHidden|adjustResize" />
+     
+        <activity
+            android:name=".PedidoDetailActivity"
+            android:configChanges="orientation|screenSize|keyboardHidden"
+            android:label="@string/title_pedido_detail"
+            android:parentActivityName=".MasterActivity"
+            android:launchMode="singleTop"
+            android:windowSoftInputMode="stateHidden|adjustResize" />
+        <activity
+            android:name=".TapPedidoDetailActivity"
+            android:configChanges="orientation|screenSize|keyboardHidden"
+            android:label="@string/title_tap"
+            android:parentActivityName=".MasterActivity"
+            android:windowSoftInputMode="stateHidden|adjustResize" />
+        <activity
+            android:name=".TapItemDetailActivity"
+            android:configChanges="orientation|screenSize|keyboardHidden"
+            android:label="@string/title_tap"
+            android:parentActivityName=".TapPedidoDetailActivity"
+            android:windowSoftInputMode="stateHidden|adjustResize" />
+        <activity
+            android:name=".SyncDataActivity"
+            android:label="@string/title_sync_data"
+            android:parentActivityName=".MasterActivity" />
+        <activity
+            android:name=".PlanejamentoRotaActivity"
+            android:label="@string/title_planejamento_rota"
+            android:parentActivityName=".MasterActivity" />
+        <activity
+            android:name=".PlanejamentoRotaPickTypeActivity"
+            android:label="@string/title_nova_atividade"
+            android:parentActivityName=".PlanejamentoRotaActivity" />
+        <activity
+            android:name=".PlanejamentoRotaDetailActivity"
+            android:label="@string/title_planejamento_rota"
+            android:parentActivityName=".PlanejamentoRotaActivity" />
+        <activity
+            android:name=".PlanejamentoRotaAddActivity"
+            android:label="@string/title_nova_atividade"
+            android:parentActivityName=".PlanejamentoRotaPickTypeActivity" />
+
+        <activity
+            android:name=".AmbienteActivity"
+            android:label="@string/title_ambiente"
+            android:launchMode="singleTop"
+            android:parentActivityName=".MasterActivity" />
+        <activity
+            android:name=".SystemUpdateActivity"
+            android:configChanges="orientation|screenSize|keyboardHidden"
+            android:label="@string/title_system"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden|adjustResize" />
+        <activity
+            android:name=".kotlin.PedidoTrackingFilterActivity"
+            android:configChanges="orientation|screenSize|keyboardHidden"
+            android:label="@string/title_rastreio"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden|adjustResize"
+            android:parentActivityName=".MasterActivity"/>
+
+
+
+        <activity
+            android:name=".ClienteFilterActivity"
+            android:label="@string/menu_filter_title" />
+        <activity
+            android:name=".MessageFilterActivity"
+            android:label="@string/menu_filter_title" />
+        <activity
+            android:name=".LayoutFilterActivity"
+            android:label="@string/menu_filter_title" />
+        <activity
+            android:name=".RelatorioNotasFilterActivity"
+            android:label="@string/menu_filter_title" />
+        <activity
+            android:name=".RelatorioChecklistNotasFilterActivity"
+            android:label="@string/menu_filter_title"
+            android:parentActivityName=".RelatorioChecklistNotasActivity" />
+        <activity
+            android:name=".PlanejamentoRotaFilterActivity"
+            android:label="@string/menu_filter_title"
+            android:parentActivityName=".PlanejamentoRotaActivity" />
+        <activity
+            android:name=".RelatorioNotasDetailActivity"
+            android:label="@string/title_relatorio_notas"
+            android:parentActivityName=".RelatorioNotasActivity" />
+        <activity
+            android:name=".RelatorioNotasActivity"
+            android:label="@string/title_relatorio_notas"
+            android:launchMode="singleTop"
+            android:parentActivityName=".MasterActivity" />
+        <activity
+            android:name=".RelatorioChecklistNotasActivity"
+            android:label="@string/title_relatorio_check_list_nota"
+            android:launchMode="singleTop"
+            android:parentActivityName=".MasterActivity" />
+
+        <activity
+            android:name=".ConsultaGenericaActiviy"
+            android:label="@string/title_relatorio_check_list_nota"
+            android:launchMode="singleTop"
+            android:parentActivityName=".MasterActivity" />
+
+        <activity
+            android:name=".kotlin.PedidoTrackingActivity"
+            android:label="@string/title_rastreio"
+            android:launchMode="singleTop"
+            android:parentActivityName=".MasterActivity" />
+
+        <activity
+            android:name=".RelatorioChecklistNotasDetailActivity"
+            android:label="@string/title_relatorio_check_list_nota"
+            android:launchMode="singleTop"
+            android:parentActivityName=".RelatorioChecklistNotasActivity" />
+
+        <activity
+            android:name=".RelatorioObjetivoActivity"
+            android:label="@string/title_relatorio_objetivos"
+            android:launchMode="singleTop"
+            android:parentActivityName=".MasterActivity" />
+        <activity
+            android:name=".RelatorioPositivacaoActivity"
+            android:label="@string/title_relatorio_positivacao"
+            android:launchMode="singleTop"
+            android:parentActivityName=".MasterActivity" />
+        <activity android:name="br.com.jjconsulting.mobile.jjlib.UnderDevelopmentActivity" />
+        <activity
+            android:name=".AlteraSenhaActivity"
+            android:label="@string/title_troca_senha"
+            android:parentActivityName=".MasterActivity"
+            android:launchMode="singleTop"
+            android:theme="@style/LoginTheme" />
+        <activity
+            android:name=".AlteraSenhaComPassThroughActivity"
+            android:label="@string/title_troca_senha"
+            android:launchMode="singleTop"
+            android:parentActivityName=".RecuperaSenhaActivity"
+            android:theme="@style/LoginTheme" />
+        <activity
+            android:name=".PedidoFilterActivity"
+            android:label="@string/menu_filter_title"
+            android:launchMode="singleTop"
+            android:parentActivityName=".MasterActivity" />
+        <activity
+            android:name=".ConsultaGenericaFilterActivity"
+            android:label="@string/menu_filter_title"
+            android:launchMode="singleTop"
+            android:parentActivityName=".MasterActivity" />
+        <activity
+            android:name=".RelatorioObjetivoFilterActivity"
+            android:label="@string/menu_filter_title"
+            android:launchMode="singleTop"
+            android:parentActivityName=".MasterActivity" />
+        <activity
+            android:name=".PickClienteFilterActivity"
+            android:label="@string/menu_filter_title"
+            android:launchMode="singleTop"
+            android:parentActivityName=".MasterActivity" />
+        <activity
+            android:name=".RelatorioCarteiraPedidosActivity"
+            android:label="@string/title_relatorio_carteira"
+            android:launchMode="singleTop"
+            android:parentActivityName=".MasterActivity" />
+        <activity
+            android:name=".RelatorioCarteiraPedidoDetailActivity"
+            android:label="@string/title_relatorio_carteira"
+            android:launchMode="singleTop"
+            android:parentActivityName=".MasterActivity" />
+        <activity
+            android:name=".RelatorioCarteiraPedidoFilterActivity"
+            android:label="@string/title_relatorio_carteira"
+            android:launchMode="singleTop"
+            android:parentActivityName=".MasterActivity" />
+        <activity
+            android:name=".CRDetailActivity"
+            android:label="@string/title_layout"
+            android:launchMode="singleTop"
+            android:configChanges="orientation|screenSize|keyboardHidden"
+            android:windowSoftInputMode="stateHidden|adjustResize"
+            android:parentActivityName=".CRActivity" />
+        <activity
+            android:name=".CRReportActivity"
+            android:label="@string/title_layout"
+            android:launchMode="singleTop"
+            android:parentActivityName=".CRDetailActivity" />
+        <activity
+            android:name=".CRActivity"
+            android:label="@string/title_layout"
+            android:launchMode="singleTop"
+            android:parentActivityName=".CRDetailActivity" />
+        <activity
+            android:name=".TapListActivity"
+            android:label="@string/title_tap"
+            android:parentActivityName=".MasterActivity"
+            android:configChanges="orientation|screenSize|keyboardHidden"
+            android:launchMode="singleTop"
+            android:windowSoftInputMode="stateHidden|adjustResize" />
+        <activity
+            android:name=".TapLogActivity"
+            android:label="@string/title_cliente_detail"
+            android:launchMode="singleTop"
+            android:parentActivityName=".MasterActivity" />
+
+        <activity
+            android:name=".TapListFilterActivity"
+            android:label="@string/title_tap"
+            android:launchMode="singleTop"
+            android:parentActivityName=".MasterActivity" />
+
+        <activity
+            android:name=".TapAnexoActivity"
+            android:parentActivityName=".TapItemDetailActivity"
+            android:launchMode="singleTop"
+            android:windowSoftInputMode="stateHidden|adjustResize" />
+
+        <activity
+            android:name=".IssacActivity"
+            android:launchMode="singleInstance"
+            android:parentActivityName=".MasterActivity"
+            android:configChanges="orientation|screenSize|keyboardHidden"
+            android:windowSoftInputMode="stateHidden|adjustResize" />
+
+        <activity
+            android:name=".MessageDetailActivity"
+            android:parentActivityName=".MasterActivity"
+            android:windowSoftInputMode="stateHidden|adjustResize"
+            android:screenOrientation="portrait"/>
+
+        <activity
+            android:name=".TapRelatorioSaldoMCActivity"
+            android:parentActivityName=".MasterActivity"
+            android:launchMode="singleTop"
+            android:label="@string/title_relatorio_saldo_mc"
+            android:windowSoftInputMode="stateHidden|adjustResize" />
+
+        <activity
+            android:name=".TapRelatorioSaldoMCFilterActivity"
+            android:label="@string/title_relatorio_saldo_mc"
+            android:launchMode="singleTop"
+            android:parentActivityName=".MasterActivity" />
+
+        <activity
+            android:name=".TapWebUserActivity"
+            android:label="@string/title_relatorio_web_user"
+            android:launchMode="singleTop"
+            android:parentActivityName=".TapPedidoDetailActivity" />
+
+        <activity
+            android:name=".BarcodeScannerActivity"
+            android:theme="@android:style/Theme.Black.NoTitleBar.Fullscreen"
+            android:launchMode="singleTop"
+            android:windowSoftInputMode="stateHidden|adjustResize" />
+
+
+        <activity
+            android:name=".RecuperaSenhaActivity"
+            android:label="@string/title_recupera_senha"
+            android:launchMode="singleTop"
+            android:theme="@style/LoginTheme" />
+
+        <activity
+            android:name=".RotaGuiadaDetailActivity"
+            android:configChanges="orientation|screenSize|keyboardHidden"
+            android:windowSoftInputMode="stateHidden|adjustResize"
+            android:launchMode="singleTop"
+            android:label="@string/title_rota"/>
+
+        <activity
+            android:name=".RotaGuiadaFilterActivity"
+            android:label="@string/title_rota_guiada_detail"
+            android:configChanges="orientation|screenSize|keyboardHidden"
+            android:windowSoftInputMode="stateHidden|adjustResize"
+            android:launchMode="singleTop"
+            android:parentActivityName=".RotaGuiadaActivity"/>
+
+        <activity
+            android:name=".RotaGuiadaActivity"
+            android:configChanges="orientation|screenSize|keyboardHidden"
+            android:windowSoftInputMode="stateHidden|adjustResize"
+            android:launchMode="singleTop"
+            android:label="@string/title_rota_guiada_detail"/>
+
+        <activity
+            android:name=".PesquisaActivity"
+            android:label="@string/title_pesquisa"
+            android:launchMode="singleTop"
+            android:parentActivityName=".RotaGuiadaDetailActivity"/>
+
+        <activity
+            android:name=".PesquisaCoachingActivity"
+            android:label="@string/title_pesquisa"
+            android:launchMode="singleTop"/>
+
+        <service android:name="br.com.jjconsulting.mobile.dansales.service.SyncManagerService"
+            android:permission="android.permission.BIND_JOB_SERVICE"/>
+
+        <receiver android:name=".service.AutoStartSyncService"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.BOOT_COMPLETED" />
+            </intent-filter>
+        </receiver>
+
+        <service android:name=".service.ClearSyncManagerService"
+            android:stopWithTask="false" />
+
+        <service android:name=".service.MyFirebaseMessagingService"
+            android:stopWithTask="false"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="com.google.firebase.MESSAGING_EVENT" />
+            </intent-filter>
+        </service>
+        <service android:name=".service.MyFirebaseInstanceIDService"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="com.google.firebase.INSTANCE_ID_EVENT" />
+            </intent-filter>
+        </service>
+
+
+        <meta-data
+            android:name="com.google.firebase.messaging.default_notification_channel_id"
+            android:value="@string/app_name"/>
+
+        <meta-data
+            android:name="com.google.firebase.messaging.default_notification_icon"
+            android:resource="@drawable/ic_notification" />
+
+        <meta-data
+            android:name="com.google.firebase.messaging.default_notification_color"
+            android:resource="@color/colorAccent" />
+
+        <provider
+            android:name="androidx.core.content.FileProvider"
+            android:authorities="${applicationId}.fileprovider"
+            android:exported="false"
+            android:grantUriPermissions="true">
+            <meta-data
+                android:name="android.support.FILE_PROVIDER_PATHS"
+                android:resource="@xml/file_paths" />
+        </provider>
+
+        <meta-data
+            android:name="com.google.android.geo.API_KEY"
+            android:value="@string/google_maps_key" />
+
+        <meta-data
+            android:name="firebase_performance_logcat_enabled"
+            android:value="true" />
+
+    </application>
+
+</manifest>

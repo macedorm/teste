@@ -1,0 +1,178 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="br.com.jjconsulting.mobile.dansales.PedidoFilterActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:paddingBottom="@dimen/activity_horizontal_margin"
+        android:paddingEnd="@dimen/activity_vertical_margin"
+        android:paddingStart="@dimen/activity_vertical_margin"
+        android:paddingTop="@dimen/activity_horizontal_margin">
+
+        <LinearLayout
+            android:id="@+id/loading_pedido_filter"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <ProgressBar
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/base_pedido_filter"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:visibility="visible">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="@dimen/form_label_margin_horizontal"
+                android:gravity="bottom"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/relatorio_objetivo_filter_seach_cli_text_view"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:maxLines="1"
+                    android:paddingEnd="@dimen/form_value_padding_top"
+                    android:paddingStart="@dimen/form_value_padding_vertical"
+                    android:text="@string/search_cliente_hint"
+                    android:textColor="@color/formLabelTextColorDisable"
+                    android:textSize="@dimen/form_value_text_size" />
+
+                <ImageButton
+                    android:id="@+id/produto_search_image_view"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="3dp"
+                    android:background="?android:selectableItemBackground"
+                    android:padding="3dp"
+                    android:src="@drawable/ic_search_blue_32dp" />
+
+            </LinearLayout>
+
+            <View
+                style="@style/LineDefault"
+                android:layout_width="wrap_content"
+                android:layout_marginRight="@dimen/form_label_margin_vertical"
+                android:layout_marginTop="@dimen/form_line_margin_vertical" />
+
+            <TextView
+                style="@style/FormLabel"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/form_label_margin_vertical"
+                android:text="@string/filter_tipo" />
+
+            <RadioGroup
+                android:id="@+id/relatorio_objetivo_filter_caixa_radio_group"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/form_label_margin_vertical"
+                android:checkedButton="@+id/relatorio_objetivo_filter_caixa_radio_button">
+
+                <RadioButton
+                    android:id="@+id/relatorio_objetivo_filter_caixa_radio_button"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/caixa" />
+
+                <RadioButton
+                    android:id="@+id/relatorio_objetivo_filter_fat_radio_button"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/fatperda" />
+
+                <RadioButton
+                    android:id="@+id/relatorio_objetivo_filter_ton_radio_button"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/ton" />
+
+            </RadioGroup>
+
+            <TextView
+                style="@style/FormLabel"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/filter_organizacao" />
+
+            <Spinner
+                android:id="@+id/org_spinner"
+                style="@style/spinnerFilterStyle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:spinnerMode="dropdown" />
+
+            <TextView
+                style="@style/FormLabel"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/filter_bandeira" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:id="@+id/loading_bandeira_spinner_text_view"
+                    style="@style/FormLabel"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:text="@string/aguarde"
+                    android:visibility="invisible" />
+
+                <Spinner
+                    android:id="@+id/bandeira_spinner"
+                    style="@style/spinnerFilterStyle"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:spinnerMode="dropdown"
+                    android:visibility="visible" />
+
+            </RelativeLayout>
+
+
+            <TextView
+                style="@style/FormLabel"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/filter_marca" />
+
+            <Spinner
+                android:id="@+id/marca_spinner"
+                style="@style/spinnerFilterStyle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:spinnerMode="dropdown" />
+
+            <TextView
+                style="@style/FormLabel"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/filter_hierarquia_comercial" />
+
+            <FrameLayout
+                android:id="@+id/tree_view_root_view_group"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+        </LinearLayout>
+
+    </RelativeLayout>
+
+</ScrollView>

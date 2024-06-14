@@ -1,0 +1,69 @@
+<resources>
+    <!-- App. -->
+    <dimen name="app_vertical_spacing">8dp</dimen>
+    <dimen name="app_double_vertical_spacing">16dp</dimen>
+    <dimen name="app_triple_vertical_spacing">24dp</dimen>
+    <dimen name="activity_horizontal_margin">16dp</dimen>
+    <dimen name="activity_vertical_margin">16dp</dimen>
+    <dimen name="tabLayoutVerticalPadding">16dp</dimen>
+    <dimen name="floatingActionButtonMargin">16dp</dimen>
+    <!-- It should be activity_horizontal_margin + some dps. -->
+    <dimen name="separator_height">1dp</dimen>
+    <dimen name="toolbar_elevation">4dp</dimen>
+    <!-- Login. -->
+    <dimen name="login_horizontal_margin">8dp</dimen>
+    <dimen name="login_vertical_margin">32dp</dimen>
+    <dimen name="login_img_width">220dp</dimen>
+    <dimen name="login_img_horizontal_padding">32dp</dimen>
+    <!-- Dan button. -->
+    <dimen name="dan_button_radius">5dp</dimen>
+    <dimen name="dan_button_border_height">1dp</dimen>
+    <dimen name="dan_button_vertical_padding">6dp</dimen>
+    <dimen name="dan_button_horizontal_padding">8dp</dimen>
+    <dimen name="dan_button_text_size">18sp</dimen>
+    <!-- Dan shape. -->
+    <dimen name="dan_shape_radius">5dp</dimen>
+    <dimen name="dan_shape_vertical_padding">6dp</dimen>
+    <dimen name="dan_shape_horizontal_padding">4dp</dimen>
+    <!-- Home GridView values. -->
+    <dimen name="home_options_container_width">168dp</dimen>
+    <dimen name="home_options_container_height">128dp</dimen>
+    <dimen name="home_options_container_horizontal_padding">12dp</dimen>
+    <dimen name="home_options_container_vertical_padding">12dp</dimen>
+    <dimen name="home_options_width">32dp</dimen>
+    <dimen name="home_options_height">32dp</dimen>
+    <!-- Default lists dimensions. -->
+    <dimen name="list_item_primary_text_size">16sp</dimen>
+    <dimen name="list_item_secondary_text_size">14sp</dimen>
+    <dimen name="list_item_horizontal_padding">8dp</dimen>
+    <dimen name="list_item_vertical_padding">16dp</dimen>
+    <dimen name="list_item_spacing">4dp</dimen>
+    <dimen name="list_item_image_end_padding">13dp</dimen>
+    <!-- Forms. -->
+    <dimen name="form_label_text_size">12sp</dimen>
+    <dimen name="form_value_text_size">18sp</dimen>
+    <dimen name="form_label_padding_top">8dp</dimen>
+    <dimen name="form_label_padding_bottom">8dp</dimen>
+    <dimen name="form_label_padding_vertical">4dp</dimen>
+    <dimen name="form_value_padding_top">0dp</dimen>
+    <dimen name="form_value_padding_bottom">8dp</dimen>
+    <dimen name="form_value_padding_vertical">4dp</dimen>
+    <dimen name="form_edit_text_margin_top">8dp</dimen>
+    <!-- Dialogs. -->
+    <dimen name="dialog_text_size">16sp</dimen>
+    <dimen name="dialog_margin_top">20dp</dimen>
+    <dimen name="dialog_margin_right">10dp</dimen>
+    <dimen name="dialog_margin_left">10dp</dimen>
+    <dimen name="dialog_margin_bottom_end">10dp</dimen>
+    <dimen name="dialog_size_icon">60dp</dimen>
+    <dimen name="dialog_size_buttons_width">120dp</dimen>
+
+    <!--Update Database. -->
+    <dimen name="update_text_size">15sp</dimen>
+    <dimen name="update_text_size_large">20sp</dimen>
+    <dimen name="update_margin_default">30dp</dimen>
+    <dimen name="update_progress_margin_negative_text">-30dp</dimen>
+    <dimen name="update_progress_margin_button">10dp</dimen>
+    <dimen name="update_progress_object_height">180dp</dimen>
+
+</resources>

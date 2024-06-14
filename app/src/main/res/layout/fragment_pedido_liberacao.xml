@@ -1,0 +1,125 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:paddingBottom="@dimen/activity_horizontal_margin"
+    android:paddingEnd="@dimen/activity_vertical_margin"
+    android:paddingStart="@dimen/activity_vertical_margin"
+    android:paddingTop="@dimen/activity_horizontal_margin"
+    tools:context="br.com.jjconsulting.mobile.dansales.PedidoLiberacaoFragment">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginBottom="@dimen/size_bottom_bar">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <br.com.jjconsulting.mobile.dansales.util.CustomTextInputLayout
+                android:id="@+id/pedido_liberacao_nota_input_layout"
+                style="@style/CustomTextInputLayoutAppearance"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/form_edit_text_margin_top">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/pedido_liberacao_nota_text_view"
+                    style="@style/CustomTextInputEdiTextApparence"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="top"
+                    android:hint="@string/pedido_liberacao_observacao_hint"
+                    android:inputType="textMultiLine"
+                    android:lines="5" />
+
+            </br.com.jjconsulting.mobile.dansales.util.CustomTextInputLayout>
+
+            <LinearLayout
+                android:id="@+id/pedido_liberacao_data_agendamento_linear_layout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/form_edit_text_margin_top"
+                android:orientation="vertical">
+
+                <TextView
+                    style="@style/FormLabel"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/pedido_liberacao_data_agendamento_hint" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/pedido_liberacao_data_agendamento_text_view"
+                        style="@style/FormValue"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/pedido_liberacao_data_agendamento_hint" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="right"
+                        android:orientation="vertical">
+
+                        <ImageView
+                            android:id="@+id/pedido_liberacao_data_agendamento_image_view"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginRight="5dp"
+                            android:src="@drawable/ic_date_range_black_24dp"
+                            android:tint="@color/colorPrimary" />
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+                <View
+                    style="@style/LineDefault"
+                    android:layout_width="match_parent"
+                    android:layout_marginBottom="@dimen/form_label_padding_vertical" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+    </ScrollView>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/size_bottom_bar"
+        android:layout_alignParentBottom="true"
+        android:gravity="center|bottom"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/pedido_liberacao_reprova_button"
+            style="@style/DanButton"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="@dimen/app_horizontal_spacing"
+            android:layout_marginStart="@dimen/app_horizontal_spacing"
+            android:layout_weight="1"
+            android:text="@string/pedido__apro_lib_reprova_button" />
+
+        <Button
+            android:id="@+id/pedido_liberacao_aprova_button"
+            style="@style/DanButton"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="@dimen/app_horizontal_spacing"
+            android:layout_marginStart="@dimen/app_horizontal_spacing"
+            android:layout_weight="1"
+            android:text="@string/pedido_apro_lib_aprova_button" />
+
+    </LinearLayout>
+
+
+</RelativeLayout>
+

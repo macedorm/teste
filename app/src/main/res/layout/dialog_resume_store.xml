@@ -1,0 +1,109 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:orientation="vertical"
+    android:background="@color/BackgroundDialog">
+
+    <androidx.cardview.widget.CardView
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/form_label_margin_vertical"
+        app:cardUseCompatPadding="true"
+        app:cardElevation="@dimen/dialog_card_elevation"
+        app:cardCornerRadius="@dimen/dialog_card_corner_radius"
+        app:cardBackgroundColor="@color/backgroundColorDialog">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/form_label_margin_vertical"
+            android:layout_marginBottom="@dimen/dialog_margin_bottom_end"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:id="@+id/icon_image_view"
+                    android:layout_width="@dimen/dialog_size_icon"
+                    android:layout_height="@dimen/dialog_size_icon"
+                    android:scaleType="fitCenter"
+                    android:tint="@color/sucessCollor"
+                    android:src="@drawable/ic_error_black_24dp"/>
+
+                <TextView
+                    android:id="@+id/tv_dialog_message"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/dialog_margin_top"
+                    android:layout_marginBottom="@dimen/dialog_margin_bottom_end"
+                    android:layout_marginLeft="@dimen/dialog_margin_left"
+                    android:layout_marginRight="@dimen/dialog_margin_left"
+                    android:textAlignment="center"
+                    android:text="Resumo da loja!"
+                    android:textSize="@dimen/dialog_text_size"
+                    android:textColor="@color/colorPrimary"/>
+
+
+            </LinearLayout>
+
+            <TableLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="@dimen/form_label_margin_vertical"
+                android:stretchColumns="0">
+                <TableRow>
+                    <TextView
+                        style="@style/FormLabel"
+                        android:text="@string/planejamento_rota_store_last_score" />
+                    <TextView
+                        style="@style/FormLabel"
+                        android:id="@+id/last_note_text_view"
+                        android:gravity="right"/>
+                </TableRow>
+
+                <TableRow>
+                    <TextView
+                        style="@style/FormLabel"
+                        android:text="@string/planejamento_rota_store_average_client" />
+                    <TextView
+                        style="@style/FormLabel"
+                        android:id="@+id/average_time_text_view"
+                        android:gravity="right"/>
+                </TableRow>
+
+                <TableRow>
+                    <TextView
+                        style="@style/FormLabel"
+                        android:text="@string/planejamento_rota_store_average_client_weekly_only" />
+                    <TextView
+                        style="@style/FormLabel"
+                        android:id="@+id/sum_note_client_text_view"
+                        android:gravity="right" />
+                </TableRow>
+            </TableLayout>
+
+            <Button
+                android:id="@+id/ok_button"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dialog_margin_top"
+                android:layout_marginLeft="@dimen/dialog_margin_left"
+                android:layout_marginRight="@dimen/dialog_margin_right"
+                android:layout_marginBottom="@dimen/dialog_margin_bottom_end"
+                style="@style/DanButton"
+                android:text="@string/ok" />
+
+        </LinearLayout>
+
+    </androidx.cardview.widget.CardView>
+
+</LinearLayout>

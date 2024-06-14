@@ -1,0 +1,36 @@
+variables:
+  GIT_CLEAN_FLAGS: none 
+
+stages:
+  - deploy
+
+assembleDevRelease:
+  only:
+    - dev
+
+  stage: deploy
+  script:
+    - 'echo "Gerando .apk de desenvolvimento..."'
+    - ./gradlew assembleDevRelease
+    - 'echo "Arquivo .apk gerado com sucesso!"'
+    - 'echo "Realizando deploy de dev..."'
+    - '& xcopy app\build\outputs\apk\dev\release\app-dev-release.apk D:\website\dansales_api\dev\download\dansales.apk /y'
+    - 'echo "Deploy realizado com sucesso!"'
+    - exit 0
+
+assembleHomRelease:
+  only:
+    - master
+
+  stage: deploy
+  script:
+    - 'echo "Gerando .apk de homologação..."'
+    - ./gradlew assembleHomRelease
+    - 'echo "Arquivo .apk gerado com sucesso!"'
+    - 'echo "Realizando deploy de homolog..."'
+    - '& xcopy app\build\outputs\apk\hom\release\app-hom-release.apk D:\website\dansales_api\homolog\download\dansales.apk /y'
+    - 'echo "Deploy realizado com sucesso!"'
+    - exit 0
+  
+
+

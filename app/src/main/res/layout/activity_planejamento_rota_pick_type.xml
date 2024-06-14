@@ -1,0 +1,79 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginLeft="@dimen/activity_horizontal_margin"
+    android:layout_marginRight="@dimen/activity_horizontal_margin"
+    tools:context="br.com.jjconsulting.mobile.dansales.RotaFragment">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/add_visita_text_view"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingVertical="@dimen/form_label_large_margin_vertical"
+                android:paddingLeft="@dimen/activity_horizontal_margin"
+                android:background="?android:attr/selectableItemBackground"
+                android:textSize="@dimen/text_size_large"
+                android:text="@string/planejamento_rota_visita_cliente"
+                android:textColor="@color/colorPrimary"
+                android:textStyle="bold"
+                android:lines="1"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/colorPrimary"/>
+
+            <TextView
+                android:id="@+id/add_visita_promotor_text_view"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingVertical="@dimen/form_label_large_margin_vertical"
+                android:paddingLeft="@dimen/activity_horizontal_margin"
+                android:background="?android:attr/selectableItemBackground"
+                android:textSize="@dimen/text_size_large"
+                android:text="@string/planejamento_rota_visita_com_promotor"
+                android:textColor="@color/colorPrimary"
+                android:textStyle="bold"
+                android:lines="1"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/colorPrimary"/>
+
+            <TextView
+                android:id="@+id/add_atividade_text_view"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingVertical="@dimen/form_label_large_margin_vertical"
+                android:paddingLeft="@dimen/activity_horizontal_margin"
+                android:background="?android:attr/selectableItemBackground"
+                android:textSize="@dimen/text_size_large"
+                android:text="@string/planejamento_rota_atividade_interna"
+                android:textColor="@color/colorPrimary"
+                android:textStyle="bold"
+                android:lines="1"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/colorPrimary"/>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</RelativeLayout>

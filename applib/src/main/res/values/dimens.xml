@@ -1,0 +1,203 @@
+<resources>
+
+    <dimen name="menu_margin">10dp</dimen>
+    <dimen name="menu_margin_content">13dp</dimen>
+    <dimen name="menu_margin_text_left">10dp</dimen>
+    <dimen name="menu_margin_text_right">10dp</dimen>
+
+    <dimen name="font_size_menu">18</dimen>
+
+    <dimen name="margin_icon">10dp</dimen>
+    <dimen name="size_icon">50dp</dimen>
+
+
+    <!-- Dan shape. -->
+    <dimen name="dan_shape_radius">5dp</dimen>
+    <dimen name="dan_shape_vertical_padding">6dp</dimen>
+    <dimen name="dan_shape_horizontal_padding">4dp</dimen>
+
+    <!-- Forms. -->
+    <dimen name="hint_label_text_size">12sp</dimen>
+    <dimen name="form_label_text_size">13sp</dimen>
+    <dimen name="form_value_text_size">18sp</dimen>
+    <dimen name="form_spinner_height">40dp</dimen>
+    <dimen name="form_label_margin_vertical">10dp</dimen>
+    <dimen name="form_label_large_margin_vertical">20dp</dimen>
+    <dimen name="form_label_margin_horizontal">10dp</dimen>
+    <dimen name="hint_margin_horizontal">10dp</dimen>
+    <dimen name="form_label_padding_top">8dp</dimen>
+    <dimen name="form_label_padding_bottom">8dp</dimen>
+    <dimen name="form_label_padding_vertical">4dp</dimen>
+    <dimen name="form_value_padding_top">0dp</dimen>
+    <dimen name="form_value_padding_bottom">8dp</dimen>
+    <dimen name="form_value_padding_vertical">4dp</dimen>
+    <dimen name="form_edit_text_margin_top">8dp</dimen>
+    <dimen name="dan_button_text_size">18sp</dimen>
+
+    <dimen name="form_label_small_margin_vertical">5dp</dimen>
+    <dimen name="form_label_small_margin_horizontal">5dp</dimen>
+
+    <!-- Default lists dimensions. -->
+    <dimen name="list_recicle_view_spacing">12dp</dimen>
+    <dimen name="input_text_spacing">10dp</dimen>
+
+    <dimen name="list_item_menu">14sp</dimen>
+    <dimen name="list_item_primary_text_size">16sp</dimen>
+    <dimen name="list_item_secondary_text_size">14sp</dimen>
+    <dimen name="list_item_secondary_text_label_size">14sp</dimen>
+    <dimen name="list_item_label_margin_right">4dp</dimen>
+    <dimen name="list_item_horizontal_padding">8dp</dimen>
+    <dimen name="list_item_vertical_padding">16dp</dimen>
+    <dimen name="list_item_spacing">4dp</dimen>
+    <dimen name="list_item_image_size">40dp</dimen>
+    <dimen name="list_item_image_end_padding">13dp</dimen>
+
+
+    <!-- JJCalendarEvents -->
+    <dimen name="title_dayofweek">15sp</dimen>
+    <dimen name="title_day">12sp</dimen>
+    <dimen name="title_event">6.5sp</dimen>
+    <dimen name="event_row_size">35dp</dimen>
+
+    <!-- Dialog -->
+    <dimen name="dialog_margin">25dp</dimen>
+    <dimen name="dialog_margin_top">20dp</dimen>
+    <dimen name="dialog_margin_right">10dp</dimen>
+    <dimen name="dialog_margin_left">10dp</dimen>
+    <dimen name="dialog_margin_bottom_end">10dp</dimen>
+    <dimen name="dialog_card_elevation">4dp</dimen>
+    <dimen name="dialog_card_corner_radius">3dp</dimen>
+    <dimen name="dialog_text_size">16sp</dimen>
+    <dimen name="dialog_text_desc_size">12sp</dimen>
+    <dimen name="dialog_size_icon">60dp</dimen>
+    <dimen name="dialog_size_buttons_width">120dp</dimen>
+    <dimen name="dialog_size_buttons_height">40dp</dimen>
+    <dimen name="dialog_content_padding">8dp</dimen>
+
+
+        <!-- App. -->
+        <dimen name="app_vertical_spacing">8dp</dimen>
+        <dimen name="app_horizontal_spacing">8dp</dimen>
+        <dimen name="app_double_vertical_spacing">16dp</dimen>
+        <dimen name="app_triple_vertical_spacing">24dp</dimen>
+        <dimen name="activity_horizontal_margin">16dp</dimen>
+        <dimen name="activity_vertical_margin">16dp</dimen>
+        <dimen name="tabLayoutVerticalPadding">16dp</dimen>
+        <dimen name="floatingActionButtonMargin">16dp</dimen>
+        <dimen name="form_label_margin_horizontal_item">5dp</dimen>
+        <dimen name="form_line_margin_vertical">5dp</dimen>
+        <dimen name="size_circle_filter">50dp</dimen>
+        <dimen name="size_tab_indicator_height">5dp</dimen>
+        <dimen name="activity_vertical_margin_large">30dp</dimen>
+
+        <!-- Menu Home -->
+        <dimen name="margin_menu_home">4dp</dimen>
+
+        <!-- It should be activity_horizontal_margin + some dps. -->
+        <dimen name="separator_height">1dp</dimen>
+        <dimen name="toolbar_elevation">4dp</dimen>
+        <!-- Login. -->
+        <dimen name="login_horizontal_margin">8dp</dimen>
+        <dimen name="login_vertical_margin">32dp</dimen>
+        <dimen name="login_img_width">220dp</dimen>
+        <dimen name="login_img_horizontal_padding">52dp</dimen>
+        <dimen name="password_img_width">25dp</dimen>
+        <dimen name="password_img_padding_width">30dp</dimen>
+        <!-- Alterar Senha -->
+        <dimen name="alterar_senha_title_text_size">20sp</dimen>
+        <!-- Alterar Senha -->
+        <dimen name="recuperar_senha_title_text_size">20sp</dimen>
+        <dimen name="recuperar_senha_instrucoes_title_text_size">12sp</dimen>
+        <!-- Dan button. -->
+        <dimen name="dan_button_radius">5dp</dimen>
+        <dimen name="dan_button_border_height">1dp</dimen>
+        <dimen name="dan_button_vertical_padding">6dp</dimen>
+        <dimen name="dan_button_horizontal_padding">8dp</dimen>
+
+        <!-- Home GridView values. -->
+        <dimen name="home_options_container_width">122dp</dimen>
+        <dimen name="home_options_container_height">96dp</dimen>
+        <dimen name="home_options_container_horizontal_padding">6dp</dimen>
+        <dimen name="home_options_container_vertical_padding">6dp</dimen>
+        <dimen name="home_options_width">32dp</dimen>
+        <dimen name="home_options_height">32dp</dimen>
+
+        <dimen name="home_options_cr_width">90dp</dimen>
+        <dimen name="home_options_cr_height">50dp</dimen>
+
+
+        <!--Update Database. -->
+        <dimen name="update_text_size">15sp</dimen>
+        <dimen name="update_text_size_large">20sp</dimen>
+        <dimen name="update_margin_default">15dp</dimen>
+        <dimen name="update_progress_margin_negative_text">-30dp</dimen>
+        <dimen name="update_progress_margin_button">10dp</dimen>
+        <dimen name="update_progress_object_height">180dp</dimen>
+        <!--Settings-->
+        <dimen name="margin_left_right_dan_button">30dp</dimen>
+        <dimen name="margin_bottom_dan_button">10dp</dimen>
+        <!-- update APK -->
+        <dimen name="update_apk_title_text_size">22sp</dimen>
+        <dimen name="update_apk_text_size">15sp</dimen>
+        <!--Tree view.-->
+        <dimen name="tree_view_horizontal_padding">4dp</dimen>
+        <dimen name="tree_view_spacing">4dp</dimen>
+        <!-- About -->
+        <dimen name="about_logo_size">220dp</dimen>
+        <!--Incluir Pedido-->
+        <!-- Pedido -->
+        <dimen name="pedido_icon_size">65dp</dimen>
+        <!--Produtos Dialog-->
+        <dimen name="produto_status_margin_right">10dp</dimen>
+        <dimen name="produto_status_width">5dp</dimen>
+        <dimen name="produto_status_height">80dp</dimen>
+        <!-- Dialogs -->
+        <dimen name="dialog_default_margin">8dp</dimen>
+        <!-- Aprovacao/Liberacao -->
+        <dimen name="size_bottom_bar">70dp</dimen>
+        <dimen name="size_image_thumb">150dp</dimen>
+        <!-- Pesquisa -->
+        <dimen name="pesquisa_margin_radio_box">10dp</dimen>
+        <!-- ETap -->
+        <dimen name="etap_icon_size">55dp</dimen>
+        <!--Chat-->
+        <dimen name="padding_text_chat">10dp</dimen>
+        <dimen name="margin_text_chat">10dp</dimen>
+        <dimen name="font_text_user_chat">14dp</dimen>
+        <dimen name="font_text_chat_user_data">10dp</dimen>
+        <dimen name="size_bottom_chat">60dp</dimen>
+        <dimen name="size_bottom_item_chat">50dp</dimen>
+        <!-- Rota Guiada -->
+        <dimen name="rg_icon_size">55dp</dimen>
+        <dimen name="rg_list_size">115dp</dimen>
+        <dimen name="rg_small_list_size">105dp</dimen>
+        <dimen name="rg_task_small_list_size">80dp</dimen>
+
+
+        <dimen name="pesquisa_card_corner_radius">10dp</dimen>
+
+        <!-- Item Pedido -->
+        <dimen name="font_item_pedido_quantidade">12dp</dimen>
+
+        <!--- Produto GridView -->
+        <dimen name="background_product_grid_radius">10dp</dimen>
+        <dimen name="background_product_grid_width">2dp</dimen>
+        <dimen name="font_size_item_product_grid">10sp</dimen>
+
+        <dimen name="card_nota_corner_radius">4dp</dimen>
+        <dimen name="card_nota_status_margin">5dp</dimen>
+        <dimen name="card_nota_margin">2dp</dimen>
+        <dimen name="card_nota_obs">10sp</dimen>
+        <dimen name="card_nota_title">18sp</dimen>
+
+        <!-- Mensagem -->
+        <dimen name="mensagem_icon">24dp</dimen>
+        <dimen name="mensagem_button">40dp</dimen>
+        <dimen name="mensagem_icon_small">20dp</dimen>
+        <dimen name="mensagem_attach_margin_line">20dp</dimen>
+
+        <dimen name="size_status_pedido">60dp</dimen>
+
+        <dimen name="text_size_large">20sp</dimen>
+
+    </resources>

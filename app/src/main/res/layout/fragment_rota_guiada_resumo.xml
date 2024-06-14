@@ -1,0 +1,122 @@
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/pedidos_coordinator_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="br.com.jjconsulting.mobile.dansales.RotaGuiadaResumoFragment">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center_horizontal"
+        android:orientation="vertical"
+        tools:context="br.com.jjconsulting.mobile.dansales.ClientesFragment">
+
+        <include
+            layout="@layout/base_list_empty_no_filter"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+
+        <ScrollView
+            android:id="@+id/rg_resume_scroll_view"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <RelativeLayout
+                    android:id="@+id/rg_pedido_relative_layout"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingTop="@dimen/list_item_horizontal_padding"
+                    android:paddingBottom="@dimen/list_item_horizontal_padding"
+                    android:paddingStart="@dimen/list_item_vertical_padding"
+                    android:paddingEnd="@dimen/list_item_vertical_padding"
+                    android:background="?android:attr/selectableItemBackground">
+
+                    <ImageView
+                        android:id="@+id/rg_resume_status_image_view"
+                        android:layout_width="@dimen/rg_icon_size"
+                        android:layout_height="@dimen/rg_icon_size"
+                        android:layout_centerVertical="true"
+                        android:layout_alignParentStart="true"
+                        android:src="@drawable/ic_rg_task_status_em_andamento"
+                        android:paddingEnd="@dimen/list_item_image_end_padding" />
+
+                    <TextView
+                        android:id="@+id/rg_resume_title_text_view"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerInParent="true"
+                        android:text="@string/rg_new_pedido"
+                        android:layout_toEndOf="@id/rg_resume_status_image_view"
+                        style="@style/ListItemPrimaryText" />
+
+                </RelativeLayout>
+
+                <LinearLayout
+                    android:id="@+id/rg_pedido_linear_layout"
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:orientation="vertical"
+                    android:background="@color/formLineColor"/>
+
+                <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/rg_resume_recycler_view"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"/>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+
+                    <Button
+                        android:id="@+id/checkout_button"
+                        android:layout_width="match_parent"
+                        android:layout_height="40dp"
+                        android:layout_weight="1"
+                        android:layout_margin="@dimen/activity_vertical_margin"
+                        android:layout_marginTop="@dimen/app_vertical_spacing"
+                        android:visibility="gone"
+                        android:text="@string/checkout"
+                        style="@style/DanButton" />
+
+                    <Button
+                        android:id="@+id/pause_button"
+                        android:layout_width="match_parent"
+                        android:layout_height="40dp"
+                        android:layout_weight="1"
+                        android:layout_margin="@dimen/activity_vertical_margin"
+                        android:layout_marginTop="@dimen/app_vertical_spacing"
+                        android:visibility="gone"
+                        android:text="@string/stop"
+                        style="@style/DanButton" />
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+        </ScrollView>
+
+    </LinearLayout>
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/add_rg_item_floating_action_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom|end"
+        android:layout_margin="@dimen/floatingActionButtonMargin"
+        android:clickable="true"
+        android:focusable="true"
+        android:src="@drawable/ic_add"
+        app:layout_anchor="@id/rg_resume_scroll_view"
+        app:layout_anchorGravity="bottom|right|end"
+        app:layout_behavior="br.com.jjconsulting.mobile.jjlib.base.ScrollAwareFABBehavior" />
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

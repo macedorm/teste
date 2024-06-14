@@ -1,0 +1,6 @@
+<resources>
+    <item type="id" name="item_click_support" />
+    <item type="id" name="jj_button_edit_text" />
+    <item type="id" name="jj_button_text_input_layout" />
+    <item type="id" name="jj_container_input_relative_layout" />
+</resources>

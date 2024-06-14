@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item
+        android:id="@+id/action_save"
+        android:icon="@drawable/ic_send"
+        android:title="@string/save_pedido"
+        android:visible="false"
+        app:showAsAction="always" />
+
+
+    <item
+        android:id="@+id/action_log"
+        android:title="@string/log_pedido"
+        android:visible="true"/>
+
+    <item
+        android:id="@+id/action_rastreio"
+        android:title="@string/log_tracking"
+        android:visible="true"/>
+
+    <item
+        android:id="@+id/action_delete"
+        android:title="@string/delete_pedido"
+        android:visible="false" />
+
+</menu>

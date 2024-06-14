@@ -1,0 +1,369 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:focusable="true"
+    android:focusableInTouchMode="true"
+    tools:context="br.com.jjconsulting.mobile.dansales.PedidoCabecalhoFragment">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:focusable="true"
+        android:focusableInTouchMode="true"
+        android:orientation="vertical"
+        android:paddingBottom="@dimen/activity_horizontal_margin"
+        android:paddingEnd="@dimen/activity_vertical_margin"
+        android:paddingStart="@dimen/activity_vertical_margin"
+        android:paddingTop="@dimen/activity_horizontal_margin">
+
+        <LinearLayout
+            android:id="@+id/cliente_form_wrapper"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="?android:selectableItemBackground"
+            android:orientation="vertical">
+
+            <TextView
+                style="@style/FormLabel"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:enabled="false"
+                android:text="@string/pedido_detail_cliente_label" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+
+                <TextView
+                    android:id="@+id/pedido_cliente_codigo_text_view"
+                    style="@style/FormValue"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="2"
+                    android:enabled="false" />
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="right">
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="5dp"
+                        android:src="@drawable/ic_launch_24dp"
+                        android:tint="@color/colorPrimary" />
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/pedido_cliente_nome_text_view"
+                style="@style/FormValue"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:enabled="false" />
+
+            <View
+                style="@style/LineDefault"
+                android:layout_width="match_parent" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/tipo_venda_form_wrapper"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/form_edit_text_margin_top"
+            android:orientation="vertical">
+
+            <TextView
+                style="@style/FormLabel"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingBottom="0dp"
+                android:text="@string/pedido_detail_tipo_venda_hint" />
+
+            <Spinner
+                android:id="@+id/tipo_venda_spinner"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:spinnerMode="dropdown" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/unidade_medida_venda_form_wrapper"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/form_edit_text_margin_top"
+            android:orientation="vertical">
+
+            <TextView
+                style="@style/FormLabel"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingBottom="0dp"
+                android:text="@string/pedido_detail_unidade_medida_hint" />
+
+            <Spinner
+                android:id="@+id/unidade_medida_spinner"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:spinnerMode="dropdown" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/pedido_venda_form_wrapper"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/form_edit_text_margin_top"
+            android:orientation="vertical">
+
+            <TextView
+                style="@style/FormLabel"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingBottom="0dp"
+                android:text="@string/pedido_detail_pedido_venda_hint" />
+
+            <Spinner
+                android:id="@+id/pedido_venda_spinner"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:spinnerMode="dropdown" />
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:id="@+id/grupo_form_wrapper"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/form_edit_text_margin_top"
+            android:orientation="vertical">
+
+            <TextView
+                style="@style/FormLabel"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingBottom="0dp"
+                android:text="@string/pedido_detail_pedido_grupo_hint" />
+
+            <Spinner
+                android:id="@+id/grupo_spinner"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:spinnerMode="dropdown" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/planta_form_wrapper"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/form_edit_text_margin_top"
+            android:orientation="vertical">
+
+            <TextView
+                style="@style/FormLabel"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingBottom="0dp"
+                android:text="@string/pedido_detail_planta_hint" />
+
+            <Spinner
+                android:id="@+id/planta_spinner"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:spinnerMode="dropdown" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/cond_pag_form_wrapper"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/form_edit_text_margin_top"
+            android:orientation="vertical">
+
+            <TextView
+                style="@style/FormLabel"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingBottom="0dp"
+                android:text="@string/pedido_detail_condicao_pagamento_hint" />
+
+            <Spinner
+                android:id="@+id/cond_pag_spinner"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:spinnerMode="dropdown" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/local_entrega_form_wrapper"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/form_edit_text_margin_top"
+            android:orientation="vertical">
+
+            <TextView
+                style="@style/FormLabel"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingBottom="0dp"
+                android:text="@string/pedido_detail_local_entrega_hint" />
+
+            <Spinner
+                android:id="@+id/local_entrega_spinner"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:spinnerMode="dropdown" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/urgente_form_wrapper"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/form_edit_text_margin_top"
+            android:orientation="vertical">
+
+            <TextView
+                style="@style/FormLabel"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingBottom="0dp"
+                android:text="@string/pedido_detail_urgente_hint" />
+
+            <Spinner
+                android:id="@+id/urgente_spinner"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:spinnerMode="dropdown" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/pedido_data_linearlayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/form_edit_text_margin_top"
+            android:orientation="vertical">
+
+            <TextView
+                style="@style/FormLabel"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/pedido_detail_data_entrega_hint" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/pedido_data_text_view"
+                    style="@style/FormValue"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="3"
+                    android:text="@string/pedido_detail_data_entrega_hint" />
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:id="@+id/pedido_data_image_view"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="5dp"
+                        android:src="@drawable/ic_date_range_black_24dp"
+                        android:tint="@color/colorPrimary" />
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <View
+                style="@style/LineDefault"
+                android:layout_width="match_parent"
+                android:layout_marginBottom="@dimen/form_label_padding_vertical" />
+
+        </LinearLayout>
+
+        <br.com.jjconsulting.mobile.dansales.util.CustomTextInputLayout
+            android:id="@+id/empenho_pedido_text_input_layout"
+            style="@style/CustomTextInputLayoutAppearance"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/form_edit_text_margin_top">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/empenho_pedido_edit_text"
+                style="@style/CustomTextInputEdiTextApparence"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:hint="@string/pedido_detail_empenho_hint"
+                android:inputType="text"
+                android:maxLength="17" />
+
+        </br.com.jjconsulting.mobile.dansales.util.CustomTextInputLayout>
+
+        <br.com.jjconsulting.mobile.dansales.util.CustomTextInputLayout
+            android:id="@+id/pedido_detail_ordem_compra_text_input_layout"
+            style="@style/CustomTextInputLayoutAppearance"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/form_edit_text_margin_top">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/pedido_detail_ordem_compra_edit_text"
+                style="@style/CustomTextInputEdiTextApparence"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:hint="@string/pedido_detail_ordem_compra_hint"
+                android:inputType="text"
+                android:digits="0123456789qwertzuiopasdfghjklyxcvbnm"
+                android:maxLength="30" />
+        </br.com.jjconsulting.mobile.dansales.util.CustomTextInputLayout>
+
+        <LinearLayout
+            android:id="@+id/pedido_agenda_form_wrapper"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/form_edit_text_margin_top"
+            android:orientation="vertical">
+
+            <TextView
+                style="@style/FormLabel"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/pedido_detail_agenda_label" />
+
+            <TextView
+                android:id="@+id/pedido_agenda_text_view"
+                style="@style/FormValue"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:enabled="false" />
+
+            <View
+                style="@style/LineDefault"
+                android:layout_width="match_parent" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</ScrollView>

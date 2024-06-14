@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:orientation="vertical"
+    android:background="@color/BackgroundDialog">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="vertical">
+
+    <androidx.cardview.widget.CardView
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/multi_values_cardview"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/dialog_margin"
+        app:cardUseCompatPadding="true"
+        app:cardElevation="@dimen/dialog_card_elevation"
+        app:cardCornerRadius="@dimen/dialog_card_corner_radius"
+        app:cardBackgroundColor="@color/backgroundColor">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/dialog_margin_left"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="right">
+
+                <ImageView
+                    android:id="@+id/close_image_view"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/ic_cancel_blue_24dp"
+                    android:layout_alignParentEnd="true"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:id="@+id/icon_image_view"
+                    android:layout_width="@dimen/dialog_size_icon"
+                    android:layout_height="@dimen/dialog_size_icon"
+                    android:scaleType="fitCenter"
+                    android:tint="@color/alertCollor"
+                    android:src="@drawable/ic_about"/>
+
+                <TextView
+                    android:id="@+id/tv_dialog_message"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/dialog_margin_top"
+                    android:layout_marginBottom="@dimen/dialog_margin_bottom_end"
+                    android:textAlignment="center"
+                    android:textSize="@dimen/dialog_text_size"
+                    android:maxLines="8"
+                    android:textColor="@color/colorPrimary"/>
+
+                <ListView
+                    android:id="@+id/justificativa_list_view"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="@dimen/dialog_margin"/>
+
+                </LinearLayout>
+
+        </LinearLayout>
+
+    </androidx.cardview.widget.CardView>
+
+    </LinearLayout>
+
+
+</RelativeLayout>

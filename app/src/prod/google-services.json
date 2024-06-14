@@ -1,0 +1,46 @@
+{
+  "project_info": {
+    "project_number": "767450994900",
+    "firebase_url": "https://dansales-mobile-prd.firebaseio.com",
+    "project_id": "dansales-mobile-prd",
+    "storage_bucket": "dansales-mobile-prd.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:767450994900:android:301fb86420f3c324",
+        "android_client_info": {
+          "package_name": "br.danone.dansalesmobile"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "767450994900-1spvj42tf0e1j2dgf5pm4pf6pt996c7k.apps.googleusercontent.com",
+          "client_type": 3
+        },
+        {
+          "client_id": "767450994900-1spvj42tf0e1j2dgf5pm4pf6pt996c7k.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCFhKnE8iZyFM_CITI58V3tAF-8D3LBgjQ"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

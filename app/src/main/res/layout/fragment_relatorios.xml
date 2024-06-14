@@ -1,0 +1,75 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:layout_marginTop="@dimen/margin_left_right_dan_button"
+    android:layout_marginLeft="@dimen/margin_left_right_dan_button"
+    android:layout_marginRight="@dimen/margin_left_right_dan_button"
+    tools:context="br.com.jjconsulting.mobile.dansales.RelatoriosFragment">
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <Button
+                android:id="@+id/objetivo_button"
+                style="@style/DanButton"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/margin_bottom_dan_button"
+                android:text="@string/relatorio_tipo_objetivo" />
+
+            <Button
+                android:id="@+id/carteira_pedidos_button"
+                style="@style/DanButton"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/margin_bottom_dan_button"
+                android:text="@string/relatorio_tipo_carteira_pedidos" />
+
+            <Button
+                android:id="@+id/notas_button"
+                style="@style/DanButton"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/margin_bottom_dan_button"
+                android:text="@string/relatorio_tipo_notas" />
+
+
+            <Button
+                android:id="@+id/saldo_master_contrato_button"
+                style="@style/DanButton"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/margin_bottom_dan_button"
+                android:text="@string/relatorio_saldo_master_contrato" />
+
+            <Button
+                android:id="@+id/positivacao_button"
+                style="@style/DanButton"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/margin_bottom_dan_button"
+                android:text="@string/relatorio_saldo_positivacao" />
+
+            <Button
+                android:id="@+id/checklist_nota_button"
+                style="@style/DanButton"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/margin_bottom_dan_button"
+                android:text="@string/relatorio_checklist_nota" />
+
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>
+
+

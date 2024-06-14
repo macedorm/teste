@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item
+        android:id="@+id/action_open"
+        android:title="@string/action_title_edit"
+        app:showAsAction="always" />
+
+    <item
+        android:id="@+id/action_sync"
+        android:title="@string/action_title_sync"
+        app:showAsAction="always" />
+
+    <item
+        android:id="@+id/action_log"
+        android:title="@string/action_title_log"
+        app:showAsAction="always" />
+
+    <item
+        android:id="@+id/action_delete"
+        android:title="@string/action_title_delete"
+        app:showAsAction="always" />
+</menu>

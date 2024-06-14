@@ -1,0 +1,229 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="br.com.jjconsulting.mobile.dansales.RelatorioNotasDetailActivity">
+
+
+    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginLeft="@dimen/activity_horizontal_margin"
+        android:layout_marginRight="@dimen/activity_horizontal_margin">
+
+        <TextView
+            android:id="@+id/relatorio_notas_title_cliente_text_view"
+            style="@style/FormLabel"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/form_label_margin_vertical"
+            android:text="@string/relatorio_cliente" />
+
+        <TextView
+            android:id="@+id/relatorio_notas_cliente_text_view"
+            style="@style/FormValue"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/relatorio_notas_title_cliente_text_view" />
+
+        <View
+            android:id="@+id/relatorio_line_notas_cliente_text_view"
+            style="@style/LineDefault"
+            android:layout_width="match_parent"
+            android:layout_below="@+id/relatorio_notas_cliente_text_view" />
+
+        <TextView
+            android:id="@+id/relatorio_title_cnpj_text_view"
+            style="@style/FormLabel"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/relatorio_line_notas_cliente_text_view"
+            android:layout_marginTop="@dimen/form_label_margin_vertical"
+            android:text="@string/relatorio_cnpj" />
+
+        <TextView
+            android:id="@+id/relatorio_notas_cnpj_text_view"
+            style="@style/FormValue"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/relatorio_title_cnpj_text_view" />
+
+        <View
+            android:id="@+id/relatorio_line_cnpj_text_view"
+            style="@style/LineDefault"
+            android:layout_width="match_parent"
+            android:layout_below="@+id/relatorio_notas_cnpj_text_view" />
+
+        <TextView
+            android:id="@+id/relatorio_notas_title_sap_text_view"
+            style="@style/FormLabel"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/relatorio_notas_cnpj_text_view"
+            android:layout_marginTop="@dimen/form_label_margin_vertical"
+            android:text="@string/relatorio_sap" />
+
+        <TextView
+            android:id="@+id/relatorio_notas_sap_text_view"
+            style="@style/FormValue"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/relatorio_notas_title_sap_text_view" />
+
+        <View
+            android:id="@+id/relatorio_line_sap_text_view"
+            style="@style/LineDefault"
+            android:layout_width="match_parent"
+            android:layout_below="@+id/relatorio_notas_sap_text_view" />
+
+
+        <TextView
+            android:id="@+id/relatorio_title_pedido_text_view"
+            style="@style/FormLabel"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/relatorio_line_sap_text_view"
+            android:layout_marginTop="@dimen/form_label_margin_vertical"
+            android:text="@string/relatorio_pedido" />
+
+        <TextView
+            android:id="@+id/relatorio_notas_pedido_text_view"
+            style="@style/FormValue"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/relatorio_title_pedido_text_view" />
+
+        <View
+            android:id="@+id/relatorio_line_pedido_text_view"
+            style="@style/LineDefault"
+            android:layout_width="match_parent"
+            android:layout_below="@+id/relatorio_notas_pedido_text_view" />
+
+        <LinearLayout
+            android:id="@+id/relatorio_notas_numero_serie_linear_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/relatorio_line_pedido_text_view"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="@dimen/form_label_margin_horizontal"
+                android:layout_weight="1"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/relatorio_notas_title_numero_text_view"
+                    style="@style/FormLabel"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/form_label_margin_vertical"
+                    android:text="@string/relatorio_nota" />
+
+                <TextView
+                    android:id="@+id/relatorio_notas_numero_text_view"
+                    style="@style/FormValue"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+
+                <View
+                    android:id="@+id/relatorio_notas_line_numero_text_view"
+                    style="@style/LineDefault"
+                    android:layout_width="match_parent" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/form_label_margin_horizontal"
+                android:layout_weight="1"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/relatorio_notas_title_serie_text_view"
+                    style="@style/FormLabel"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/form_label_margin_vertical"
+                    android:text="@string/relatorio_serie" />
+
+                <TextView
+                    android:id="@+id/relatorio_notas_serie_text_view"
+                    style="@style/FormValue"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+
+                <View
+                    android:id="@+id/relatorio_notas_line_serie_text_view"
+                    style="@style/LineDefault"
+                    android:layout_width="match_parent" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/relatorio_title_valor_total_text_view"
+            style="@style/FormLabel"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/relatorio_notas_numero_serie_linear_layout"
+            android:layout_marginTop="@dimen/form_label_margin_vertical"
+            android:text="@string/relatorio_valor_total" />
+
+        <TextView
+            android:id="@+id/relatorio_notas_valor_total_text_view"
+            style="@style/FormValue"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/relatorio_title_valor_total_text_view" />
+
+        <View
+            android:id="@+id/relatorio_valor_total_line_serie_text_view"
+            style="@style/LineDefault"
+            android:layout_width="match_parent"
+            android:layout_below="@+id/relatorio_notas_valor_total_text_view" />
+
+
+        <TextView
+            android:id="@+id/relatorio_notas_title_icms_text_view"
+            style="@style/FormLabel"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/relatorio_valor_total_line_serie_text_view"
+            android:layout_marginTop="@dimen/form_label_margin_vertical"
+            android:text="@string/relatorio_icms_total" />
+
+        <TextView
+            android:id="@+id/relatorio_notas_icms_text_view"
+            style="@style/FormValue"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/relatorio_notas_title_icms_text_view" />
+
+        <View
+            android:id="@+id/relatorio_icms_line_text_view"
+            style="@style/LineDefault"
+            android:layout_width="match_parent"
+            android:layout_below="@+id/relatorio_notas_icms_text_view" />
+
+        <TextView
+            android:id="@+id/relatorio_title_cond_text_view"
+            style="@style/FormLabel"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/relatorio_icms_line_text_view"
+            android:layout_marginTop="@dimen/form_label_margin_vertical"
+            android:text="@string/relatorio_condicao_pagamento" />
+
+        <TextView
+            android:id="@+id/relatorio_notas_cond_text_view"
+            style="@style/FormValue"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/relatorio_title_cond_text_view" />
+    </RelativeLayout>
+</ScrollView>

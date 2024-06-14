@@ -1,0 +1,20 @@
+{
+  "version": 3,
+  "artifactType": {
+    "type": "APK",
+    "kind": "Directory"
+  },
+  "applicationId": "br.danone.dansalesmobile.hml",
+  "variantName": "homRelease",
+  "elements": [
+    {
+      "type": "SINGLE",
+      "filters": [],
+      "attributes": [],
+      "versionCode": 278,
+      "versionName": "0.278.20240527",
+      "outputFile": "app-hom-release.apk"
+    }
+  ],
+  "elementType": "File"
+}

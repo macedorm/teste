@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="?android:attr/selectableItemBackground">
+
+    <RelativeLayout
+        android:id="@+id/background_relative_linear"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/form_label_margin_vertical">
+
+    <TextView
+        android:id="@+id/etap_rel_mc_text_view"
+        style="@style/ListItemPrimaryText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"/>
+
+    <TextView
+        android:id="@+id/etap_rel_cod_master_tap_text_view"
+        style="@style/ListItemSecondaryText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/etap_rel_mc_text_view" />
+
+    <TextView
+        android:id="@+id/etap_rel_data_text_view"
+        style="@style/ListItemSecondaryText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/etap_rel_cod_master_tap_text_view"/>
+
+
+    <TextView
+        android:id="@+id/etap_rel_nome_cli_text_view"
+        style="@style/ListItemSecondaryText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/etap_rel_data_text_view" />
+
+    <TextView
+        android:id="@+id/etap_rel_nome_status_text_view"
+        style="@style/ListItemSecondaryText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/etap_rel_nome_cli_text_view" />
+
+
+    <TextView
+        android:id="@+id/etap_rel_vl_text_view"
+        style="@style/ListItemSecondaryText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/etap_rel_nome_status_text_view" />
+
+    <TextView
+        android:id="@+id/etap_rel_vl_master_text_view"
+        style="@style/ListItemSecondaryText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/etap_rel_vl_text_view" />
+
+    <TextView
+        android:id="@+id/etap_rel_saldo_master_text_view"
+        style="@style/ListItemSecondaryText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/etap_rel_vl_master_text_view" />
+
+    </RelativeLayout>
+
+</RelativeLayout>

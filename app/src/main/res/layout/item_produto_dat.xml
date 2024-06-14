@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:paddingTop="@dimen/list_item_horizontal_padding"
+    android:paddingBottom="@dimen/list_item_horizontal_padding"
+    android:paddingEnd="@dimen/list_item_vertical_padding"
+    android:background="?android:attr/selectableItemBackground"
+    tools:context="br.com.jjconsulting.mobile.dansales.LoginActivity">
+
+    <View
+        android:id="@+id/status_view"
+        android:layout_width="@dimen/produto_status_width"
+        android:layout_height="@dimen/produto_status_height"
+        android:layout_alignParentStart="true"
+        android:layout_centerVertical="true"
+        android:layout_marginEnd="@dimen/form_label_margin_horizontal"
+        android:background="@android:color/holo_red_dark" />
+
+    <TextView
+        android:id="@+id/nome_text_view"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toEndOf="@id/status_view"
+        android:layout_alignParentTop="true"
+        android:maxLines="2"
+        style="@style/ListItemPrimaryText" />
+
+    <LinearLayout
+        android:id="@+id/data_group1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_toEndOf="@id/status_view"
+        android:layout_below="@id/nome_text_view"
+        android:orientation="horizontal">
+
+        <TextView
+            style="@style/ListItemSecondaryText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/form_label_margin_vertical"
+            android:layout_marginEnd="@dimen/form_label_margin_horizontal"
+            android:text="@string/SKU"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/sku_text_view"
+            style="@style/ListItemSecondaryText"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/form_label_margin_vertical"
+            android:layout_marginEnd="@dimen/form_label_margin_horizontal"
+            android:layout_weight="1"
+            android:maxLines="1" />
+
+        <TextView
+            style="@style/ListItemSecondaryText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/form_label_margin_vertical"
+            android:layout_marginEnd="@dimen/form_label_margin_horizontal"
+            android:text="@string/weight"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/peso_text_view"
+            style="@style/ListItemSecondaryText"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/form_label_margin_vertical"
+            android:layout_weight="1"
+            android:maxLines="1" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/data_group2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_toEndOf="@id/status_view"
+        android:layout_below="@id/data_group1"
+        android:orientation="horizontal">
+
+        <TextView
+            style="@style/ListItemSecondaryText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/form_label_margin_vertical"
+            android:layout_marginEnd="@dimen/form_label_margin_horizontal"
+            android:text="@string/qtd_disponivel"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/qtd_disponivel_text_view"
+            style="@style/ListItemSecondaryText"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/form_label_margin_vertical"
+            android:layout_marginRight="@dimen/form_label_margin_horizontal"
+            android:layout_weight="1"
+            android:maxLines="1"/>
+
+        <TextView
+            style="@style/ListItemSecondaryText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/form_label_margin_vertical"
+            android:layout_marginEnd="@dimen/form_label_margin_horizontal"
+            android:text="@string/qtd_batch"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/qtd_batch_text_view"
+            style="@style/ListItemSecondaryText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/form_label_margin_vertical"
+            android:maxLines="1" />
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/sortimento_text_view"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toEndOf="@id/status_view"
+        android:layout_below="@id/data_group2"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="@dimen/form_label_margin_vertical"
+        style="@style/ListItemSecondaryText" />
+
+</RelativeLayout>

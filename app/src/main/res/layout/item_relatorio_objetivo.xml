@@ -1,0 +1,182 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="?android:attr/selectableItemBackground"
+    android:paddingBottom="@dimen/list_item_horizontal_padding"
+    android:paddingEnd="@dimen/list_item_vertical_padding"
+    android:paddingStart="@dimen/list_item_vertical_padding"
+    android:paddingTop="@dimen/list_item_horizontal_padding">
+
+    <LinearLayout
+        android:id="@+id/relatorio_objetivos_nome_perda_linear_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/relatorio_notas_nome_text_view"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="@dimen/form_label_margin_horizontal"
+            android:layout_weight="1"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/relatorio_objetivos_nome_text_view"
+                style="@style/ListItemPrimaryText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:maxLines="1"
+                android:text="ACTIMEL" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1">
+
+            <TextView
+                style="@style/ListItemSecondaryText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="@dimen/form_label_margin_horizontal"
+                android:text="@string/relatorio_perda"
+                android:textStyle="bold" />
+
+
+            <TextView
+                android:id="@+id/relatorio_objetivos_perda_text_view"
+                style="@style/ListItemSecondaryText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/relatorio_perda"
+                android:textAlignment="textEnd" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:id="@+id/relatorio_objetivos_obj_real_linear_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/relatorio_objetivos_nome_perda_linear_layout"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="@dimen/form_label_margin_horizontal"
+            android:layout_weight="1"
+            android:orientation="horizontal">
+
+            <TextView
+                style="@style/ListItemSecondaryText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="@dimen/form_label_margin_horizontal"
+                android:text="@string/relatorio_obj"
+                android:textStyle="bold" />
+
+
+            <TextView
+                android:id="@+id/relatorio_objetivos_obj_text_view"
+                style="@style/ListItemSecondaryText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/relatorio_obj"
+                android:textAlignment="textEnd" />
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1">
+
+            <TextView
+                style="@style/ListItemSecondaryText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="@dimen/form_label_margin_horizontal"
+                android:text="@string/relatorio_real"
+                android:textStyle="bold" />
+
+
+            <TextView
+                android:id="@+id/relatorio_objetivos_real_text_view"
+                style="@style/ListItemSecondaryText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/relatorio_real"
+                android:textAlignment="textEnd" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/relatorio_objetivos_cob_ref_linear_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/relatorio_objetivos_obj_real_linear_layout"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="@dimen/form_label_margin_horizontal"
+            android:layout_weight="1"
+            android:orientation="horizontal">
+
+            <TextView
+                style="@style/ListItemSecondaryText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="@dimen/form_label_margin_horizontal"
+                android:text="@string/relatorio_cob"
+                android:textStyle="bold" />
+
+
+            <TextView
+                android:id="@+id/relatorio_objetivos_cob_text_view"
+                style="@style/ListItemSecondaryText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/relatorio_cob"
+                android:textAlignment="textEnd" />
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1">
+
+            <TextView
+                style="@style/ListItemSecondaryText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="@dimen/form_label_margin_horizontal"
+                android:text="@string/relatorio_ref"
+                android:textStyle="bold" />
+
+
+            <TextView
+                android:id="@+id/relatorio_objetivos_ref_text_view"
+                style="@style/ListItemSecondaryText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/relatorio_ref"
+                android:textStyle="bold"
+                android:textAlignment="textEnd" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+</RelativeLayout>

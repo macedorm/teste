@@ -1,0 +1,106 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:focusable="true"
+    android:focusableInTouchMode="true"
+    android:orientation="vertical"
+    android:paddingBottom="@dimen/activity_horizontal_margin"
+    android:paddingEnd="@dimen/activity_vertical_margin"
+    android:paddingStart="@dimen/activity_vertical_margin"
+    android:paddingTop="@dimen/activity_horizontal_margin"
+    tools:context="br.com.jjconsulting.mobile.dansales.PedidoObservacaoFragment">
+
+    <LinearLayout
+        android:id="@+id/pedido_obs_error_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="@dimen/form_label_margin_vertical"
+        android:gravity="center"
+        android:visibility="gone">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/list_empty_obs"
+            android:textAlignment="center" />
+
+    </LinearLayout>
+
+    <RelativeLayout
+        android:id="@+id/pedido_obs_relative_layout"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1">
+
+        <br.com.jjconsulting.mobile.dansales.util.CustomTextInputLayout
+            android:id="@+id/pedido_obs_input_layout"
+            style="@style/CustomTextInputLayoutAppearance"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/pedido_obs_text_view"
+                style="@style/CustomTextInputEdiTextApparence"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="top"
+                android:hint="@string/pedido_obs_hint"
+                android:importantForAutofill="noExcludeDescendants"
+                android:inputType="textMultiLine"
+                android:lines="30"
+                android:maxLength="250" />
+
+        </br.com.jjconsulting.mobile.dansales.util.CustomTextInputLayout>
+
+        <ImageView
+            android:id="@+id/pedido_obs_info_image_view"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:background="?android:selectableItemBackground"
+            android:src="@drawable/ic_help_outline_black_24dp"
+            android:tint="@color/colorPrimary" />
+    </RelativeLayout>
+
+
+    <RelativeLayout
+        android:id="@+id/pedido_obs_nf_relative_layout"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1">
+
+        <br.com.jjconsulting.mobile.dansales.util.CustomTextInputLayout
+            android:id="@+id/pedido_obs_nf_input_layout"
+            style="@style/CustomTextInputLayoutAppearance"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/pedido_obs_nf_text_view"
+                style="@style/CustomTextInputEdiTextApparence"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="top"
+                android:hint="@string/pedido_obs_nf_hint"
+                android:importantForAutofill="noExcludeDescendants"
+                android:inputType="textMultiLine"
+                android:lines="30"
+                android:imeOptions="actionDone"
+                android:textIsSelectable="false"
+                android:maxLength="1000" />
+
+        </br.com.jjconsulting.mobile.dansales.util.CustomTextInputLayout>
+
+        <ImageView
+            android:id="@+id/pedido_obs_nf_info_image_view"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:background="?android:selectableItemBackground"
+            android:src="@drawable/ic_help_outline_black_24dp"
+            app:tint="@color/colorPrimary" />
+
+    </RelativeLayout>
+</LinearLayout>

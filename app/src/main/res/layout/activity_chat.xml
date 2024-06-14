@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ChatActivity">
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/list_message_recycler_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginBottom="@dimen/size_bottom_chat"
+        android:clipToPadding="false"
+        android:paddingTop="10dp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/size_bottom_chat"
+        android:layout_alignParentBottom="true"
+        android:layout_marginLeft="@dimen/form_label_margin_vertical"
+        android:layout_marginRight="@dimen/form_label_margin_vertical"
+        android:gravity="top|center_horizontal"
+        android:orientation="horizontal">
+
+        <androidx.cardview.widget.CardView xmlns:card_view="http://schemas.android.com/apk/res-auto"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/size_bottom_item_chat"
+            android:layout_gravity="left"
+            android:layout_weight="1"
+            app:cardBackgroundColor="@color/chatEditTextBackground"
+            card_view:cardCornerRadius="20dp">
+
+            <EditText
+                android:id="@+id/message_edit_text"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="@dimen/form_label_margin_vertical"
+                android:layout_marginStart="@dimen/form_label_margin_vertical"
+                android:background="@android:color/transparent"
+                android:hint="@string/hint_chat"
+                android:minHeight="@dimen/size_bottom_item_chat" />
+
+        </androidx.cardview.widget.CardView>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="4"
+            android:gravity="right">
+
+            <ImageButton
+                android:id="@+id/fab_img"
+                android:layout_width="@dimen/size_bottom_item_chat"
+                android:layout_height="@dimen/size_bottom_item_chat"
+                android:layout_centerInParent="true"
+                android:background="@drawable/button_oval"
+                android:src="@drawable/ic_send_button_chat" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</RelativeLayout>

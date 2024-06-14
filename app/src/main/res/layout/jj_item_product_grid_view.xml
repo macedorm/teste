@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:gravity="center"
+    android:layout_margin="@dimen/margin_bottom_dan_button">
+
+    <LinearLayout
+        android:id="@+id/product_linear_layout"
+        android:orientation="vertical"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:padding="10dp"
+        android:background="@drawable/background_green_product_grid"
+        android:layout_margin="10dp">
+
+        <ImageView
+            android:id="@+id/product_image_view"
+            android:layout_width="wrap_content"
+            android:layout_height="100dp"/>
+
+        <TextView
+            style="@style/ListItemSecondaryText"
+            android:id="@+id/product_expanded_list_item"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/font_size_item_product_grid"
+            android:lines="3"/>
+
+        <LinearLayout
+            android:id="@+id/preco_linear_layout"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:visibility="gone"
+            android:orientation="vertical">
+
+            <androidx.cardview.widget.CardView
+                xmlns:app="http://schemas.android.com/apk/res-auto"
+                android:id="@+id/container_min_card_view"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/margin_bottom_dan_button"
+                app:cardCornerRadius="@dimen/card_nota_corner_radius"
+                app:cardBackgroundColor="@color/statusNotaCheckListOportunidade">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/card_nota_status_margin"
+                        android:layout_marginRight="@dimen/card_nota_status_margin"
+                        android:textColor="@color/colorWhite"
+                        android:textSize="10sp"
+                        android:text="Min "/>
+
+                    <androidx.cardview.widget.CardView
+                        xmlns:app="http://schemas.android.com/apk/res-auto"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/card_nota_margin"
+                        android:layout_marginBottom="@dimen/card_nota_margin"
+                        android:layout_marginRight="@dimen/card_nota_margin"
+                        app:cardCornerRadius="@dimen/card_nota_corner_radius"
+                        app:cardElevation="0dp"
+                        app:cardBackgroundColor="@color/backgroundColor">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="20dp"
+                            android:gravity="center"
+                            android:orientation="horizontal">
+
+                            <TextView
+                                android:id="@+id/preco_min_text_view"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content" />
+
+                        </LinearLayout>
+
+                    </androidx.cardview.widget.CardView>
+                </LinearLayout>
+
+
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                xmlns:app="http://schemas.android.com/apk/res-auto"
+                android:id="@+id/container_max_card_view"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:cardCornerRadius="@dimen/card_nota_corner_radius"
+                app:cardBackgroundColor="@color/statusNotaCheckListOportunidade">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/card_nota_status_margin"
+                        android:layout_marginRight="@dimen/card_nota_status_margin"
+                        android:textColor="@color/colorWhite"
+                        android:textSize="10sp"
+                        android:text="Max"/>
+
+                    <androidx.cardview.widget.CardView
+                        xmlns:app="http://schemas.android.com/apk/res-auto"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/card_nota_margin"
+                        android:layout_marginBottom="@dimen/card_nota_margin"
+                        android:layout_marginRight="@dimen/card_nota_margin"
+                        app:cardCornerRadius="@dimen/card_nota_corner_radius"
+                        app:cardElevation="0dp"
+                        app:cardBackgroundColor="@color/backgroundColor">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="20dp"
+                            android:gravity="center"
+                            android:orientation="horizontal">
+
+                            <TextView
+                                android:id="@+id/preco_man_text_view"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"/>
+
+                        </LinearLayout>
+
+                    </androidx.cardview.widget.CardView>
+
+                </LinearLayout>
+
+            </androidx.cardview.widget.CardView>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</LinearLayout>

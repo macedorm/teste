@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="?android:attr/selectableItemBackground"
+    android:orientation="horizontal"
+    android:paddingEnd="@dimen/list_item_vertical_padding"
+    android:paddingStart="@dimen/list_item_vertical_padding">
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/pergunta_pesquisa_card_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="@dimen/activity_vertical_margin"
+        app:cardBackgroundColor="@color/backgroundColor"
+        app:cardCornerRadius="@dimen/pesquisa_card_corner_radius"
+        app:cardElevation="@dimen/dialog_card_elevation"
+        app:cardUseCompatPadding="true">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center_vertical"
+        android:padding="@dimen/activity_vertical_margin"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/pergunta_pesquisa_text_view"
+            style="@style/ListItemPrimaryText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@drawable/color_enable_disable" />
+
+        <TextView
+            android:id="@+id/pergunta_pesquisa_resp_text_view"
+            style="@style/ListItemSecondaryText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/unanswered_question" />
+
+        <ImageView
+            android:id="@+id/pergunta_pesquisa_resp_imageView"
+            android:layout_width="@dimen/pedido_icon_size"
+            android:layout_height="@dimen/pedido_icon_size"
+            android:scaleType="centerInside"
+            android:visibility="gone" />
+
+    </LinearLayout>
+
+    </androidx.cardview.widget.CardView>
+
+</LinearLayout>

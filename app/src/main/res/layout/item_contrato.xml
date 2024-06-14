@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="?android:attr/selectableItemBackground"
+    android:paddingBottom="@dimen/list_item_horizontal_padding"
+    android:paddingEnd="@dimen/list_item_vertical_padding"
+    android:paddingStart="@dimen/list_item_vertical_padding"
+    android:paddingTop="@dimen/list_item_horizontal_padding">
+
+    <TextView
+        android:id="@+id/contrato_title_text_view"
+        style="@style/ListItemPrimaryText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_toEndOf="@id/cliente_status_credito_image_view" />
+
+    <TextView
+        android:id="@+id/contrato_content_text_view"
+        style="@style/ListItemSecondaryText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/cliente_nome_text_view"
+        android:layout_toEndOf="@id/cliente_status_credito_image_view"
+        android:paddingTop="@dimen/list_item_spacing" />
+
+</RelativeLayout>

@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="?android:attr/selectableItemBackground"
+    android:paddingBottom="@dimen/list_item_horizontal_padding"
+    android:paddingEnd="@dimen/list_item_vertical_padding"
+    android:paddingStart="@dimen/list_item_vertical_padding"
+    android:paddingTop="@dimen/list_item_horizontal_padding">
+
+    <TextView
+        android:id="@+id/anexo_nome_text_view"
+        style="@style/ListItemSecondaryText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_marginBottom="@dimen/form_label_margin_vertical"
+        android:layout_marginTop="@dimen/form_label_margin_vertical" />
+</RelativeLayout>

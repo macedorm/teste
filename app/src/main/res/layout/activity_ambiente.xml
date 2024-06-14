@@ -1,0 +1,131 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginLeft="@dimen/activity_horizontal_margin"
+    android:layout_marginRight="@dimen/activity_horizontal_margin"
+    tools:context="br.com.jjconsulting.mobile.dansales.RotaFragment">
+
+    <TextView
+        android:id="@+id/ambiente_title_emei_text_view"
+        style="@style/FormLabel"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/form_label_margin_vertical"
+        android:text="@string/imei" />
+
+    <TextView
+        android:id="@+id/ambiente_emei_text_view"
+        style="@style/FormValue"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/ambiente_title_emei_text_view"
+        android:enabled="false" />
+
+    <View
+        android:id="@+id/ambiente_line_emei_view"
+        style="@style/LineDefault"
+        android:layout_width="match_parent"
+        android:layout_below="@+id/ambiente_emei_text_view" />
+
+    <TextView
+        android:id="@+id/ambiente_title_status_sync_text_view"
+        style="@style/FormLabel"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/ambiente_line_emei_view"
+        android:layout_marginTop="@dimen/form_label_margin_vertical"
+        android:text="@string/status_sync" />
+
+    <TextView
+        android:id="@+id/ambiente_status_sync_text_view"
+        style="@style/FormValue"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/ambiente_title_status_sync_text_view"
+        android:enabled="false" />
+
+    <View
+        android:id="@+id/ambiente_line_status_sync_view"
+        style="@style/LineDefault"
+        android:layout_width="match_parent"
+        android:layout_below="@+id/ambiente_status_sync_text_view" />
+
+    <TextView
+        android:id="@+id/ambiente_title_version_text_view"
+        style="@style/FormLabel"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/ambiente_line_status_sync_view"
+        android:layout_marginTop="@dimen/form_label_margin_vertical"
+        android:text="@string/version" />
+
+    <TextView
+        android:id="@+id/ambiente_version_text_view"
+        style="@style/FormValue"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/ambiente_title_version_text_view"
+        android:enabled="false"
+        android:text="@string/app_version" />
+
+    <View
+        android:id="@+id/ambiente_line_version_view"
+        style="@style/LineDefault"
+        android:layout_width="match_parent"
+        android:layout_below="@+id/ambiente_version_text_view" />
+
+    <TextView
+        android:id="@+id/database_version_label_text_view"
+        style="@style/FormLabel"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/ambiente_version_text_view"
+        android:layout_marginTop="@dimen/form_label_margin_vertical"
+        android:text="@string/database_version" />
+
+    <TextView
+        android:id="@+id/database_version_text_view"
+        style="@style/FormValue"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/database_version_label_text_view"
+        android:text="@string/database_version_placeholder" />
+
+    <View
+        android:id="@+id/database_version_break_line_view"
+        style="@style/LineDefault"
+        android:layout_width="match_parent"
+        android:layout_below="@+id/database_version_text_view" />
+
+
+    <TextView
+        android:id="@+id/ambiente_title_url_text_view"
+        style="@style/FormLabel"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/database_version_break_line_view"
+        android:layout_marginTop="@dimen/form_label_margin_vertical"
+        android:text="@string/title_ambiente" />
+
+    <LinearLayout
+        android:id="@+id/ambiente_url_linear_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/ambiente_title_url_text_view"
+        android:orientation="vertical">
+
+        <Spinner
+            android:id="@+id/ambiente_url_spinner"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:spinnerMode="dropdown" />
+    </LinearLayout>
+
+    <View
+        android:id="@+id/ambiente_line_url_view"
+        style="@style/LineDefault"
+        android:layout_width="match_parent"
+        android:layout_below="@+id/ambiente_url_linear_layout" />
+
+</RelativeLayout>

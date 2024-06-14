@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:paddingStart="@dimen/list_item_vertical_padding"
+    android:paddingEnd="@dimen/list_item_vertical_padding"
+    android:background="?android:attr/selectableItemBackground">
+
+    <RelativeLayout
+        android:id="@+id/rg_container_item_relative_layout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true">
+    <TextView
+        style="@style/FormLabel"
+        android:id="@+id/rg_user_text_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:maxLines="1" />
+
+    <ImageView
+        android:id="@+id/rg_status_image_view"
+        android:layout_width="@dimen/rg_icon_size"
+        android:layout_height="@dimen/rg_icon_size"
+        android:layout_centerVertical="true"
+        android:layout_alignParentStart="true"
+        android:layout_below="@id/rg_user_text_view"
+        android:paddingEnd="@dimen/list_item_image_end_padding" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:orientation="vertical"
+            android:layout_below="@id/rg_user_text_view"
+            android:layout_toEndOf="@id/rg_status_image_view">
+
+            <TextView
+                android:id="@+id/rg_nome_text_view"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:maxLines="2"
+                style="@style/ListItemPrimaryText" />
+
+            <TextView
+                android:id="@+id/rg_endereco1_text_view"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:maxLines="1"
+                android:paddingTop="@dimen/list_item_spacing"
+                style="@style/ListItemSecondaryText" />
+
+            <TextView
+                android:id="@+id/rg_endereco2_text_view"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:maxLines="1"
+                android:paddingTop="@dimen/list_item_spacing"
+                style="@style/ListItemSecondaryText" />
+
+            <LinearLayout
+                android:id="@+id/fora_rota_linear_layout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:visibility="gone"
+                android:gravity="right"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:layout_width="15dp"
+                    android:layout_height="15dp"
+                    android:layout_marginRight="@dimen/form_label_margin_vertical"
+                    android:scaleType="fitCenter"
+                    android:src="@drawable/ic_rg_status_cliente_fora_da_rota" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </RelativeLayout>
+
+</RelativeLayout>

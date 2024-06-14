@@ -1,0 +1,70 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginLeft="@dimen/margin_left_right_dan_button"
+    android:layout_marginRight="@dimen/margin_left_right_dan_button"
+    android:paddingTop="@dimen/activity_horizontal_margin"
+    tools:context="br.com.jjconsulting.mobile.dansales.SettingsFragment">
+
+    <LinearLayout
+        android:id="@+id/setting_loading_linear_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center_horizontal"
+        android:orientation="vertical">
+
+        <ProgressBar
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/setting_base_linear_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <Button
+            android:id="@+id/environment_button"
+            style="@style/DanButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/margin_bottom_dan_button"
+            android:text="@string/environment_button" />
+
+        <Button
+            android:id="@+id/change_password_button"
+            style="@style/DanButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/margin_bottom_dan_button"
+            android:text="@string/change_password_button" />
+
+        <Button
+            android:id="@+id/restore_button"
+            style="@style/DanButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/margin_bottom_dan_button"
+            android:text="@string/restore_button" />
+
+        <Button
+            android:id="@+id/sync_button"
+            style="@style/DanButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/margin_bottom_dan_button"
+            android:text="@string/sync_button" />
+
+        <Button
+            android:id="@+id/recover_password_button"
+            style="@style/DanButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/recover_password_button" />
+
+    </LinearLayout>
+
+</RelativeLayout>

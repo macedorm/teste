@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/container_footer_linear_layout"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:paddingTop="@dimen/menu_margin_content"
+    android:paddingBottom="@dimen/menu_margin_content"
+    android:paddingLeft="@dimen/menu_margin"
+    android:layout_marginTop="10dp"
+    android:background="?android:attr/selectableItemBackground"
+    android:gravity="center_vertical"
+    android:orientation="horizontal">
+
+    <LinearLayout
+        android:id="@+id/container_icon_linear_layout"
+        android:layout_width="50dp"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="@dimen/menu_margin_text_right"
+        android:orientation="vertical"/>
+
+    <TextView
+        android:id="@+id/name_menu_text_View"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textAlignment="textStart"
+        android:text="Inicío"
+        style="@style/ListItemMenu"/>
+
+
+</LinearLayout>

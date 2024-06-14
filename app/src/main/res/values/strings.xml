@@ -1,0 +1,963 @@
+<resources>
+    <string name="element_messagem_liga">MensagemLida</string>
+    <string name="element_sort_report_erro">SortimentoReportErro</string>
+    <string name="element_rota_guiada">RotaGuiada</string>
+    <string name="element_rota_guiada_tarefa">RotaGuiadaTarefa</string>
+    <string name="element_rota_guiada_acao">RotaGuiadaAcao</string>
+    <string name="element_pesquisa_layout">PesquisaLayout</string>
+    <string name="element_pesquisa_resposta">PesquisaResposta</string>
+    <string name="element_planejamento_rota">RotaGuiadaPlanejamentoRota</string>
+
+
+    <!-- App's info. -->
+    <string name="app_name">DanSales</string>
+    <string name="app_version">Versão %1$s</string>
+    <string name="google_maps_key">AIzaSyCAN__8Tieemd4Sld6DmPAs5YNzarPx5Ps</string>
+
+    <string name="session_expired">Sessão expirou, realize o login novamente!</string>
+    <!-- Chatbot -->
+    <string name="username">c8686293-1639-4687-8b7c-675419a07e76</string>
+    <string name="password">xafIN01gwKdG</string>
+    <string name="workspace">56f7d4cf-ec0f-48c7-9385-a87a22bfef63</string>
+
+    <!-- Titles. -->
+    <string name="title_home">Início</string>
+    <string name="title_pedidos">Pedidos</string>
+    <string name="title_hist_pedidos">Histórico de Pedidos</string>
+
+    <string name="title_add_pedido">Novo pedido</string>
+    <string name="title_rg">Rota Guiada</string>
+    <string name="title_clientes">Clientes</string>
+    <string name="title_rastreio">Rastreio de Pedidos</string>
+    <string name="title_aprovacao">Aprovação</string>
+    <string name="title_liberacao">Liberação</string>
+    <string name="title_rota">Rota Guiada</string>
+    <string name="title_relatorios">Relatórios</string>
+    <string name="title_consulta_generica">Consulta Genérica</string>
+    <string name="title_tap">TAP</string>
+    <string name="title_CR">CR</string>
+    <string name="title_tap_anexo">Anexos</string>
+    <string name="title_pesquisa">Pesquisa</string>
+    <string name="title_check_list">Check-list</string>
+    <string name="title_inspetoria">Inspetoria</string>
+    <string name="title_screen_message">Mensagem</string>
+
+    <string name="title_planejamento_rota">Planejamento Rota</string>
+    <string name="title_nova_atividade">Nova atividade</string>
+    <string name="title_sync_data">Sincronizar</string>
+    <string name="title_requisicao">Requisição</string>
+    <string name="title_auto_sync_data">Auto Sincronismo</string>
+    <string name="title_settings">Configurações</string>
+    <string name="title_help">Ajuda</string>
+    <string name="title_about">Sobre</string>
+    <string name="title_logout">Sair</string>
+    <string name="title_chat">Isaac Chat</string>
+    <string name="title_ambiente">Ambiente</string>
+    <string name="title_system">Atualização do Sistema</string>
+    <string name="title_troca_senha">Alterar Senha</string>
+    <string name="title_recupera_senha">Recuperar Senha</string>
+    <string name="instrucoes_recupera_senha">Instruções: para recuperar a senha, preencha abaixo com o seu login e clique em enviar. Se esse foi o último dispositivo acessado por você, poderá alterar a senha aqui mesmo. Caso contrário, a alteração deverá ser feita através do e-mail de recuperação de senha que enviaremos para o e-mail cadastrado.</string>
+    <string name="title_log">Log do pedido</string>
+    <string name="title_layout">Layout</string>
+    <string name="title_layout_report">Reportar Layout incorreto</string>
+    <string name="title_log_tap">ETAPAS</string>
+    <string name="title_cliente_detail">Detalhes do Cliente</string>
+    <string name="title_pick_cliente">Sel. Cliente</string>
+    <string name="title_pick_layout">Sel. Layout</string>
+    <string name="title_pick_agenda">Sel. Agenda</string>
+    <string name="title_pedido_detail">Pedido</string>
+    <string name="title_pedido_justificativa">Justificativa</string>
+    <string name="title_rota_guiada_detail">Rota do dia</string>
+    <string name="title_add_item">Incluir item</string>
+    <string name="title_edit_item">Editar item</string>
+    <string name="title_visualizar_item">Visualizar item</string>
+    <string name="title_relatorio_notas">Notas</string>
+    <string name="title_relatorio_check_list_nota">Notas Checklist</string>
+    <string name="title_relatorio_objetivos">Objetivo</string>
+    <string name="title_relatorio_positivacao">Positivação</string>
+    <string name="title_relatorio_carteira">Cart. Pedidos</string>
+    <string name="title_relatorio_saldo_mc">Saldo MasterContrato</string>
+    <string name="title_relatorio_web_user">Selecionar Usuários</string>
+    <string name="title_page_home">Olá %s,\no que deseja fazer? %s</string>
+    <string name="tab_pedido_cabecalho">Dados</string>
+    <string name="tab_pedido_aprovacao">Aprovação</string>
+    <string name="tab_pedido_liberacao">Liberação</string>
+    <string name="tab_pedido_itens">Itens</string>
+    <string name="tab_pedido_observacao">Observação</string>
+    <string name="tab_pedido_resumo">Resumo</string>
+    <string name="tab_pedido_log">Rastreio de Pedidos</string>
+    <string name="tab_rota_guiada_cliente">Cliente</string>
+    <string name="tab_rota_guiada_resumo">Resumo</string>
+    <string name="tab_relatorio_notas_cabecalho">Cabeçalho</string>
+    <string name="tab_relatorio_notas_sku">SKU</string>
+    <string name="menu_filter_title">Filtro</string>
+    <string name="menu_calendar_title">Calendário</string>
+    <string name="menu_apply_filter_title">Aplicar filtro</string>
+    <string name="menu_cancel_filter_title">Limpar filtro</string>
+    <string name="title_hom">(Você está em homologação)</string>
+
+    <!-- Connection Titles. -->
+    <string name="title_connection_login">Realizando autenticação com o servidor</string>
+    <string name="title_connection_error">Não foi possível conectar ao servidor, por favor verifique sua conexão e tente novamente.</string>
+    <string name="hint_email_id_login">Login (e-mail ou código)</string>
+    <string name="cliente_hint">Cliente</string>
+    <string name="email_hint">E-mail</string>
+    <string name="recover_password">Recuperar senha</string>
+    <string name="send_email_to_recover_email">Enviar</string>
+    <string name="login">Entrar</string>
+    <string name="login_danone">Login com SSO</string>
+    <string name="login_default">Login sem SSO</string>
+    <string name="ciente">Ciente</string>
+    <string name="info">Informações</string>
+    <string name="report">Reportar</string>
+    <string name="forgot_password">Esqueceu a senha?</string>
+    <string name="user_hint">Login</string>
+    <string name="user_name_hint">Nome do usuário</string>
+    <string name="name_hint">Nome abreviado</string>
+
+    <string name="update_user_description">Para alterar seus dados pessoais, preencha os campos corretamente, seguindo as instruções abaixo e, em seguida, clique em ENVIAR para completar a operação.Os dados serão enviados para análise e poderão ser reprovados ocasinando bloqueio ao seu acesso, portanto: \n\nNão utilizar nomes genéricos, para os campos Nome Usuário e Nome Abreviado \n\nInformar um E-MAIL válido que tenha acesso para recebimento do link de validação</string>
+    <string name="update_user_title">Alterar Dados</string>
+
+    <string name="promotor_hint">Promotor</string>
+    <string name="password_hint">Senha</string>
+    <string name="current_password_hint">Senha Atual</string>
+    <string name="new_password_hint">Nova Senha</string>
+    <string name="confirm_password_hint">Confirmar Nova Senha</string>
+    <string name="unidade_negocio_hint">Unidade de negócio</string>
+    <string name="cliente_nome_hint">Razão Social</string>
+    <string name="cliente_cnpj_hint">CNPJ</string>
+    <string name="cliente_bandeira_hint">Bandeira</string>
+    <string name="cliente_codigo_sap_hint">Código SAP</string>
+    <string name="cliente_layout_hint">Layout da loja</string>
+    <string name="current_layout_hint">Layout atual</string>
+    <string name="current_report_hint">Evidências</string>
+    <string name="new_layout_hint">Novo Layout</string>
+    <string name="cliente_endereco_hint">Endereço</string>
+    <string name="cliente_condicao_pagamento_hint">Condição de pagamento</string>
+    <string name="cliente_status_hint">Status</string>
+    <string name="cliente_data_ultimo_pedido">Data Último Pedido</string>
+    <string name="search_cliente_hint">Pesquisar Cliente</string>
+    <string name="id_produto_hint">ID Produto</string>
+    <string name="produto_hint">Produto</string>
+    <string name="produto_expiration_date">Data de Validade</string>
+    <string name="produto_expiration">Validade</string>
+    <string name="produto_valor_gondula_hint">Valor Gôndola</string>
+    <string name="produto_quantidade_hint">Quantidade</string>
+    <string name="produto_desconto_hint">% Desconto</string>
+    <string name="produto_data_venc_hint">Data vencimento</string>
+    <string name="produto_estoque_hint">Qtd. estoque</string>
+    <string name="produto_batch">Batch</string>
+    <string name="produto_qtd_ped_ant_hint">Qtd. pedido anterior</string>
+    <string name="produto_itens_p_caixa_hint">Qtd. p/ caixa</string>
+    <string name="produto_valor_uni_hint">Valor unitário</string>
+    <string name="produto_valor_p_caixa_hint">Valor p/ caixa</string>
+    <string name="produto_media_pedido_hint">Qtd. média p/ pedido</string>
+    <string name="produto_valor_total_hint">Valor total</string>
+    <string name="produto_sortimento_hint">Sortimento</string>
+    <string name="produto_peso_total">Peso total</string>
+    <string name="produto_ultimo_item_hint">Último produto incluso</string>
+    <string name="cliente_indisponivel">CLIENTE INDISPONÍVEL</string>
+    <string name="pedido_tipo_label">Tipo: %s</string>
+    <string name="pedido_ped_label">Ped.: %s</string>
+    <string name="pedido_ped_reg_label">Regional: %s</string>
+    <string name="pedido_ped_cli_label">Pedido Cliente: %s</string>
+    <string name="pedido_codigo_sap_label">Pedido SAP: %s</string>
+    <string name="pedido_valor_total_label">Total: %s</string>
+    <string name="pedido_emissao_label">Emissão: %s</string>
+    <string name="pedido_nf_label">Nota Fiscal: %s</string>
+    <string name="pedido_serie_nf_label">Serie: %s</string>
+    <string name="pedido_peso_label">Peso: %s Kg</string>
+    <string name="obs_hint">Observações</string>
+    <string name="pedido_obs_hint">Observações interna</string>
+    <string name="pedido_obs_nf_hint">Observações da nota fiscal</string>
+    <string name="pedido_detail_agenda_label">Agenda Solution</string>
+    <string name="pedido_detail_cliente_label">Cliente</string>
+    <string name="pedido_detail_cliente_adress_label">Endereço</string>
+    <string name="pedido_detail_unidade_medida_hint">Unidade de medida</string>
+    <string name="pedido_detail_condicao_pagamento_hint">Condição de pagamento</string>
+    <string name="pedido_detail_planta_hint">Planta</string>
+    <string name="pedido_detail_urgente_hint">Pedido Urgente?</string>
+    <string name="pedido_detail_data_entrega_hint">Entrega em</string>
+    <string name="data_start_hint">Data inicio</string>
+    <string name="data_end_hint">Data fim</string>
+    <string name="hours_start_hint">Hora inicio</string>
+    <string name="hours_end_hint">Hora fim</string>
+    <string name="data_finish">Data do Check-out</string>
+    <string name="time_finish">Horário do Check-out</string>
+    <string name="loading_pedido_item">Não foi possível carregar os itens do pedido, tente novamente!</string>
+    <string name="pedido_liberacao_data_agendamento_hint">Data de agendamento</string>
+    <string name="pedido_liberacao_observacao_hint">Observações</string>
+    <string name="pedido_detail_empenho_hint">Empenho</string>
+    <string name="pedido_detail_investimento_hint">Investimento</string>
+    <string name="pedido_detail_ordem_compra_hint">Ordem de compra</string>
+    <string name="pedido_detail_tipo_venda_hint">Tipo de Venda</string>
+    <string name="pedido_detail_pedido_venda_hint">Pedido Venda</string>
+    <string name="pedido_detail_pedido_grupo_hint">Grupo</string>
+    <string name="pedido_detail_local_entrega_hint">Local de Entrega</string>
+    <string name="tap_detail_master_contrato_hint">Master Contrato</string>
+    <string name="tap_detail_aprov_status_hint">Status</string>
+    <string name="tap_detail_aprov_mot_hint">Motivo Reprovação</string>
+    <string name="tap_detail_mes_acao_investimento_hint">Mês da Ação</string>
+    <string name="tap_detail_regiao_hint">Região</string>
+    <string name="tap_detail_num_acordo_hint">Núm. Acordo Cliente</string>
+    <string name="tap_detail_cons_saldo_hint">Consumo Saldo</string>
+
+    <string name="tap_detail_fat_liq_hint">Fat. Liq.(CANN)</string>
+    <string name="tap_detail_num_tap_hint">Núm. TAP</string>
+    <string name="tap_detail_status_hint">Status TAP</string>
+    <string name="tap_detail_data_prev_pgto_hint">Data Prev. Pagto.</string>
+    <string name="tap_detail_deal_hint">Deal</string>
+    <string name="tap_detail_data_hint">Data TAP</string>
+    <string name="tap_item_tipo_hint">Tipo</string>
+    <string name="tap_item_acao_hint">Ação</string>
+    <string name="tap_item_anexo_hint">Anexo</string>
+    <string name="tap_item_cat_hint">Categoria de Produto</string>
+    <string name="tap_item_valor_hint">Valor</string>
+    <string name="tap_item_valor_estimado_hint">Valor Estimado</string>
+    <string name="tap_item_valor_apurado_hint">Valor Apurado</string>
+    <string name="tap_item_obs_hint">Observação (máx. 500 caracteres)</string>
+    <string name="tap_detail_obs_hint">Comentário (máx. 250 caracteres)</string>
+    <string name="tap_anexo_label">Anexo: %s</string>
+    <string name="tap_cod_label">Código: %s</string>
+    <string name="tap_data_label">Data: %s</string>
+    <string name="tap_master_contrato_label">Master Contrato: %s</string>
+    <string name="tap_mes_acao_label">Mês da Ação: %s</string>
+
+    <string name="tap_web_user_cod_label">Código: %s</string>
+    <string name="tap_web_user_name_label">Nome: %s</string>
+    <string name="tap_web_user_email_label">Email: %s</string>
+
+    <string name="tap_rel_mc_label">Master Contrato: %s</string>
+    <string name="tap_rel_cod_tap_label">Codigo Tap: %s</string>
+    <string name="tap_rel_date_label">Data de Criação: %s</string>
+    <string name="tap_rel_cod_cli_label">Código Cliente: %s</string>
+    <string name="tap_rel_name_cli_label">Nome Cliente: %s</string>
+    <string name="tap_rel_name_status_label">Nome Status: %s</string>
+    <string name="tap_rel_vl_tap_status_label">Valor Tap: %s</string>
+    <string name="tap_rel_vl_master_status_label">Valor Master: %s</string>
+    <string name="tap_rel_saldo_master_status_label">Saldo Master: %s</string>
+
+    <string name="tap_vl_estimado_label">Valor Estimado: %s</string>
+    <string name="tap_vl_apurado_label">Valor Apurado: %s</string>
+    <string name="tap_acao_label">Ação: %s</string>
+    <string name="tap_categoria_produto_label">Categoria de Produto: %s</string>
+    <string name="tap_tipo_label">Tipo: %s</string>
+    <string name="pergunta_resposta_hint">Resposta</string>
+    <string name="filter_hierarquia_comercial">Hierarquia comercial</string>
+    <string name="filter_organizacao">Organização</string>
+    <string name="filter_tipo_cadastro">Tipo Cadastro</string>
+    <string name="filter_tipo_task">Atividade</string>
+    <string name="filter_regiao">Organização</string>
+    <string name="filter_marca">Marca</string>
+    <string name="filter_bandeira">Bandeira</string>
+    <string name="filter_status">Status</string>
+    <string name="filter_plano_campo">Dia de Visita</string>
+    <string name="filter_pending_approval">Minhas Aprovações Pendentes</string>
+
+    <string name="filter_tipo">Tipo</string>
+    <!-- Legenda Pesquisa. -->
+    <string name="pesq_status_publicado">Publicado</string>
+    <string name="pesq_status_em_aberto">Em Aberto</string>
+    <string name="pesq_status_inativo">Inativo</string>
+    <string name="pesq_status_publicado_mob">Respostas obrigatórias respondidas</string>
+    <string name="pesq_status_em_aberto_mob">Respostas obrigatórias pendentes</string>
+    <string name="pesq_status_inativo_mob">Não respondidas</string>
+    <!-- LegeETapClienteente. -->
+    <string name="cliente_status_credito_black">Bloqueado</string>
+    <string name="cliente_status_credito_green">Percentual a partir 90%</string>
+    <string name="cliente_status_credito_yellow">Percentual até 89%</string>
+    <string name="cliente_status_credito_red">Analise Creco</string>
+    <string name="cliente_status_credito_blue">Agenda Solution</string>
+
+    <!-- Legenda Pedido. -->
+    <string name="pedido_status_web">Pedido Origem Web</string>
+    <string name="pedido_status_mobile">Pedido Origem Mobile</string>
+    <string name="pedido_status_sug">Pedido Sugerido</string>
+    <string name="pedido_status_cac">Pedido Origem CAC</string>
+    <string name="pedido_status_edi">Pedido Origem EDI</string>
+
+
+    <!-- Help. -->
+    <string name="need_help">Precisa de ajuda?</string>
+    <string name="help_guide">
+        Caso esteja tendo dificuldade para acessar ou utilizar o aplicativo,
+        por favor entre em contato com o Help Desk.
+    </string>
+    <string name="call_help_desk">Ligar</string>
+    <string name="help_desk_label">Help Desk</string>
+    <string name="help_desk_phone_number">0800 770 2929</string>
+    <!-- Etc. -->
+    <string name="navigation_drawer_open">Abrir menu de navegação</string>
+    <string name="navigation_drawer_close">Fechar menu de navegação</string>
+    <string name="logout_message">Você realmente deseja sair?</string>
+    <string name="exit_message">Você realmente deseja encerrar a aplicação?</string>
+    <string name="permission_message">Cliente não possui tipo de venda disponivel.</string>
+    <string name="not_permisssion_granted">Suas permissões de localização foram negadas, entre em contato com o Help Desk para que seja habilitado sua localização</string>
+
+    <string name="selected">Selecionados: </string>
+    <string name="continue_text">Continuar</string>
+    <string name="go">Começar</string>
+    <string name="cancel">Cancelar</string>
+    <string name="insert_new_item">Salvar</string>
+    <string name="save_existing_item">Salvar</string>
+    <string name="start">Iniciar</string>
+    <string name="cant_call">Não foi possível iniciar a chamada.</string>
+    <string name="not_connected">Não há conexão com a internet.</string>
+    <string name="auto_sync_in_progress">Não é possível iniciar, existe um auto sincronismo em execucão.</string>
+    <string name="user_blank">Por favor, preencha o campo de login.</string>
+    <string name="password_blank">Por favor, preencha o campo de senha.</string>
+    <string name="perfil_change">Seu perfil foi alterado, faça o login novamente</string>
+    <string name="usuario_id">ID %1$s</string>
+    <string name="ultima_sincronizacao">Sincronizado: %1$s</string>
+    <string name="SKU">SKU</string>
+    <string name="cod_simplificado">Código</string>
+    <string name="qtd">Qtd</string>
+    <string name="weight">PESO</string>
+    <string name="weight_l">Peso</string>
+    <string name="lote">Lote</string>
+    <string name="qtd_estoque">Estoque</string>
+    <string name="qtd_disponivel">QTD. DISPONÍVEL</string>
+    <string name="qtd_batch">QTD. BATCH</string>
+    <string name="theres_no_agenda">Não há agenda para este Cliente</string>
+    <string name="more_options">OUTRAS OPERAÇÕES</string>
+    <string name="coin">R$</string>
+    <string name="vl">R$</string>
+    <string name="sort">Sortimento</string>
+    <string name="icmsst">ICMS ST</string>
+    <string name="vlricms">VLR ICMS</string>
+    <string name="vlripi">VLR IPI</string>
+    <string name="vlrdesc">VLR DESC</string>
+    <string name="vlrtotal">Valor Total</string>
+    <string name="gondula">Gôndola</string>
+    <string name="vlrunit">Valor Unitário</string>
+    <string name="caixa">Caixa</string>
+    <string name="fatperda">Fat-Perda</string>
+    <string name="ton">Ton</string>
+    <string name="peso">Peso:</string>
+    <string name="status">Status:</string>
+    <string name="legendas">Legendas</string>
+    <string name="select_all">Selecionar todas</string>
+    <string name="remove_all">Remover todas</string>
+
+    <string name="save_pedido">Salvar pedido</string>
+    <string name="resume_client">Resumo</string>
+    <string name="save_item_pedido">Salvar item</string>
+    <string name="log_tracking">Rastreio do pedido</string>
+    <string name="log_pedido">Log Pedido</string>
+    <string name="delete_pedido">Excluir Pedido</string>
+    <string name="aguarde">aguarde...</string>
+    <string name="aguarde_reset_login">Aguarde, essa operação pode levar alguns minutos!</string>
+    <string name="null_field">N/A</string>
+    <string name="list_empty">Não há dados disponíveis. Verifique o filtro acima e tente novamente.</string>
+    <string name="list_empty_no_filter">Não há dados disponíveis.</string>
+    <string name="list_empty_obs">Você não tem permissão para colocar observação nesse tipo de venda.</string>
+    <string name="batch_hint">Indisponível</string>
+    <string name="barcode_error">Não foi encontrado nenhum produto com esse código de barras %s</string>
+    <string name="title_intent_photo">Selecione uma imagem</string>
+    <!-- Actions. -->
+    <string name="action_title_edit">Editar</string>
+    <string name="action_title_sync">Enviar pedido</string>
+    <string name="action_title_log">Log do Pedido</string>
+    <string name="action_title_delete">Excluir Pedido</string>
+    <string name="action_title_delete_tap">Cancelar Tap</string>
+    <string name="action_title_visualization">Visualizar</string>
+    <string name="action_title_aprov">Aprovar</string>
+    <string name="action_title_cancel_tap">Cancelar Tap</string>
+    <string name="action_rg_novo_pedido">Novo Pedido</string>
+    <string name="action_rg_pesquisa">Nova Pesquisa</string>
+
+    <string name="action_barcode_title">Barcode</string>
+    <string name="action_search_title">Pesquisar</string>
+    <string name="action_search_hint">Pesquisa</string>
+    <string name="action_add_new_pedido_hint">Criar novo pedido</string>
+    <string name="action_add_new_agenda_outras_operacoes_hint">Outras operações</string>
+    <string name="action_add_new_pedido_agenda_distribuidor_hint">Agenda distribuidor</string>
+    <!-- Update Database. -->
+    <string name="not_update">Você não possui atualizações disponíveis</string>
+    <string name="update_sucess">Atualização dos dados foram executados com sucesso</string>
+    <string name="udapte_error">Ocorreu um erro e não foi possível concluir a atualização dos dados</string>
+    <string name="udapte_not_wifi">Você não está conectado a um rede WI-FI, deseja continuar?</string>
+    <string name="loading_sync">Preparando atualização...</string>
+    <string name="cancel_sync">Cancelando atualização...</string>
+    <string name="timeout_sync">Timeout, tentando reconectar: %s de %s</string>
+    <string name="noconnection_sync">Sem Conexão, tentando reconectar: %s de %s</string>
+    <string name="title_sync">Aviso</string>
+    <string name="title_message_sync">Para realizar a sincronização recomendamos que você esteja conectado em uma rede WI-FI</string>
+    <string name="update">Atualizando</string>
+    <string name="de">de</string>
+    <string name="rows">Registros</string>
+    <string name="mensagem_cancelar_update">Tem certeza que deseja cancelar a Sincronização dos dados</string>
+    <!-- Settings -->
+    <string name="environment_button">Ambiente</string>
+    <string name="change_password_button">Alterar Senha</string>
+    <string name="restore_button">Resetar Geral</string>
+    <string name="sync_button">Sincronizar</string>
+    <string name="recover_password_button">Recuperar senha</string>
+    <string name="title_restore_dialog">Tem certeza que deseja resetar o Aplicativo? Todas as informações de histórico serão apagadas do aparelho.</string>
+    <string name="error_restore_dialog">Erro ao resetar aplicativo!</string>
+    <string name="ok_restore_dialog">Reset foi realizado com sucesso!</string>
+    <!-- Ambiente -->
+    <string name="imei">IMEI</string>
+    <string name="status_sync">Último Sincronismo</string>
+    <string name="version">Versão do aplicativo</string>
+    <string name="database_version">Banco de dados</string>
+    <string name="database_size">Tamanho do banco de dados</string>
+    <string name="database_version_placeholder">SQLite</string>
+    <string name="ambiente_error_change_password">Para resetar o password é necessário estar logado.</string>
+    <string name="sending_recover_password_error">Não foi possível enviar a solicitação para recuperar a senha. Por favor, tente novamente mais tarde.</string>
+    <string name="recover_password_internal_server_error">Não foi possível recuperar a senha. Por favor, tente novamente mais tarde.</string>
+    <string name="recover_password_validation">Por favor, preencha com seu login (e-mail ou código).</string>
+    <string name="ambiente_prod">Produção</string>
+    <string name="ambiente_hom">Homologação</string>
+    <string name="ambiente_dev">Desenvolvimento</string>
+
+    <string-array name="tipo_ambiente_array">
+        <item>@string/ambiente_hom</item>
+        <item>@string/ambiente_dev</item>
+        <item>@string/ambiente_prod</item>
+    </string-array>
+    <!-- Update APK -->
+    <string name="update_apk_finishing">Preparando instalação</string>
+    <string name="update_apk_progress">Baixando %1$s</string>
+    <string name="update_apk_error">Não foi possível concluir o update do aplicativo, tente novamente!</string>
+    <string name="update_now">Atualizar agora</string>
+    <string name="update_apk_title">Existe uma nova versão do aplicativo disponível para download. Essa atualização é obrigatória para continuar usando o aplicativo. Para realizar a instalação com sucesso é necessário ativar a opção Fontes Desconhecidas.</string>
+    <string name="update_play_store_title">Existe uma nova versão do aplicativo disponível para download na Play Store. Essa atualização é obrigatória para continuar usando o aplicativo. Se realizou essa ação, aguarde a propagação da Play Store.</string>
+    <string name="new_app_version">Nova Versão %1$s</string>
+
+    <!-- Login -->
+    <string name="permission_mobile_error">Você não tem permissão para utilizar o Aplicativo, por favor contate o administrador.</string>
+
+    <!-- Alterar Senha -->
+    <string name="error_empty_passowrd">Por favor, preencha o campo senha.</string>
+    <string name="error_empty_new_passowrd">Por favor, preencha o campo nova senha.</string>
+    <string name="error_confirm_passowrd">Os campos nova senha e confirmar nova senha devem ser iguais.</string>
+    <string name="ok_confirm_password">A senha foi alterada com sucesso.</string>
+    <string name="login_expired_alert">Sua senha está prestes a expirar. Troque o mais rápido possível para não ter seu acesso bloqueado.</string>
+    <string name="sucess_recover_pwd">Alteração realizada com sucesso.</string>
+    <!-- About -->
+    <string name="developer">Developed by:</string>
+    <string name="powered">Powered by:</string>
+    <string name="site">https://dansalesweb.danone.com.br</string>
+    <!-- Incluir Item -->
+    <string name="search_item_product_error">Nenhum item foi encontrado.</string>
+    <string name="add_item_blocked">Produto indisponível (bloqueado).</string>
+    <string name="add_item_empty_price">Produto sem preço.</string>
+    <string name="add_item_cancel">Você realmente deseja cancelar a inclusão/edição do item?</string>
+    <string name="add_no_item_detected">Para prosseguir, por favor, selecione um tipo de venda.</string>
+    <!-- Produtos -->
+    <string name="mensagem_exluir_produto">Tem certeza que deseja excluir esse item?</string>
+    <!-- Spinner's labels. -->
+    <string name="select_item">Selecione item</string>
+    <string name="select_familia">Selecione a marca</string>
+    <string name="select_bandeira">Selecione a bandeira</string>
+    <string name="select_status">Selecione um status</string>
+    <string name="select_tipo_cadastro">Selecione tipo cadastro</string>
+    <string name="select_organizacao">Selecione a organização</string>
+    <string name="select_status_cliente">Selecione o status</string>
+    <string name="select_plano_campo">Selecione o dia</string>
+    <string name="select_tipo_venda">Selecione o tipo da venda</string>
+    <string name="select_grupo">Selecione grupo</string>
+    <string name="select_motivo_reprovacao">Selecione Motivo</string>
+    <string name="select_master_contrato">Selecione Master Contrato</string>
+    <string name="select_mes_acao">Selecione Mês da Ação</string>
+    <string name="select_regiao">Selecione a Região</string>
+    <string name="select_task">Selecione a Atividade</string>
+    <string name="select_user">Selecione um Usuário</string>
+    <string name="select_tap_tipo_item">Selecione Tipo</string>
+    <string name="select_tap_cat_item">Selecione Categoria</string>
+    <string name="select_tap_acao_item">Selecione Ação</string>
+    <string name="select_origem_message">Selecione Origem da Mensagem</string>
+
+
+    <string name="select_pedido_venda">Selecione o Pedido Venda</string>
+    <string name="select_layout">Selecione o layout</string>
+    <string name="select_answer">Selecione a resposta</string>
+    <string name="select_layout_error">"Para continuar é necessário escolher um layout"</string>
+    <!-- Aprovacao/Liberação pedido -->
+    <string name="pedido_apro_lib_aprova_button">Aprovar</string>
+    <string name="pedido__apro_lib_reprova_button">Reprovar</string>
+    <string name="pedido_apro_lib_msg_nota_vazia">Para reprovar o pedido é necessário preencher o campo Observações.</string>
+    <string name="pedido_apro_lib_msg_data_vazia">Para continuar é necessário preencher o campo Data de agendamento.</string>
+    <string name="pedido_apro_lib_msg_sucess">A Operação foi realizada com sucesso.</string>
+    <!-- Detalhe Pedido -->
+    <string name="detail_pedido_sync_warning">Existem alguns pontos de atenção em seu pedido, deseja continuar?</string>
+    <string name="detail_pedido_sync_question">Deseja enviar o pedido?</string>
+    <string name="detail_pedido_just_question">Você tem itens obrigatórios não preenchidos, para continuar é necessário justificar, deseja continuar?</string>
+    <string name="detail_pedido_just_escolhe_usuairo">Você tem itens obrigatórios não preenchidos, deseja justificar por item ou por pedido?</string>
+    <string name="detail_pedido_delete">Tem certeza que deseja excluir o pedido. Após excluído não será possível recuperar o pedido!</string>
+    <string name="detail_pedido_sync_sucess">Pedido sincronizado com sucesso!</string>
+    <string name="detail_pedido_sync_error_connection">Não foi possível receber o retorno do servidor, tente novamente!</string>
+    <string name="detail_pedido_validation_error">Falha ao validar pedido, verifique os erros encontrados no menu RESUMO!</string>
+    <string name="detail_button_title_just_pedido">Pedido</string>
+    <string name="detail_button_title_just_item">Item</string>
+    <string name="detail_pedido_tp_venda_bloq">Devido o cliente estar bloqueado no crédito, este tipo de pedido não pode ser realizado. Verifique o desbloqueio do cliente com equipe de crédito e cobrança para efetivar o pedido.</string>
+
+    <!-- Resumo pedido -->
+    <string name="resumo_status_pedido">Status do Pedido</string>
+    <string name="resumo_data_pedido">Data de criação</string>
+    <string name="resumo_data_import_sap">Data de importação SAP</string>
+    <string name="resumo_erros_pedido">Validação do pedido</string>
+    <string name="resumo_peso_minimo">Peso Mínimo</string>
+    <string name="resumo_peso_maximo">Peso Máximo (Excedente)</string>
+    <string name="resumo_valor_minimo">Valor Mínimo</string>
+    <string name="resumo_peso_Pedido">Peso do Pedido</string>
+    <string name="resumo_quantidade_pedido">Quantidade do Pedido</string>
+    <string name="resumo_quantidade_itens">Quantidade de Itens</string>
+    <string name="resumo_valor">Valor total</string>
+    <string name="resumo_positivado">Positivado</string>
+    <string name="resumo_title_sortimento">Sortimento Pedido</string>
+    <string name="resumo_sortimento_obrigatorio">Obrigatório</string>
+    <string name="resumo_sortimento_inovacao">Inovação</string>
+    <string name="resumo_sortimento_recomendado">Recomendado</string>
+    <string name="resumo_sortimento_substituto">Substituto</string>
+
+    <string name="loading">carregando...</string>
+
+    <!-- Relatórios -->
+    <string name="relatorio_tipo_objetivo">Objetivo</string>
+    <string name="relatorio_tipo_carteira_pedidos">Carteira de Pedidos</string>
+    <string name="relatorio_tipo_notas">Notas</string>
+    <string name="relatorio_checklist_nota">Notas Checklist</string>
+    <string name="relatorio_consulta_generica">Consulta Genérica</string>
+    <string name="relatorio_saldo_positivacao">Positivação</string>
+    <string name="relatorio_resumo_positivacao">Resumo</string>
+    <string name="relatorio_saldo_master_contrato">Saldo MasterContrato</string>
+    <string name="relatorio_sub_title_notas">Nota:\u0020</string>
+    <string name="relatorio_sub_title_cliente">Cliente:\u0020</string>
+    <string name="relatorio_sub_title_data">Data:\u0020</string>
+    <string name="relatorio_sub_title_valor">Tipo:\u0020</string>
+    <string name="relatorio_sub_title_sap">SAP:\u0020</string>
+    <string name="relatorio_sub_title_date">Emissão:\u0020</string>
+    <string name="cg_tipo_cadastro">Tipo Cadastro:\u0020</string>
+    <string name="cg_cnpj">CNPJ:\u0020</string>
+    <string name="cg_status">Status:\u0020</string>
+    <string name="cg_data_inclusao">Inclusão:\u0020</string>
+    <string name="cg_solicitante">Solicitante:\u0020</string>
+    <string name="cg_bandeira">Bandeira:\u0020</string>
+    <string name="cg_uf">UF:\u0020</string>
+    <string name="cg_cidade">Cidade:\u0020</string>
+
+    <string name="relatorio_cliente">Cliente</string>
+    <string name="relatorio_cnpj">CNPJ</string>
+    <string name="relatorio_sap">Pedido SAP</string>
+    <string name="relatorio_nota">Nota</string>
+    <string name="relatorio_serie">Serie</string>
+    <string name="relatorio_perda">Perda(%)</string>
+    <string name="relatorio_real">Real</string>
+    <string name="relatorio_obj">Obj</string>
+    <string name="relatorio_cob">Cob(%)</string>
+    <string name="relatorio_ref">Raf</string>
+    <string name="relatorio_pedido">Pedido Cliente</string>
+    <string name="relatorio_condicao_pagamento">Condição de Pagamento</string>
+    <string name="relatorio_valor_total">Valor Total</string>
+    <string name="relatorio_icms_total">ICMS/ST</string>
+    <string name="relatorio_positivacao_tipo_usuario_erro">Só é possível visualizar esse relátorio Promotores, GA e GR</string>
+    <string name="relatorio_planejado">Planejado</string>
+    <string name="relatorio_aderencia">Aderência</string>
+    <string name="relatorio_fora">Fora Plano</string>
+    <string name="relatorio_produtividade">Produtividade</string>
+    <string name="relatorio_perdido">Perdidos</string>
+
+    <string name="relatorio_carteira_pedido_status_1">Faturado Total</string>
+    <string name="relatorio_carteira_pedido_status_2">Cancelado</string>
+    <string name="relatorio_carteira_pedido_status_3">Em aberto</string>
+    <string name="relatorio_carteira_pedido_status_4">Faturado Parcial</string>
+    <string name="relatorio_carteira_pedido_status_5">Corte Total</string>
+
+    <string-array name="status_carteira_pedido_array">
+        <item>@string/relatorio_carteira_pedido_status_1</item>
+        <item>@string/relatorio_carteira_pedido_status_4</item>
+        <item>@string/relatorio_carteira_pedido_status_2</item>
+        <item>@string/relatorio_carteira_pedido_status_3</item>
+        <item>@string/relatorio_carteira_pedido_status_5</item>
+    </string-array>
+    <!-- Hints, etc. -->
+    <string name="agenda_item_codigo">Agenda %s</string>
+    <string name="agenda_item_validade">Val. do contrato: %s</string>
+    <string name="agenda_item_edital">Edital: %s</string>
+    <string name="log_item_date">Data: %s</string>
+    <string name="log_item_obs">Observação: %s</string>
+    <string name="log_item_acao">Ação: %s</string>
+    <string name="unidade_peso_kg">%s Kg</string>
+    <string name="kg">Kg</string>
+
+    <string name="empty">Não Preenchido</string>
+    <string name="hour_end">23:59</string>
+    <string-array name="array_question">
+        <item>@string/yes</item>
+        <item>@string/no</item>
+    </string-array>
+    <string name="pedido_without_items">Você não adicionou nenhum item para esse pedido,\npara adicionar itens clique no botão "+" \nlocalizado no canto inferior direito.\n</string>
+    <string name="pedido_just_title_items">Você tem itens obrigatórios não preenchidos é necessário justificar</string>
+
+    <!-- Validação do Pedido -->
+    <string name="message_error_qtd_invalid">Quantidade inválida</string>
+    <string name="message_error_desc_invalid">Desconto inválido</string>
+    <string name="message_error_no_desc_invalid">Não há permissão para uso de desconto</string>
+    <string name="message_error_max_desc_invalid">Desconto acima do máximo permitido</string>
+    <string name="message_error_price_major_table">Preço de venda não pode ser maior que o preço de tabela</string>
+    <string name="message_error_inv_invalid">Investimento inválido</string>
+    <string name="message_error_no_perm_inv">Não há permissão para uso de investimento</string>
+    <string name="message_error_prod_lot">Produto/lote já inserido no pedido</string>
+    <string name="message_error_prod_invalid_lot">Lote inválido</string>
+    <string name="message_error_prod">Produto já inserido no pedido</string>
+    <string name="message_error_prod_alter">Produto já inserido no pedido, deseja alterar?</string>
+
+    <string name="message_error_prod_experation_date">Produto já inserido com essa Data de Validade</string>
+    <string name="message_error_expiration_data">Data de validade inválida</string>
+    <string name="message_error_value_reb">Valor de gôndula inválido</string>
+    <string name="message_error_qtd_no_mult">Quantidade deve ser múltiplo de</string>
+    <string name="message_error_qtd_no_balance">Quantidade superior ao saldo disponível:</string>
+    <string name="message_title_validation">Não foi possível sincronizar, verifique os erros abaixo:</string>
+    <string name="message_error_tipo_venda">Necessário selecionar um tipo de venda</string>
+    <string name="message_error_bon_campanha">Não existe campanha vigente para este cliente</string>
+    <string name="message_error_bon_data">Pedido de venda finalizado em outro dia</string>
+    <string name="message_error_bon_codped">Pedido de Venda não informado</string>
+    <string name="message_error_bon_naolocalizado">Pedido de venda obrigatório para tipo bonificado</string>
+    <string name="message_error_obs_nf">Campo Obs. Nota Fiscal obrigatório</string>
+    <string name="message_error_obs_internal">Campo Obs. Interna obrigatório</string>
+    <string name="message_error_obs_internal_max">O campo OBS. NF deve ter no máximo 70 caracteres</string>
+    <string name="message_error_obs_internal_urg">Campo Obs. Interna obrigatório para pedidos marcados como urgente</string>
+    <string name="message_error_date_error">Campo data de entrega fora do mês vigente</string>
+    <string name="message_error_sem_item">Não há itens cadastrados</string>
+    <string name="message_error_peso_maximo">O peso total está acima do máximo permitido \n%s</string>
+    <string name="message_error_peso_minimo">Peso mínimo do pedido não foi atingido \n%s</string>
+    <string name="message_error_valor_minimo">Valor mínimo do pedido não foi atingido \n%s</string>
+    <string name="message_warnign_pedido_urgente">Pedidos marcados como urgente podem gerar acrecimos</string>
+    <string name="message_waring_un_med_un_to_cx">Não é possível trocar a unidade de medida pois seus itens possuem quantidade que não correspondem a uma caixa completa</string>
+    <string name="message_info_pedido">Pedido validado, sujeito à condições comerciais, estoque e liberação de crédito</string>
+    <string name="message_warning_pedido_sync_codigo">Código do pedido foi atualizado para: %s</string>
+    <string name="message_error_update_pedido_sync">Não foi possível atualizar, já existe um pedido com esse código %s</string>
+    <string name="message_error_sug_pedido">Não é possível criar um novo pedido, existe um pedido sugerido para esse Cliente</string>
+    <string name="message_error_cliente_bloaquedo">Cliente está bloqueado, não é possível continuar!</string>
+
+    <!-- Pesquisa -->
+    <string name="date_pesquisa">Válido de %s a %s</string>
+    <string name="pesquisa_save_answer_erro">Erro ao salvar resposta, tente novamente!</string>
+    <string name="pesquisa_frequencio_erro">Não foi possível obter a frequencia da pesquisa, tente novamente!</string>
+    <string name="unanswered_question">Pergunta não respondida</string>
+    <string name="message_error_validation_res_date">É necessário preencher o campo com uma data válida</string>
+    <string name="message_error_validation_res_text">É necessário preencher o campo de resposta</string>
+    <string name="message_error_validation_res_option">Necessário escolher uma opção para continuar</string>
+    <string name="message_error_validation_res_option_preco">Preencha todos itens obrigatórios com o preço informado na gôndola</string>
+    <string name="message_error_validation_res_number">Necessário inserir valores entre %s e %s</string>
+    <string name="message_error_sync_pesquisa_validation">Para continuar é necessário preencher todas as perguntas obrigatórias</string>
+    <string name="report_sync_error_connection">Não foi possível enviar o report, falha ao conectar ao servidor!</string>
+    <string name="pesquisa_nota_error_connection">Pesquisa foi enviada, porém não foi possivel recuperar a nota</string>
+    <string name="pesquisa_sync_error_connection">Não foi possível sincronizar as respostas, falha ao conectar ao servidor!</string>
+    <string name="pesquisa_sync_ok_connection">Pesquisa enviada com sucesso!</string>
+    <string name="pesquisa_sync_error_question_disable">Não foi possível responder uma pergunta desabilitada!</string>
+    <string name="pesquisa_sync_error_status">Essa pesquisa não está disponível para envio ou alteração!</string>
+    <string name="pedido_not_found">Pedido não encontrado. Por favor, verifique os pedidos disponíveis e tente novamente.</string>
+    <string name="pesquisa_sync_no_edit">Você já respondeu essa pesquisa!</string>
+    <string name="pergunta_erro">Não foi possível abrir a pergunta verifique o cadastro e suas condicionais!</string>
+    <string name="pesquisa_title_cliente_info">Legal, tudo pronto!</string>
+    <string name="pesquisa_title_resumo_loja">Resumo da Loja!</string>
+    <string name="pesquisa_title_layout_loja">Layout da Loja!</string>
+    <string name="pesquisa_pergunta_dependecia_resp_error">Para responder essa pergunta é necessário responder primeiro a pergunta: %s</string>
+
+    <!-- ETap -->
+    <string name="message_etap_client">Você não tem permissão para acessar esse cliente.</string>
+    <string name="message_etap_send">Tap enviada para aprovação.</string>
+    <string name="message_etap_save">Tap salva com sucesso.</string>
+    <string name="message_etap_save_erro">Não foi possível salvar sua Tap.</string>
+    <string name="message_etap_send_erro">Não foi possível enviar sua Tap.</string>
+    <string name="message_etap_master_contrato">Não foi possível carregar o MasterContrato.</string>
+    <string name="message_etap_delete">Tap cancelada com sucesso.</string>
+    <string name="message_etap_lote_erro">Não foi possível enviar as Taps, verifique sua conexão e tente novamente.</string>
+    <string name="message_etap_delete_erro">Não foi possível cancelar a Tap.</string>
+    <string name="message_etap_detail_erro">Não foi possível carregar os detalhes da tap, verifique sua conexão e tente novamente.</string>
+    <string name="message_etap_listl_erro">Não possível carregar suas taps, verifique sua conexão e tente novamente.</string>
+    <string name="message_etap_send_validation_item_tipo_error">Necessário preencher o campo Tipo</string>
+    <string name="message_etap_send_validation_item_acao_error">Necessário preencher o campo Ação</string>
+    <string name="message_etap_send_validation_item_cat_prod_error">Necessário preencher o campo Categoria de Produto</string>
+    <string name="message_etap_send_validation_item_valor_error">Necessário preencher o campo Valor</string>
+    <string name="message_etap_send_validation_mc_error">Necessário preencher o campo MasterContrato</string>
+    <string name="message_etap_send_validation_mes_acao_error">Necessário preencher o campo Mês de ação</string>
+    <string name="message_etap_send_validation_regiao_error">Necessário preencher o campo Região</string>
+    <string name="message_etap_send_validation_fat_liq_error">Necessário preencher o campo Fat Liq com valores igual ou maior que 1</string>
+    <string name="message_etap_add_item_validation_error">Para continuar é necessário preencher todos os campos</string>
+    <string name="message_etap_add_item_error">Não foi possível salvar o item, verifique sua conexão e tente novamente!</string>
+    <string name="message_etap_remove_item_error">Não foi possível remover o item, verifique sua conexão e tente novamente!</string>
+    <string name="message_etap_vl_est_validation_error">Para continuar é necessário preencher o campo Valor Estimado</string>
+    <string name="message_etap_vl_apu_validation_error">Para continuar é necessário preencher o campo Valor Apurado</string>
+    <string name="message_etap_send_aprov">Deseja enviar para aprovação?</string>
+    <string name="message_etap_send_lote_question">Confirma a aprovação das taps selecionadas</string>
+
+    <string name="etap_without_items">Você não adicionou nenhum item para essa Tap,\npara adicionar itens clique no botão "+" \nlocalizado no canto inferior direito.\n</string>
+    <string name="etap_lista_objetivo">Listar TAP</string>
+    <string name="etap_financas">Análise Finanças</string>
+    <string name="etap_consultar">Consultar TAP</string>
+    <string name="detail_etapo_delete">Tem certeza que deseja cancelar a tap?</string>
+    <string name="etap_resumo_qtd_acoes">Qtde. Ações</string>
+    <string name="etap_resumo_valor_total_estimado">Valor Total Estimado</string>
+    <string name="etap_resumo_valor_total_apurado">Valor Total Apurado</string>
+    <string name="etap_resumo_por_fat_liq">% Fat. Liq.</string>
+
+    <string name="error_connection_multi">Não foi possível conectar com o servidor de integração, tente mais tarde!</string>
+
+    <string name="etap_error_connection_anexo">Não foi possível conectar a internet, tente novamente!</string>
+    <string name="tap_lote_dialog_type">Para enviar as taps em lote é necessário preencher o campo observação.</string>
+    <string name="tap_qtd_selected_tap">Quantidade de taps selecionadas</string>
+    <string name="tap_qtd_remove_selected_tap">Quantidade seleção taps removidas</string>
+
+    <string name="message_etap_rascunho">Deseja continuar inserindo a Tap com Master Contrato Rascunho?</string>
+
+    <!-- ETap Aprovacao -->
+    <string name="tap_apro_lib_aprova_button">Aprovar</string>
+    <string name="tap__apro_lib_reprova_button">Reprovar</string>
+    <string name="tap_apro_lib_msg_nota_vazia">Para continuar é necessário preencher o campo Observações.</string>
+    <string name="tap_apro_lib_msg_status">Para continuar é necessário preencher o campo Motivo.</string>
+    <string name="tap_apro_lib_msg_sucess">A Operação foi realizada com sucesso.</string>
+
+    <!-- Status ETAP -->
+    <string-array name="etap_status_array">
+        <item>@string/etap_status_1</item>
+        <item>@string/etap_status_2</item>
+        <item>@string/etap_status_3</item>
+        <item>@string/etap_status_4</item>
+        <item>@string/etap_status_5</item>
+        <item>@string/etap_status_6</item>
+        <item>@string/etap_status_7</item>
+        <item>@string/etap_status_8</item>
+        <item>@string/etap_status_9</item>
+        <item>@string/etap_status_10</item>
+        <item>@string/etap_status_11</item>
+        <item>@string/etap_status_12</item>
+
+    </string-array>
+
+    <string name="etap_status_1">Em Digitação</string>
+    <string name="etap_status_2">Aguardando Aprovador</string>
+    <string name="etap_status_3">Aprovado Cliente</string>
+    <string name="etap_status_4">Aprovado</string>
+    <string name="etap_status_5">Reprovado</string>
+    <string name="etap_status_6">Aguardando Comprovação</string>
+    <string name="etap_status_7">Validação Comprovação</string>
+    <string name="etap_status_8">Aguardando Comprovação Pgto.</string>
+    <string name="etap_status_9">Pago ou Pgto. Programado</string>
+    <string name="etap_status_10">Cancelado</string>
+    <string name="etap_status_11">Bloqueado Finanças</string>
+    <string name="etap_status_12">Reprovado Cliente</string>
+
+    <string-array name="array_tipo_aprov">
+        <item>@string/tipo_aprov_ap</item>
+        <item>@string/tipo_aprov_re</item>
+        <item>@string/tipo_aprov_bl</item>
+        <item>@string/tipo_aprov_de</item>
+    </string-array>
+
+    <string name="tipo_aprov_ap">Aprovar</string>
+    <string name="tipo_aprov_re">Reprovar</string>
+    <string name="tipo_aprov_bl">Bloquear</string>
+    <string name="tipo_aprov_de">Desbloquear</string>
+
+    <!-- Rota Guiada -->
+    <string name="detail_data_hint">Data da Visita</string>
+    <string name="rg_message_error_task">Você não tem acesso a essa funcionalidade</string>
+
+    <!-- Chat -->
+    <string name="hint_chat">Digite Aqui..</string>
+    <string name="message_default">Não posso te ajudar no momento.</string>
+    <string name="message_chat_error">Não possível enviar sua mensagem, verifique sua conexão. Deseja tentar novamente?</string>
+    <string name="issac_error_connection">Não foi possíve acessar o issac, verifique sua conexão! Deseja tentar novamente?</string>
+
+    <!-- PlanoCampoUtils -->
+    <string name="today">Hoje</string>
+    <string name="monday">Segunda</string>
+    <string name="tuesday">Terça</string>
+    <string name="wednesday">Quarta</string>
+    <string name="thusday">Quinta</string>
+    <string name="friday">Sexta</string>
+    <string name="saturday">Sábado</string>
+    <string name="sunday">Domingo</string>
+
+    <!--Freq -->
+    <string name="nofreq">Não Controla</string>
+    <string name="daily">Diária</string>
+    <string name="weekly">Semanal</string>
+    <string name="monthly">Mensal</string>
+    <string name="biweekly">Quinzenal</string>
+    <string name="bimonthly">Bimestral</string>
+    <string name="quarterly">Trimestral</string>
+    <string name="semiannual">Semestral</string>
+    <string name="yearly">Anual</string>
+
+    <!-- Rota Guiada -->
+    <string name="distance_marker">Cliente %s: %s km</string>
+    <string name="checkin">Checkin</string>
+    <string name="checkout">Checkout</string>
+    <string name="stop">Pausar</string>
+    <string name="not_area_client">Notamos que você não está na área do Cliente Selecionado, deseja continuar?</string>
+    <string name="checkin_not_done">Para continuar é necessário realizar o Checkin</string>
+    <string name="rota_invalid">Houve um problema com a rota, não é possível continuar. Tente novamente!</string>
+    <string name="rota_date_incorret">Não é possivel continuar, dia da rota é diferente do dia atual.</string>
+    <string name="rota_date_checkin_checkout_error">Não é possível continuar, a data de checkout é diferente do checkin.</string>
+    <string name="checkout_success">Checkout realizado com sucesso</string>
+    <string name="valid_checkout_success">Pedido não realizado \n Justifique</string>
+    <string name="valid_pesquisa_checkout_success">Atividade %s não realizada \n\n Justifique</string>
+    <string name="checkin_accomplished">Você já realizou o checkin</string>
+    <string name="has_rota_cliente">Esse cliente já está na rota</string>
+    <string name="cliente_not_available">Esse cliente não está disponivel</string>
+    <string name="hours_checkout_justificativa_error"> O Data e hora deve ser maior que a última ação</string>
+    <string name="pedido_cliente_inativo">Não é possível gerar pedidos para clientes inativos, por favor verificar com o time de Operações de Vendas.</string>
+
+    <string name="select_status_rota_guiada">Selecione o Status</string>
+    <string name="title_visita_dia">Visita do dia</string>
+    <string name="title_visita_n_realizada">Visita não realizada/Incompleta: %s</string>
+    <string name="message_error_visita_pausada">Não pode haver mais de uma visita pausada</string>
+    <string name="message_error_visita_andamento">Não pode haver mais de uma visita em andamento, finalize  ou pause uma visita para continuar.</string>
+    <string name="message_error_visita_n_realizada">Você possui visita(s) não realizada(s), justifique para realizar as visitas do dia</string>
+    <string name="message_cliente_fora_rota">Você está adicionando um cliente fora do plano de campo</string>
+    <string name="message_sync_rg">Não foi possível enviar as informações de Rota, possivelmente você está sem conexão!</string>
+    <string name="aguarde_sync_rg">aguarde enviando os dados para o servidor</string>
+    <string name="user_not_allowed">Rota Guiada só está disponível para GA e Promotor</string>
+
+    <string name="title_dialog_visita_n_realizada">Visita não realizada \n\nJustifique</string>
+
+    <string name="title_dialog_visita_incompleta">Visita Incompleta \n\nJustifique</string>
+    <string name="title_dialog_visita_incompleta_data">Visita Incompleta \n \n Data da última ação:  \n %s \n \n Justifique</string>
+    <string name="select_item_just">Para continuar, selecione um item</string>
+    <string name="rg_new_pedido">Novo Pedido*</string>
+
+    <string name="message_n_justificado">Não foram justificados todos os itens, deseja continuar justificando?</string>
+    <string name="justificativa_n_preenchida">Não preenchida</string>
+    <string name="block_delete_item">Não é possível apagar esse item.</string>
+    <string name="insert_itens_sortimento">Esse tipo de venda faz o cruzamento layout x cliente. Deseja prosseguir?</string>
+
+    <string-array name="array_status_rota">
+        <item>@string/rg_status_n_iniciado</item>
+        <item>@string/rg_status_andamento</item>
+        <item>@string/rg_status_finalizado</item>
+        <item>@string/rg_status_fora_rota</item>
+        <item>@string/rg_status_n_realizado</item>
+    </string-array>
+
+    <!-- Dialog Resume Client. -->
+    <string name="dialog_resume_cliente_nota">Nota</string>
+    <string name="dialog_resume_cliente_espaco">Espaço</string>
+
+    <string name="checklist_status_nota_n_respondeu">Não respondeu</string>
+    <string name="checklist_status_nota_n_pontou">Não pontou</string>
+    <string name="checklist_status_nota_pontou">Pontou</string>
+    <string name="checklist_status_oportunidade">Oportunidade</string>
+
+    <string name="checklist_status_nota_n_respondeu_header">Podemos melhorar!</string>
+    <string name="checklist_status_nota_n_pontou_header">Atenção! Você não pontuou!</string>
+    <string name="checklist_status_nota_pontou_header">Parabéns! Continue assim!</string>
+    <string name="checklist_status_oportunidade_header">Podemos melhorar!</string>
+
+    <string name="checklist_block_change_layout">Não é possivel alterar o layout da pesquisa, pois as respostas já foram enviadas.</string>
+    <string name="checklist_change_layout_warning">Ao alterar o layout todas as suas repostas serão apagadas, deseja continuar?</string>
+    <string name="checklist_not_exists_layout">Layout não está mais disponivel, será alterado para o layout padrão e suas respostas serão removidas</string>
+
+    <string name="checklist_obrig_sem_justificativa">Necessário o preenchimento de todas atividades obrigatórias para realizar o check-out deste cliente</string>
+
+    <!-- Legenda Rota Guiada. -->
+    <string name="rg_status_n_iniciado">Não iniciado</string>
+    <string name="rg_status_andamento">Em Andamento</string>
+    <string name="rg_status_parado">Pausado</string>
+    <string name="rg_status_fora_rota">Finalizado - Fora Rota</string>
+    <string name="rg_status_n_realizado">Visita não realizado</string>
+    <string name="rg_status_incompleto">Visita incompleta</string>
+    <string name="rg_status_finalizado">Finalizado - Rota</string>
+    <string name="rg_status_default">Não indentificado</string>
+
+
+    <!-- Nota check list -->
+    <string name="pesquisa_nota_obs">Melhora sua nota através de uma ação especifica nessa área</string>
+    <string name="info_price">Informe Preço</string>
+    <string name="price_error">Para responder a perguntar do tipo Preço é necessário preencher o Sortimento Obrigatorio</string>
+
+    <!-- Sincronismo -->
+    <string name="sync_description">Os dados estão sendo atualizados</string>
+    <string name="sync_result">Total de registros atualizados:</string>
+
+    <!-- Mensagens -->
+    <string name="sender_message">De:</string>
+    <string name="title_message">Assunto:</string>
+    <string name="date_message">Data:</string>
+    <string name="message_type_labelfilter">Origem da Mensagem</string>
+    <string name="message_type_mes">Mensagem</string>
+    <string name="message_type_rg">Rota Guiada</string>
+    <string name="message_type_push">Notificação (push)</string>
+    <string name="message_type_read">Lida</string>
+    <string name="message_type_noread">Não Lida</string>
+    <string name="message_info_dialog">Caso queira rever suas mensagens disponíveis, favor acessar o módulo de mensagens dentro do menu principal</string>
+    <string name="message_attachment_title_progress">Aguarde enquanto o download do arquivo %s é realizado</string>
+    <string name="message_open_attachment_error">Não é possível abrir o aquivo nesse dispositivo</string>
+
+    <!-- CR report -->
+    <string name="message_report_error_layout">Para continuar é necessário selecionar um layout</string>
+    <string name="message_report_error_bitmap">Para continuar é necessário selecionar uma foto</string>
+    <string name="message_report_success">Os dados foram enviados com sucesso para análise!</string>
+
+    <!--Planejamento Rota -->
+    <string name="planejamento_ga_visita_promotor">Acompanhar visita</string>
+
+    <string name="planejamento_rota_visita_cliente">Visita Cliente</string>
+    <string name="planejamento_rota_visita_com_promotor">Visita Cliente com promotor</string>
+    <string name="planejamento_rota_atividade_interna">Atividade interna</string>
+    <string name="planejamneto_rota_note">Deseja finalizar a atividade? Você pode deixar deixar observações no campo abaixo: </string>
+
+    <string name="planejamneto_rota_add_task_date_error">Necessário preencher o campo data de início</string>
+    <string name="planejamneto_rota_add_task_error">Necessário escolher uma atividade</string>
+    <string name="planejamneto_rota_add_task_client_error">Necessário escolher um cliente</string>
+    <string name="planejamneto_rota_add_task_promotor_error">Necessário escolher um promotor</string>
+    <string name="planejamneto_rota_add_task_hours_start_error">Necessário preencher o campo hora de início</string>
+    <string name="planejamneto_rota_add_task_hours_end_error">Necessário preencher o campo hora de encerramento</string>
+    <string name="planejamneto_rota_add_task_hours_compare_error">Horário de inicio deve ser menor que horario final</string>
+
+    <string name="planejamneto_rota_add_task_success">Atividade adicionada com sucesso!</string>
+
+    <string name="planejamneto_rota_remove_error">Só é possível remover atividades não iniciadas!</string>
+    <string name="planejamneto_rota_remove_question">Tem certeza que deseja remover o item?</string>
+
+    <string name="planejamento_coaching_promotor_date">Pesquisa coaching promotor não foi respondida</string>
+    <string name="planejamento_coaching_promotor_answer">Pesquisa coaching promotor já foi respondida!</string>
+    <string name="planejamento_coaching_promotor_error">Necessário realizar todas as visitas com o promotor!</string>
+
+    <string name="planejamneto_rota_start_hours">Início: </string>
+    <string name="planejamneto_rota_finish_hours">Fim: </string>
+
+    <string name="planejamento_rota_resume_store">Resumo da loja!</string>
+    <string name="planejamento_rota_resume">Resumo!</string>
+    <string name="planejamento_rota_total_score">Notal total</string>
+
+    <string name="planejamneto_rota_resume_store_erro">Não foi possível recuperar as informações, verifique sua conexão e tente novamente!</string>
+    <string name="planejamneto_rota_resume_store_no_data">Não foram encontrados dados suficientes para exibir o resumo</string>
+
+    <string name="planejamento_rota_resume_store_title">Veja o resumo do promotor!</string>
+
+    <string name="planejamento_rota_store_last_score">Última nota do Checklist</string>
+    <string name="planejamento_rota_store_average_client">Tempo médio de visita dessa loja</string>
+    <string name="planejamento_rota_store_average_client_weekly">Visita média semanal por cliente geral</string>
+    <string name="planejamento_rota_store_average_client_weekly_only">Visita média semanal dessa loja</string>
+
+    <string name="planejamento_rota_store_general_last_score">Última nota de execução geral</string>
+    <string name="planejamento_rota_store_general_average_client">Tempo médio em loja geral</string>
+
+    <string name="planejamento_rota_store_average_sup">Média supervisor</string>
+    <string name="planejamento_rota_store_average_promotor_client">"Média promotor</string>
+    <string name="planejamento_rota_store_average_promotor_checklist">"Média geral</string>
+
+
+    <string name="planejamento_rota_store_legenda"><b>"1) Média supervisor: </b>Média do captado pelo supervisor no dia do coaching \n \n  <b>2) Média promotor:</b> Média do checklist dos promotores do mesmo cliente \n\n <b>3) Média geral:</b> Média do checklist geral do promotor</string>
+
+    <!--Pedido Tracking -->
+    <string name="nota_hint">Nota Fiscal</string>
+    <string name="serie_nota_hint">Serie</string>
+    <string name="pedido_hint">Número do pedido</string>
+    <string name="pedido_tracking_title_filter">Informe número do pedido ou o número da nota/Série</string>
+    <string name="pedido_tracking_sub_title_filter">Ou</string>
+    <string name="pedido_tracking_error_nf">Não foi possível localizar status da nota referente ao seu pedido</string>
+    <string name="pedido_tracking_vehicle_plate">Placa: </string>
+    <string name="pedido_tracking_shipping_company">Transportadora: </string>
+    <string name="pedido_tracking_driver">Motorista: </string>
+    <string name="link_rastreio">Link de rastreio</string>
+    <string name="pedido_tracking_choose_nf">Selecione Nota Fiscal</string>
+
+
+</resources>
+

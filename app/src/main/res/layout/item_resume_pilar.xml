@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="@dimen/form_label_small_margin_vertical"
+    android:background="?android:attr/selectableItemBackground">
+
+    <TableLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:stretchColumns="*"
+        android:shrinkColumns="*">
+        <TableRow
+            android:gravity="center">
+            <TextView
+                style="@style/ListItemSecondaryText"
+                android:layout_weight="1"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:lines="3"
+                android:textSize="11sp"
+                android:id="@+id/pilar_text_view" />
+            <TextView
+                style="@style/ListItemSecondaryText"
+                android:id="@+id/average_day_text_view"
+                android:layout_weight="1"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:gravity="center"/>
+            <TextView
+                style="@style/ListItemSecondaryText"
+                android:id="@+id/average_x_day_text_view"
+                android:layout_weight="1"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:gravity="center"/>
+            <TextView
+                style="@style/ListItemSecondaryText"
+                android:id="@+id/average_promotor_text_view"
+                android:layout_weight="1"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:gravity="center"/>
+        </TableRow>
+    </TableLayout>
+</RelativeLayout>

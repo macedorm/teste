@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="@dimen/form_label_small_margin_vertical"
+    android:background="?android:attr/selectableItemBackground">
+
+    <LinearLayout
+        android:id="@+id/rg_container_item_relative_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="0.20">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal"
+            android:gravity="center"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+
+            <ImageView
+                android:id="@+id/rg_status_image_view"
+                android:layout_width="@dimen/rg_icon_size"
+                android:layout_height="@dimen/rg_icon_size"
+                android:padding="@dimen/list_item_image_end_padding"/>
+
+
+            <LinearLayout
+                android:id="@+id/container_linear_layout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+
+                <TextView
+                    style="@style/FormLabel"
+                    android:id="@+id/rg_user_text_view"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:maxLines="1"/>
+
+                <TextView
+                    android:id="@+id/rg_nome_text_view"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:maxLines="2"
+                    style="@style/ListItemPrimaryText" />
+
+                <TextView
+                    android:id="@+id/rg_endereco1_text_view"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:maxLines="1"
+                    android:paddingTop="@dimen/list_item_spacing"
+                    style="@style/ListItemSecondaryText" />
+
+                <TextView
+                    android:id="@+id/rg_endereco2_text_view"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:maxLines="1"
+                    android:paddingTop="@dimen/list_item_spacing"
+                    style="@style/ListItemSecondaryText" />
+
+                <LinearLayout
+                    android:id="@+id/fora_rota_linear_layout"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:visibility="gone"
+                    android:gravity="right"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:layout_width="15dp"
+                        android:layout_height="15dp"
+                        android:layout_marginRight="@dimen/form_label_margin_vertical"
+                        android:scaleType="fitCenter"
+                        android:src="@drawable/ic_rg_status_cliente_fora_da_rota" />
+
+                </LinearLayout>
+
+                <TextView
+                    style="@style/ListItemSecondaryText"
+                    android:id="@+id/rg_obs_text_view"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:visibility="gone"/>
+
+                <Button
+                    style="@style/DanButton"
+                    android:id="@+id/add_event_button"
+                    android:layout_width="wrap_content"
+                    android:layout_height="40dp"
+                    android:text="@string/planejamento_ga_visita_promotor"/>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <RelativeLayout
+        android:id="@+id/rg_container_item_delete_relative_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="0.8">
+
+        <ImageView
+            android:id="@+id/delete_image_view"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_centerInParent="true"
+            android:scaleType="fitCenter"
+            android:src="@drawable/ic_delete" />
+
+    </RelativeLayout>
+
+</LinearLayout>

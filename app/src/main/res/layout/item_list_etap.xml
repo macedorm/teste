@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="?android:attr/selectableItemBackground">
+
+    <RelativeLayout
+        android:id="@+id/background_relative_linear"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+    <ImageView
+        android:id="@+id/etap_status_image_view"
+        android:layout_width="@dimen/etap_icon_size"
+        android:layout_height="@dimen/etap_icon_size"
+        android:layout_alignParentStart="true"
+        android:layout_centerVertical="true"
+        android:layout_margin="@dimen/list_item_image_end_padding"
+        android:scaleType="centerInside" />
+
+    <TextView
+        android:id="@+id/etap_cliente_nome_text_view"
+        style="@style/ListItemPrimaryText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="@dimen/list_item_horizontal_padding"
+        android:layout_toEndOf="@id/etap_status_image_view" />
+
+    <TextView
+        android:id="@+id/etap_codigo_tap_text_view"
+        style="@style/ListItemSecondaryText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/etap_cliente_nome_text_view"
+        android:layout_toEndOf="@id/etap_status_image_view" />
+
+    <TextView
+        android:id="@+id/etap_data_cad_text_view"
+        style="@style/ListItemSecondaryText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/etap_codigo_tap_text_view"
+        android:layout_toEndOf="@id/etap_status_image_view" />
+
+
+    <TextView
+        android:id="@+id/etap_master_contrato_text_view"
+        style="@style/ListItemSecondaryText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/etap_data_cad_text_view"
+        android:layout_toEndOf="@id/etap_status_image_view" />
+
+    <TextView
+        android:id="@+id/etap_mes_acao_text_view"
+        style="@style/ListItemSecondaryText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/etap_master_contrato_text_view"
+        android:layout_toEndOf="@id/etap_status_image_view" />
+
+
+    <TextView
+        android:id="@+id/etap_valor_estimado_tap_text_view"
+        style="@style/ListItemSecondaryText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/etap_mes_acao_text_view"
+        android:layout_toEndOf="@id/etap_status_image_view" />
+
+    <TextView
+        android:id="@+id/etap_valor_apurado_tap_text_view"
+        style="@style/ListItemSecondaryText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/etap_valor_estimado_tap_text_view"
+        android:layout_toEndOf="@id/etap_status_image_view"
+        android:layout_marginBottom="@dimen/list_item_horizontal_padding" />
+
+
+    <ImageView
+        android:id="@+id/etap_status_check_box"
+        android:layout_width="@dimen/etap_icon_size"
+        android:layout_height="@dimen/etap_icon_size"
+        android:layout_centerVertical="true"
+        android:layout_alignParentRight="true"
+        android:src="@drawable/ic_check_circle_black_24dp"
+        android:tint="@color/colorPrimary"
+        android:visibility="gone"
+        android:scaleType="centerInside" />
+
+    </RelativeLayout>
+
+</RelativeLayout>

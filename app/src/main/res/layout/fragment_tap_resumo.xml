@@ -1,0 +1,132 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="br.com.jjconsulting.mobile.dansales.PedidoResumoFragment">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingBottom="@dimen/activity_horizontal_margin"
+            android:paddingEnd="@dimen/activity_vertical_margin"
+            android:paddingStart="@dimen/activity_vertical_margin"
+            android:paddingTop="@dimen/activity_horizontal_margin">
+
+            <TextView
+                android:id="@+id/resumo_text_view"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:visibility="gone" />
+
+            <LinearLayout
+                android:id="@+id/etap_resumo_qtd_acoes_linear_layout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/resumo_text_view"
+                android:orientation="vertical">
+
+                <TextView
+                    style="@style/FormLabel"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/etap_resumo_qtd_acoes" />
+
+                <TextView
+                    android:id="@+id/etap_resumo_qtd_acoes_text_view"
+                    style="@style/FormValue"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/etap_resumo_qtd_acoes" />
+
+                <View
+                    style="@style/LineDefault"
+                    android:layout_width="match_parent" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/etap_valor_estimado_linear_layout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/etap_resumo_qtd_acoes_linear_layout"
+                android:layout_marginTop="@dimen/form_label_margin_vertical"
+                android:orientation="vertical">
+
+                <TextView
+                    style="@style/FormLabel"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/etap_resumo_valor_total_estimado" />
+
+                <TextView
+                    android:id="@+id/etap_resumo_valor_estimado_text_view"
+                    style="@style/FormValue"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/etap_resumo_valor_total_estimado"/>
+
+                <View
+                    style="@style/LineDefault"
+                    android:layout_width="match_parent" />
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:id="@+id/etap_valor_apurado_linear_layout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/etap_valor_estimado_linear_layout"
+                android:layout_marginTop="@dimen/form_label_margin_vertical"
+                android:orientation="vertical">
+
+                <TextView
+                    style="@style/FormLabel"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/etap_resumo_valor_total_apurado" />
+
+                <TextView
+                    android:id="@+id/etap_resumo_valor_total_apurado_text_view"
+                    style="@style/FormValue"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/etap_resumo_valor_total_apurado"/>
+
+                <View
+                    style="@style/LineDefault"
+                    android:layout_width="match_parent" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/etap_resumo_por_fat_liq_linear_layout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/etap_valor_apurado_linear_layout"
+                android:layout_marginTop="@dimen/form_label_margin_vertical"
+                android:orientation="vertical">
+
+                <TextView
+                    style="@style/FormLabel"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/etap_resumo_por_fat_liq" />
+
+                <TextView
+                    android:id="@+id/etap_resumo_por_fat_liq_text_view"
+                    style="@style/FormValue"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/etap_resumo_por_fat_liq"/>
+
+                <View
+                    style="@style/LineDefault"
+                    android:layout_width="match_parent" />
+            </LinearLayout>
+
+        </RelativeLayout>
+    </ScrollView>
+</LinearLayout>
